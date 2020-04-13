@@ -5,6 +5,9 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 //Yve Vestal Titan (YVT Create Logo)
+import '../../node_modules/augmented-ui/augmented.css'; 
+//augmented ui
+//Homepage 
 
 const IndexPage = () => (
   <Layout>

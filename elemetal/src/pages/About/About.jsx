@@ -1,6 +1,6 @@
 import React from 'react';
 import { scroller } from 'react-scroll';
-
+import FloatingComponent from './FloatingComponent';
 
 
 export const About = () => {
@@ -10,7 +10,19 @@ export const About = () => {
   //techLogos.map() render onto Flooating Clear Components horizontally
   return (
     <div id='about'>
-
+    <p> Why I like Frontend Development</p>
+      <ul>
+        <li> Instant Results </li>
+        <li> Less Creativity Cap </li>
+        <li> Individuality </li>
+      </ul>
+    <p> Why Backend is great too...</p>
+    <ul> 
+      <li> You think Long Term</li>
+      <li> Server Side Rendering </li>
+      <li> Scaleability</li> 
+      <li> It's Hidde in Plain Sight</li>
+    </ul>
     <hr></hr>
 
     <p> Technologies: </p>
