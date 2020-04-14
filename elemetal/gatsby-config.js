@@ -1,24 +1,23 @@
-
-// const url = require('url')
-// const moment = require('moment')
-// const siteTitle="Cutting Through The Edge of Reality"
-// const siteUrl = `http://www.angiechangpagne.com`
-// const author = `Angie Chang`
-
-// const getDate = node => {
-//   return moment(node.first_publication_date, dateFormat).toString()
-// }
+const siteMetadata= {
+  name: `Elemeta`,
+  author: `@angiechangpagne`,
+  description: `Cutting through the Edges of Reality`,
+  social: [],
+}
 
 module.exports = {
   siteMetadata: {
     title: `Elemetal`,
     name: `YVT`,
-    tagline: `Pushing The Edge of Reality`,
+    tagline: `Cutting through the Edges of Reality`,
     description: `Blade Runner in the Real World`,
     author: `@angiechangpagne`,
     siteUrl: `http://www.angiechangpagne.com`,
+    social: [],
   },
   plugins: [
+    `gatsby-plugin-chakra-ui`,
+    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -26,26 +25,30 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    // `gatsby-transformer-sharp`,
+    // `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
+        ...siteMetadata,
         name: `Elemetal`,
+        lang: `en-US`,
         short_name: `YVT`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `gainsboro`,
+        theme_color: `ghostwhite`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-typescript`,
+    // `gatsby-plugin-ipfs`,
+    `gatsby-plugin-react-helmet`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
 
 
 
