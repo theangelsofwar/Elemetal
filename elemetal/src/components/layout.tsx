@@ -9,7 +9,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import {TLayoutQuery} from '../types/gatsbyGraphql'
 import Header from "./header"
 import "./layout.css"
 
@@ -17,22 +16,20 @@ interface iProps {
   children: any
 }
 
-const Layout = ({ children }: iProps): JSX.Element => {
-  const layoutQuery: TLayoutQuery = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          canonicalUrl
-          siteTitle
-        }
-      }
-    }
-  `)
+const Layout = ({children}: iProps): JSX.Element => {
+  // const layoutQuery: TLayoutQuery = useStaticQuery(graphql`
+  //   query {
+  //       siteMetadata {
+  //         canonicalUrl
+  //         siteTitle
+  //       }
+  //   }
+  // `)
 
-  const {canonicalUrl, siteTitle} = layoutQuery.site.siteMetadata
+  // const {canonicalUrl, siteTitle} = layoutQuery.site.siteMetadata
   return (
-    <>
-      <Header siteTitle={siteTitle} />
+    <div>
+      <Header/>
       <div
         style={{
           margin: `0 auto`,
@@ -47,12 +44,8 @@ const Layout = ({ children }: iProps): JSX.Element => {
           <a href="https://www.angiechangpagne.com">Angie Chang(YVT Alias)</a>
         </footer>
       </div>
-    </>
+    </div>
   )
 }
-
-// Layout.propTypes = {
-//   children: PropTypes.node.isRequired,
-// }
 
 export default Layout

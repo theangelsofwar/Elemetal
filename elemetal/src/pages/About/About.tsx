@@ -1,10 +1,10 @@
 import React from 'react';
-import { scroller } from 'react-scroll';
+// import { scroller } from 'react-scroll';
 import FloatingComponent from './FloatingComponent';
 
 export const About = () => {
   //technology logos
-  const techLogos = []; //store images of technology logos to render clear,
+  // const techLogos = []; //store images of technology logos to render clear,
   //have them float on the bottom
   //techLogos.map() render onto Flooating Clear Components horizontally
   return (

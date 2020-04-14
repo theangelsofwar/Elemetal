@@ -13,22 +13,22 @@ interface iProps {
 }
 
 const SEO = ({ description, keywords=[],lang='en', meta=[], title }: iProps): JSX.Element => {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            siteTitle
-            siteDescription
-            author
-          }
-        }
-      }
-    `
-  )
+  // const { site } = useStaticQuery(
+  //   graphql`
+  //     query {
+  //       site {
+  //         siteMetadata {
+  //           siteTitle
+  //           siteDescription
+  //           author
+  //         }
+  //       }
+  //     }
+  //   `
+  // )
 
-  const {author, siteDescription, siteTitle} = site.siteMetadata
-  const metaDescription = description || siteDescription
+  // const {author, siteDescription, siteTitle} = site.siteMetadata
+  // const metaDescription = description
 
   return (
     <Helmet
@@ -36,11 +36,10 @@ const SEO = ({ description, keywords=[],lang='en', meta=[], title }: iProps): JS
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: description,
         },
         {
           property: `og:title`,
@@ -48,7 +47,7 @@ const SEO = ({ description, keywords=[],lang='en', meta=[], title }: iProps): JS
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: description,
         },
         {
           property: `og:type`,
@@ -59,21 +58,17 @@ const SEO = ({ description, keywords=[],lang='en', meta=[], title }: iProps): JS
           content: `summary`,
         },
         {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
           name: `twitter:title`,
           content: title,
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
+          content: description,
         },
       ].concat(meta || [])}
     />
   )
-}
+};
 
 // SEO.defaultProps = {
 //   lang: `en`,

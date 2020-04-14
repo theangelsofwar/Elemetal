@@ -4,12 +4,12 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 // You can delete this file if you're not using it
-require('source-map-support').install()
-require('ts-node').register({
-  compilerOptions: {
-    module: 'commonjs',
-    target: 'es2017'
-  }
-})
+// require('source-map-support').install()
+// require('ts-node').register({
+//   compilerOptions: {
+//     module: 'commonjs',
+//     target: 'es2017'
+//   }
+// })
 
-exports.createPages = require('./src/gatsby/createPages').createPages
+// exports.createPages = require('./src/gatsby/createPages').createPages
