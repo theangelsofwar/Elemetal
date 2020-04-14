@@ -2,7 +2,6 @@ import React from 'react';
 import { scroller } from 'react-scroll';
 import FloatingComponent from './FloatingComponent';
 
-
 export const About = () => {
   //technology logos
   const techLogos = []; //store images of technology logos to render clear,

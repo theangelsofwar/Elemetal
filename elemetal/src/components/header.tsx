@@ -3,7 +3,10 @@ import PropTypes from "prop-types"
 import React from "react"
 import './styless.css'
 
-const Header = ({ siteTitle }) => (
+interface iProps {
+  siteTitle: string
+}
+const Header = ({ siteTitle }: iProps): JSX.Element => (
   <header className='nav-header'>
     <div
       style={{
@@ -16,7 +19,7 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: `aliceblue`,
             textDecoration: `none`,
           }}
         >

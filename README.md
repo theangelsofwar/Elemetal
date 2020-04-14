@@ -12,6 +12,30 @@ Netlify
 augmented-ui
 Lambda Components
 
+Typescript-Superset of Javascript(though not necessary), better for closer interaction to underlying graphQL built into Gatsby, better conversion rates
+> npm install typescript --dev
+> npm install -g @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint
+
+Gatsby Files:
+gatsby-browser.js
+gatsby-config.js : Querying GraphQL in Gatsby:
+gatsby-node.js : Node API
+gatsby-ssr.js : Server Side Render API
+
+
+Gatsby Plugins: 
+npm install:
+> npm install gatsby-plugin-typescript 
+  -adds transpiler
+>
+Hooks: 
+useStaticQuery
+
+
+Optimizing SEO and Metadata:
+
+
+
 Run: 
 gatsby-develop
 
