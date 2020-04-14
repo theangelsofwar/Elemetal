@@ -8,6 +8,10 @@ Elemetal V1. A futuristic aesthetic
 "Gatsby? What Gatsby?"
 
 Gatsby-amazing React Library for Progressive Web Apps and Speedy Static Sites
+>Great for eCommerce solutions because of its SEO functionalityes
+>Great for Blogs, Portfolio Sites, Discussion Boards, Mailing 
+>able to configure with graphql
+>Good CICD
 
 Starting Point: Gatsby Config
 
@@ -42,12 +46,16 @@ npm install:
 
 Hooks: 
 useStaticQuery
-
+useWeb3React
 
 
 There are two Versions of this current version of my Gatsby Portfolio site-
 >One of them is centralized
 >One of them is decentralized
+
+For Browser Configuration:
+>npm install @ethersproject/providers
+>npm install @web3-react/core
 
 Interplanetary File Transfer(IPFS)
 

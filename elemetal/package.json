@@ -5,7 +5,10 @@
   "version": "0.1.0",
   "author": "Angie Changpagne(Yve Vestal Titan Alias) <angiechangpagne@gmail.com>",
   "dependencies": {
+    "@chakra-ui/core": "^0.7.0",
+    "@ethersproject/providers": "^5.0.0-beta.160",
     "@types/react-helmet": "^5.0.15",
+    "@web3-react/core": "^6.0.9",
     "augmented-ui": "^1.1.2",
     "emotion-theming": "^10.0.27",
     "gatsby": "^2.20.12",

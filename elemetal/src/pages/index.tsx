@@ -1,10 +1,15 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import { Box, Grid, Heading } from '@chakra-ui/core';
+import { Web3Provider } from '@ethersproject/providers';
+import { useWeb3React } from '@web3-react/core';
+import React, { useEffect, useState } from 'react';
+
+//import Web3 provier context and the wrapper before importing React
+import { Link, graphql } from 'gatsby';
 import bio from '../components/bio'
 import Img from 'gatsby-image'
 import './styles.css'
 import About from "./About/About"
-import Layout from "../components/layout"
+import { Layout } from "../components/Layout/Layout"
 import Divider from '../components/Divider'
 import Image from "../components/image"
 import SEO from "../components/seo"
