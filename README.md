@@ -78,6 +78,9 @@ Im going to do a post on the underlying theories and workings behind Gatsby, as 
 
 
 
+Next:
+Google Analytics(Do not go overboard)
+
 Tumblr
 
 
