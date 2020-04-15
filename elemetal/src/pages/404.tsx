@@ -29,7 +29,7 @@ const NotFoundPage = (): JSX.Element => (
     <Helmet>
       <title> Not Found </title>
     </Helmet>
-    <h1>I do not Exist</h1>
+    <h1>Exist?</h1>
     <p>You just hit a void ether... get back safe</p>
   </Layout>
 )
