@@ -2,11 +2,11 @@ import React from 'react';
 import './styless.css';
 import { Box, Heading, Button } from 'rebass';
 
-export const FloatingComponent = (props) => {
+const FloatingComponent = () => {
   return (
     <div id="floatingComponent">
-      <Heading fontSize={[5,6,7]}
-      color='primary'> {props} </Heading>
+      <Heading
+      color='primary'> </Heading>
     </div>
   )
 }

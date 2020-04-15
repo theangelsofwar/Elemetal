@@ -5,46 +5,45 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
- //add floating icons to technologies used, source their logos with image sources addresses
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-import Header from "../header"
-import "./layout.css"
+// add floating icons to technologies used, source their logos with image sources addresses
+import './layout.css'
 
-interface iProps {
-  children: any
+import {graphql, useStaticQuery} from 'gatsby'
+import React from 'react'
+import {Helmet} from 'react-helmet'
+
+// import PropTypes from "prop-types"
+import Header from '../header'
+
+interface Props {
+  children: React.ReactNode
 }
 
-const Layout = ({children}: iProps): JSX.Element => {
-  // const layoutQuery: TLayoutQuery = useStaticQuery(graphql`
-  //   query {
-  //       siteMetadata {
-  //         canonicalUrl
-  //         siteTitle
-  //       }
-  //   }
-  // `)
+const Layout = ({children}: Props): JSX.Element => {
+  const data = useStaticQuery(graphql`
+    {
+      site {
+        siteMetadata {
+          name
+          description
+        }
+      }
+    }
+  `)
 
-  // const {canonicalUrl, siteTitle} = layoutQuery.site.siteMetadata
   return (
-    <div>
-      <Header/>
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Born in the US, Sent from Mars
-          Copyright{` `}
-          <a href="https://www.angiechangpagne.com">Angie Chang(YVT Alias)</a>
-        </footer>
-      </div>
-    </div>
+    <React.StrictMode>
+      <Helmet titleTemplate={`%s 0 ${data.site.siteMetadata.name}`} defaultTitle={data.site.siteMetadata.name}>
+        <meta name="description" content={data.site.siteMetadata.description} />
+      </Helmet>
+
+      <Header />
+      <main>{children}</main>
+      <footer>
+        © {new Date().getFullYear()}, Born in the US, Sent from Mars Copyright{`Yve Vestal Titan(Angie Changpagne) `}
+        <a href="https://www.angiechangpagne.com">Angie Chang(YVT Alias)</a>
+      </footer>
+    </React.StrictMode>
   )
 }
 

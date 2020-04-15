@@ -17,9 +17,12 @@ Starting Point: Gatsby Config
 
 Tech Used:
 React.js
-Gatsby.js(speed increase by 38%, leveraging GraphQL)
+Web3 for React
+Fortmatic
+Gatsby.js(significant speed increase, leveraging GraphQL)
 Netlify
 augmented-ui
+Carbon Components
 Lambda Components
 Jest Unit testing
 
@@ -56,6 +59,16 @@ There are two Versions of this current version of my Gatsby Portfolio site-
 For Browser Configuration:
 >npm install @ethersproject/providers
 >npm install @web3-react/core
+
+Handling Ethereum Events:
+>hooks.ts file in lib folder
+
+
+Fortmatic: For integrating a dApp into the Ethereum Blockchain(currently in testing mode)
+For more information, check out:
+https://docs.fortmatic.com/web3-integration 
+
+What is 
 
 Interplanetary File Transfer(IPFS)
 

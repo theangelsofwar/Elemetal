@@ -1,5 +1,7 @@
+const path = require('path');
+
 const siteMetadata= {
-  name: `Elemeta`,
+  name: `Elemetal`,
   author: `@angiechangpagne`,
   description: `Cutting through the Edges of Reality`,
   social: [],
@@ -25,8 +27,9 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    // `gatsby-transformer-sharp`,
-    // `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-image`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
