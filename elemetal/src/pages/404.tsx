@@ -1,11 +1,11 @@
-import {graphql} from 'gatsby'
+// import {graphql} from 'gatsby'
 import React from 'react'
 import {Helmet} from 'react-helmet'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-const NotFoundPage = (props: any): JSX.Element => {
+const NotFoundPage = () => {
   return (
     <Layout>
       <SEO title="404: Not found" />
