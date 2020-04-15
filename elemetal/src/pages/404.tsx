@@ -10,7 +10,7 @@ const NotFoundPage = (props: any): JSX.Element => {
     <Layout>
       <SEO title="404: Not found" />
       <Helmet>
-        <title> Exists? </title>
+        <title> Void Ether </title>
       </Helmet>
       <p>You just hit a void ether...get back safe</p>
     </Layout>
