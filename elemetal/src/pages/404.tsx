@@ -12,19 +12,9 @@ const NotFoundPage = () => {
       <Helmet>
         <title> Void Ether </title>
       </Helmet>
-      <p>You just hit a void ether...get back safe</p>
+      <p>You just hit a void ether</p>
     </Layout>
   )
 }
 
 export default NotFoundPage
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
