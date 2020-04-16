@@ -1,5 +1,7 @@
 // tsconfig.json
 {
+  "include": ["./src/**/*"],
+  "compileOnSave": false,
   "compilerOptions": {
     "module": "commonjs",
     "target": "esnext",
@@ -9,6 +11,8 @@
     "noEmit": true,
     "isolatedModules": true,
     "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "noUnusedLocals": false,
     "allowJs": true,
     "checkJs": false,

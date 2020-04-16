@@ -3,7 +3,7 @@ const path = require('path');
 const siteMetadata= {
   name: `Elemetal`,
   author: `@angiechangpagne`,
-  description: `Cutting through the Edges of Reality`,
+  description: `Cutting past the Edge of Reality`,
   social: [],
 }
 
@@ -11,7 +11,7 @@ module.exports = {
   siteMetadata: {
     title: `Elemetal`,
     name: `YVT`,
-    tagline: `Cutting through the Edges of Reality`,
+    tagline: `Cutting past the Edge of Reality`,
     description: `Blade Runner in the Real World`,
     author: `@angiechangpagne`,
     siteUrl: `http://www.angiechangpagne.com`,
@@ -47,11 +47,64 @@ module.exports = {
     `gatsby-plugin-typescript`,
     // `gatsby-plugin-ipfs`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+        {
+          site {
+            siteMetadata {
+              title
+              description
+              siteUrl
+              site_url: siteUrl
+
+            }
+          }
+        }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt, 
+                  date: edge.node.frontmatter.date, 
+                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  custom_elements: [{ "content:encoded": edge.node.html }],
+                })
+              })
+            },
+            query: `
+            {
+              allMarkdownRemark(
+                sort: { order: DESC, fields: [frontmatter___date] },
+              ) {
+                edges {
+                  node {
+                    excerpt
+                    html
+                    fields { slug }
+                    frontmatter {
+                      title
+                      date
+                    }
+                  }
+                }
+              }
+            }
+            `,
+            output: "/rss.xml",
+            title: "RSS Feeds",
+            // match: "^/ether/",
+            // link: "https://angiechangpagne.com/ether/"
+          },
+        ],
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
 };
-
-
-
