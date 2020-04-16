@@ -12,7 +12,9 @@ import Img from 'gatsby-image'
 import React, {useEffect, useState} from 'react'
 
 import bio from '../components/bio'
+//    <h1> Angie Chang </h1>
 // import Divider from '../components/Divider'
+// <About />
 import Image from '../components/image'
 import Layout from '../components/layout'
 import Navbar from '../components/Navbar/Navbar'
@@ -27,7 +29,7 @@ import Publications from './Publications'
 
 // augmented ui
 // Homepage
-
+// HE110, {formatEthAddress(account)}!
 // interface iProps {
 //   data: {
 //     site: {
@@ -38,6 +40,7 @@ import Publications from './Publications'
 //     },
 //   };
 // }
+// <Box> </Box> <Box />  <Grid> </Grid>
 
 export const indexPageQuery = graphql`
   query {
@@ -79,20 +82,14 @@ const IndexPage = (props: any): JSX.Element => {
           `angiechangpagne`,
           `open-source`,
           `los-angeles`,
+          `decentralized`,
+          `dApp`,
           `builtinla`,
         ]}
       />
-      <h1> Angie Chang </h1>
-      <p> Welcome to The Digital Ether </p>
-      <Grid>
-        <Box>
-          <Heading> HE110, {formatEthAddress(account)}!</Heading>
-          <Navbar />
-        </Box>
-        <Box />
-      </Grid>
-      <About />
+      <Navbar />
       <Link to="/page-2/" />
+      <p> Welcome to The Digital Ether </p>
     </Layout>
   )
 }
