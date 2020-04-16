@@ -2,9 +2,11 @@ const path = require('path');
 
 const siteMetadata= {
   name: `Elemetal`,
-  author: `@angiechangpagne`,
+  author: `Yve Vestal Titan(angiechangpagne)`,
   description: `Cutting past the Edge of Reality`,
-  social: [],
+  social: {
+    linkedin: `angiechangpagne`,
+  },
 }
 
 module.exports = {
@@ -15,7 +17,9 @@ module.exports = {
     description: `Blade Runner in the Real World`,
     author: `@angiechangpagne`,
     siteUrl: `http://www.angiechangpagne.com`,
-    social: [],
+    social: {
+      linkedin: `angiechangpagne`,
+    },
   },
   plugins: [
     `gatsby-plugin-chakra-ui`,
@@ -103,6 +107,20 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-page-creator`,
+      options: {
+        path: `${__dirname}/src/pages`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-page-creator`,
+      options: {
+        path: `${__dirname}/src/components`,
+      },
+    },
+    `gatsby-plugin-netlify`,
+    `gatsby-plugin-sass`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

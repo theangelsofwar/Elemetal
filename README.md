@@ -7,11 +7,13 @@ Elemetal V1. A futuristic aesthetic
 
 "Gatsby? What Gatsby?"
 
+
 Gatsby-amazing React Library for Progressive Web Apps and Speedy Static Sites
 >Great for eCommerce solutions because of its SEO functionalityes
 >Great for Blogs, Portfolio Sites, Discussion Boards, Mailing 
 >able to configure with graphql
 >Good CICD
+>Funny story, I checked what the Gatsby site is built with and it was actually Angular...
 
 Starting Point: Gatsby Config
 
