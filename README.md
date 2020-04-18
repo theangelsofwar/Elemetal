@@ -58,6 +58,9 @@ Hooks:
 useStaticQuery
 useWeb3React
 
+Query on localhost:8000/___graphql (three underscores)
+>frontmatter
+>markdown remark plugin
 
 There are two Versions of this current version of my Gatsby Portfolio site-
 >One of them is centralized
@@ -92,6 +95,7 @@ Optimizing SEO and Metadata:
 
 Run: 
 gatsby-develop
+>Links to Gatsby's internal development server, located in East Egg. 
 
 
 Im going to do a post on the underlying theories and workings behind Gatsby, as it has even more Abstractions from Javascript than Angular does!

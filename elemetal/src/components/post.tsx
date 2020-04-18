@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 interface Props {
   data: any
 }
-export const post = ({ data }: Props ): JSX.Element => {
+export const Post = ({ data }: Props ): JSX.Element => {
   const post = data.markdownRemark;
 
   return (
@@ -27,4 +27,4 @@ export const query = graphql`
 `
 
 
-export default post;
+export default Post;
