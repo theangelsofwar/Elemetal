@@ -31,7 +31,7 @@ const About = (): JSX.Element => {
       <h1> Cut Through the Edge of Reality</h1>
       <p> Hello, My Name is Angie, I am a Frontend and Fullstack Web Developer </p>
       <p> I was raised in New York, but I am a Californian at heart. I am a huge proponent for React, Typescript, GraphQL, and progressive Web Apps. </p>
-      <p> My background is in Java and C++ </p>
+      <p> My background is in Java, MVC Architecture, Spring Framework and Maven</p>
       <p> I love contributing to the Open Source community and working with distributed systems and architectures. </p>
       <p> For me, software engineering is my way of pushing civilization in a pivotal direction. </p>
       <p> Check out some of my public projects! </p>

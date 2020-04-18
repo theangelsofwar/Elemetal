@@ -6,7 +6,7 @@ import SEO from '../components/seo'
 
 const SecondPage = (): JSX.Element => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="Honor the Machine" />
     <h1>Honor The Machine</h1>
     <Link to="/"> </Link>
   </Layout>

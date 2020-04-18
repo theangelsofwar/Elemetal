@@ -6,8 +6,7 @@ const Showcase = (): JSX.Element => (
     <h1> {'<Angie />'} </h1>
     <p> <br></br><hr />  </p>
     <h3> Software Developer </h3>
-    <br></br>
-    <p></p>
+    <p> Los Angeles, CA </p>
   </div>
 )
 

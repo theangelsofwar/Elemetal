@@ -33,9 +33,9 @@ const Layout = ({children}: Props): JSX.Element => {
   `)
 
   return (
-    <React.StrictMode>
+    <React.Fragment>
       <Helmet titleTemplate={`%s 0 ${data.site.siteMetadata.name}`} defaultTitle={data.site.siteMetadata.name}>
-        <meta name="description" content={data.site.siteMetadata.description} />
+        <meta name='description' content={data.site.siteMetadata.description} />
       </Helmet>
       <div
         style={{
@@ -48,11 +48,11 @@ const Layout = ({children}: Props): JSX.Element => {
       <footer>
         © {new Date().getFullYear()},  Copyright {`Yve Vestal Titan `}
         <a href="https://www.angiechangpagne.com">  Angie Chang(YVT) </a>
-        Born in the US, Sent from Mars
+        Sent from Mars 
       </footer>
       </div>
      
-    </React.StrictMode>
+    </React.Fragment>
   )
 }
 

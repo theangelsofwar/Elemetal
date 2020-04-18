@@ -5,7 +5,8 @@ import styled from 'styled-components';
 import Card from '../../components/Card';
 // import { Grid } from 'evergreen-ui';
 const OpenSource = (): JSX.Element => (
-  <div id="os">
+  <React.Fragment>
+  <div id='opensource' className='opensource'>
     <Card 
       photo={("../../images/ProjectArtemis.jpg")} 
       title="Artemis Developer Tools: For REST To GraphQL Migration Testing"
@@ -69,6 +70,7 @@ const OpenSource = (): JSX.Element => (
       description="Vote-aire is an Enlightened way of Voting, demonstrated on the the Ethereum Blockchain, with use of IPFS as a way to open the portal to equality through decentralized systems"
       />
   </div>
+  </React.Fragment>
 )
 
 export default OpenSource;

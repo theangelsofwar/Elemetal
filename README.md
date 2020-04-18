@@ -10,6 +10,8 @@ Elemetal V1. A futuristic aesthetic
 
 Gatsby-amazing React Library for Progressive Web Apps and Speedy Static Sites
 >Great for eCommerce solutions because of its SEO functionalityes
+>Static sites that have separation concerns from business logic avoid SQL injection attacks
+>Call to external APIs
 >Great for Blogs, Portfolio Sites, Discussion Boards, Mailing 
 >able to configure with graphql
 >Good CICD
@@ -48,6 +50,9 @@ npm install:
   -used for Site Meta data and SEO optimizations
 >npm install gatsby-image
   -lazy loading of images
+
+<Link />
+Internal Links are faster due to lazy loading
 
 Hooks: 
 useStaticQuery

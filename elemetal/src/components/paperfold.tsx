@@ -6,6 +6,10 @@ import React, {Component} from 'react'
 // import logo from './logo.svg';
 // import 'styles.scss';
 
-const paperfold = (): JSX.Element => <div id="paperfold" />
+const paperfold = (): JSX.Element => (
+  <React.Fragment>
+    <div id="paperfold" />
+  </React.Fragment>
+)
 
 export default paperfold

@@ -1,14 +1,24 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import { Link } from 'gatsby'
+import PropTypes from 'prop-types'
+import React from 'react'
 import './styless.css'
+import styles from './header.module.scss';
+
 
 interface Props {
   siteTitle: string
+  link: string
+  to: any
 }
+
+
+const HeaderLink = (props: Props) =>  (
+  <Link className={styles.link} to={props.to}
+)
 const Header = ({ siteTitle }: Props): JSX.Element => (
-  <header className='nav-header'>
+  <header className={styles.container}>
     <div
+    className={styles.row}
       style={{
         margin: `0 auto`,
         maxWidth: 960,

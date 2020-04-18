@@ -2,8 +2,8 @@ const path = require('path');
 
 const siteMetadata= {
   name: `Elemetal`,
-  author: `Yve Vestal Titan(angiechangpagne)`,
-  description: `Cutting past the Edge of Reality`,
+  author: `Yve Vestal Titan (angiechangpagne)`,
+  description: `Cutting Through the Edges of Reality`,
   social: {
     linkedin: `angiechangpagne`,
   },
