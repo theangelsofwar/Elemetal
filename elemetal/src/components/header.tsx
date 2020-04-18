@@ -2,23 +2,22 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 import './styless.css'
-import styles from './header.module.scss';
-
+import './header.module.scss';
 
 interface Props {
   siteTitle: string
   link: string
-  to: any
+  to: string
 }
 
+// const HeaderLink = (props: Props) =>  (
+//   <Link className={styles.link} to={props.to}
+// 
 
-const HeaderLink = (props: Props) =>  (
-  <Link className={styles.link} to={props.to}
-)
 const Header = ({ siteTitle }: Props): JSX.Element => (
-  <header className={styles.container}>
+  <header className='header'>
     <div
-    className={styles.row}
+    className='row'
       style={{
         margin: `0 auto`,
         maxWidth: 960,

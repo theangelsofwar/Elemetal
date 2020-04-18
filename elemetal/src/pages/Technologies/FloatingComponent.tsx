@@ -1,5 +1,5 @@
 import React from 'react';
-import './styless.css';
+// import styles from './styless.css';
 import { Box, Heading, Button } from 'rebass';
 
 const quotes=[];

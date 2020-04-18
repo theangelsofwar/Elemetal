@@ -50,6 +50,7 @@ module.exports = {
     },
     `gatsby-plugin-typescript`,
     // `gatsby-plugin-ipfs`,
+    `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-feed`,

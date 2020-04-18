@@ -5,9 +5,9 @@ import Layout from '../../components/layout';
 
 const Resume = ():JSX.Element => (
   <Layout>
-  <div id="resume" className="resume">
+  <div id='resume' className='resume'>
     <PortfolioItem 
-      title="Resume"
+      title='Resume'
       link={withPrefix('../../static/Resume/AngieYveRoaring20sResume.docx')}
      />
   </div>

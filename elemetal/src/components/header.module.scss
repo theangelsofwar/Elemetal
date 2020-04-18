@@ -1,9 +1,9 @@
-@import '../styles/global';
+@import '../../styles/global';
 
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap');
 
 .container {
-  max-width: $site-width;
+  max-width: 100%;
   margin: 0 auto;
   padding-top: 17px;
   margin-top: 24px;
@@ -38,12 +38,12 @@
 
 .button-github {
   @extend .button-icon;
-  background-image:l url('../images/github.png');
+  background-image:l url('../images/yvtfavicon.png');
 }
 
 .button-linkedin {
   @extend .button-icon;
-  background-image: url('../images/linkedin.png');
+  background-image: url('../images/yvtfavicon.png');
 }
 
 .link {
