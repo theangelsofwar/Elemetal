@@ -1,7 +1,11 @@
+import { withPrefix } from 'gatsby';
 import React from 'react'
-
+import Helmet from 'react-helmet'
 // import { scroller } from 'react-scroll';
-import FloatingComponent from './FloatingComponent'
+//import quote 
+// import Logo from '../../components/Icons/logo.svg';
+ import './styless.css';
+//import quotes, or have the glow quotes click and be a pop over display
 
 // {/* <p> Why I like Frontend Development</p>
 //       <ul>
@@ -22,10 +26,17 @@ const About = () => {
   // have them float on the bottom
   // techLogos.map() render onto Flooating Clear Components horizontally
   return (
-    <div id="about">
-      <hr />
-      <p> Technologies: </p>
-      <FloatingComponent />
+    <div id='about' className='about'>
+      <Helmet title={'About | angie.stack'} />
+      <h1> Cut Through the Edge of Reality</h1>
+      <p> Hello, My Name is Angie, I am a Frontend and Fullstack Web Developer </p>
+      <p> I was raised in New York, but I am a Californian at heart. I am a huge proponent for React, Typescript, GraphQL, and progressive Web Apps. </p>
+      <p> My background is in Java and C++ </p>
+      <p> I love contributing to the Open Source community and working with distributed systems and architectures. </p>
+      <p> For me, software engineering is my way of pushing civilization in a pivotal direction. </p>
+      <p> Check out some of my public projects! </p>
+      <p> Coding is like an Art. I like to take inspiration from Architecture, Fashion, Chemistry and Biology when ideating my projects. </p>
+     <hr />
     </div>
   )
 }

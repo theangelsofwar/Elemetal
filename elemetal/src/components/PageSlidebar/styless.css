@@ -1,0 +1,88 @@
+
+
+/* .react-burger-menu {
+  max-width: 17vw;
+  display: flex;
+  flex-direction: row;
+} */
+ /** sidepanel styles*/
+.bm-menu {
+  box-sizing: border-box;
+  box-shadow: 3px solid floralwhite;
+  background: rgba(143, 121, 210, 0.433);
+  font-size: 1.1em;
+  font-weight: 4.2px;
+  padding: 1vw;
+}
+
+.pageslidebar {
+  box-sizing: border-box;
+  box-shadow: 3px floralwhite;
+  display: inline-flex;
+  /* flex-direction: row; */
+  
+  /* flex: 0 0 190px; */
+}
+
+.bm-menu-wrap {
+  transition: '' !important;
+}
+
+.bm-cross-button {
+  height: 6vh;
+}
+
+.bm-cross {
+  background-color: rgba(255, 0, 89, 0.762);
+}
+
+
+/** the sidebar panel for transition*/
+.bm-burger-button {
+  position: fixed;
+  min-width: 9vw;
+  height: 4.2vh;
+  left: 3.7vw;
+  top: 3vh;
+  background-color: rgb(112, 216, 164);
+  /* content: 'Side Nav Panel'; */
+}
+
+/* .bm-burger-bars {
+  background: turquoise;
+} */
+
+.bm-item-list {
+  display: inline-block;
+}
+
+.bm-overlay {
+  min-width: 17vw;
+  /* background-color: rgba(213, 207, 228, 0.433); */
+}
+
+.bm-morph-shape {
+  fill: #b6add36e
+}
+
+.menu-item, .menu-item--small {
+  /* background-color: rgba(143, 121, 210, 0.433); */
+  min-width: 17vw;
+  max-width: 19vw;
+  flex-direction: column;
+  display: inline-flexbox;
+  position: relative;
+  /* flex-wrap: wrap; */
+  /* position: absolute; */ 
+  font-size: 1.1em;
+  font-weight: 4.2px;
+  padding: 3vh .5vw 2vh 5.3vw;
+}
+
+.menu-item:hover {
+  background-color: deeppink;
+  color: floralwhite;
+  text-shadow: powderblue;
+  border-radius: 66px 17px 66px 17px;
+  font-weight: 6px;
+}

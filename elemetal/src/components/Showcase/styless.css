@@ -1,0 +1,18 @@
+
+.showcase {
+  background-color: rgba(142, 166, 187, 0.296);
+  color: darkslategrey;
+  max-height: 30vh;
+  text-shadow: 2px solid blanchedalmond;
+  margin-top: 5.1em;
+  padding-top: 1.7rem;
+  padding-bottom: 1.5rem;
+  justify-content: center;
+}
+
+h1, h3 {
+  font-size: 3.7em;
+  text-shadow: 12px solid midnightblue;
+  color: aliceblue;
+  text-align: center;
+}

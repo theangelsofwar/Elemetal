@@ -1,4 +1,4 @@
-import {graphql, useStaticQuery} from 'gatsby'
+// import {graphql, useStaticQuery} from 'gatsby'
 import React from 'react'
 
 // interface Props {
@@ -6,7 +6,7 @@ import React from 'react'
 // }
 
 const usePosts = () => {
-  const data = []
+  // const data = []
   // const data = useStaticQuery(graphql`
   //   query {
 

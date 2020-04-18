@@ -1,6 +1,6 @@
 import {Link} from 'gatsby'
 import React from 'react'
-import NavBar, {ElementsWrapper} from 'react-scrolling-nav'
+import NavBar, {ElementsWrapper} from 'react-scrolling-nav';
 // import {Box, Flex} from 'rebass'
 // {/* <Flex px={2} color="mintcream" bg="gainsboro" alignItems="center">
 //     <Box mx="auto" />
@@ -49,41 +49,35 @@ const Navbar = () => {
     <div>
       <NavBar
         items={navbarItems}
-        offset={-40}
+        offset={-80}
         duration={500}
         delay={0}
         height={76}
         backgroundColor="darkslategray"
-        coverWidth={1086}
+        coverWidth={1186}
         navWidth={696}
         linkClass="link"
         activeLinkClass="activeLink"
       />
       <div className="container">
         <ElementsWrapper items={navbarItems}>
-          <div name="home" className="item">
-            {' '}
-            Home{' '}
+          <div id='home' className='item'>
+            <Link to='#home' />
           </div>
-          <div name="about" className="item">
-            {' '}
-            About{' '}
+          <div id='about' className='item'>
+            <Link to='#about' />
           </div>
-          <div name="opensource" className="item">
-            {' '}
-            Open Source{' '}
+          <div id='opensource' className='item'>
+            <Link to='#opensource' />
           </div>
-          <div name="publications" className="item">
-            {' '}
-            Publications
+          <div id='publications' className='item'>
+            <Link to='#publications' />
           </div>
-          <div name="resume" className="items">
-            {' '}
-            Resume{' '}
+          <div id='resume' className='item'>
+            <Link to='#resume' />
           </div>
-          <div name="technologies" className="item">
-            {' '}
-            Technologies{' '}
+          <div id='technologies' className='item'>
+            <Link to='#technologies' />
           </div>
         </ElementsWrapper>
       </div>

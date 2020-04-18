@@ -1,10 +1,9 @@
-
-import React from "react"
-import PropTypes from "prop-types"
-import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import React from "react"
+// import PropTypes from "prop-types"
+import Helmet from "react-helmet"
 
-interface iProps {
+interface Props {
   description?: string
   keywords?: string[]
   lang?: string
@@ -12,7 +11,7 @@ interface iProps {
   title: string
 }
 
-const SEO = ({ description, keywords=[],lang='en', meta=[], title }: iProps): JSX.Element => {
+const SEO = ({ description, keywords=[],lang='en', meta=[], title }: Props): JSX.Element => {
   // const { site } = useStaticQuery(
   //   graphql`
   //     query {

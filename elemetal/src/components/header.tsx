@@ -3,10 +3,10 @@ import PropTypes from "prop-types"
 import React from "react"
 import './styless.css'
 
-interface iProps {
+interface Props {
   siteTitle: string
 }
-const Header = ({ siteTitle }: iProps): JSX.Element => (
+const Header = ({ siteTitle }: Props): JSX.Element => (
   <header className='nav-header'>
     <div
       style={{

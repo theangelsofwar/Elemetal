@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap');
+
+
 html {
-  font-family: Oxanium, sans-serif;
+  font-family: 'Oxanium', sans-serif;
+  box-sizing: border-box;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  overflow-y: auto;
 }
 body {
   margin: 0;
@@ -13,20 +18,26 @@ aside,
 details,
 figcaption,
 figure,
-footer,
 header,
 main,
 menu,
-nav,
 section,
 summary {
-  display: block;
+  display: inherit;
+  // flex-direction: column;
+  color: steelblue;
+  overflow-y: auto;
 }
 audio,
 canvas,
 progress,
 video {
   display: inline-block;
+}
+nav {
+  display: inherit;
+  // flex-direction: col;
+  overflow-y: scroll;
 }
 audio:not([controls]) {
   display: none;
@@ -37,7 +48,16 @@ progress {
 }
 [hidden],
 template {
-  display: none;
+  display: inline-block;
+}
+
+footer {
+  color: ghostwhite;
+  text-shadow: 13px hotpink;
+  background-color: rgba(54, 32, 65, 0.782);
+  margin: auto;
+  padding: .66rem;
+  position: relative;
 }
 a {
   background-color: transparent;
@@ -65,8 +85,8 @@ h1 {
   margin: 0.67em 0;
 }
 mark {
-  background-color: rgb(0, 238, 255);
-  color: #000;
+  background-color: rgba(54, 32, 65, 0.782);
+  color: rgba(43, 221, 168, 0.406);
 }
 small {
   font-size: 80%;
@@ -94,7 +114,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family: 'Oxanium', monospace, monospace;
   font-size: 1em;
 }
 figure {
@@ -102,7 +122,7 @@ figure {
 }
 hr {
   box-sizing: content-box;
-  height: 0;
+  height: 2px;
   overflow: visible;
 }
 button,
@@ -141,7 +161,7 @@ button::-moz-focus-inner {
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring,
 button:-moz-focusring {
-  outline: 1px dotted ButtonText;
+  outline: 0px dotted ButtonText;
 }
 fieldset {
   border: 1px solid silver;
@@ -170,7 +190,7 @@ textarea {
 }
 [type="search"] {
   -webkit-appearance: textfield;
-  outline-offset: -2px;
+  outline-offset: 0;
 }
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
@@ -185,7 +205,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
+  font: 112.5%/1.45em 'Oxanium', georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -199,8 +219,8 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  color: hsla(122, 13%, 54%, 0.8);
+  font-family: 'Oxanium', georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -230,7 +250,7 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: Oxanium, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Oxanium', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -245,9 +265,9 @@ h2 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: inherit;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Oxanium', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -264,7 +284,7 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Oxanium', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -281,7 +301,7 @@ h4 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Oxanium', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -298,7 +318,7 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Oxanium', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -315,7 +335,7 @@ h6 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Oxanium', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -403,7 +423,7 @@ pre {
   margin-bottom: 1.45rem;
   font-size: 0.85rem;
   line-height: 1.42;
-  background: hsla(0, 0%, 0%, 0.04);
+  background: hsla(226, 100%, 87%, 0.68);
   border-radius: 3px;
   overflow: auto;
   word-wrap: normal;
@@ -482,7 +502,7 @@ hr {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: calc(1.45rem - 1px);
-  background: hsla(0, 0%, 0%, 0.2);
+  background: hsla(154, 62%, 57%, 0.692);
   border: none;
   height: 1px;
 }
@@ -620,3 +640,5 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+
