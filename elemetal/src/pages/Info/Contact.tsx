@@ -8,7 +8,7 @@ import StyledLink from '../../components/StyledLink';
 // </StyledLink>
 //add new Logo YVT
 
-const Contact = () => (
+const Contact = (): JSX.Element => (
   
   <StyledLink className="b" href="https://github.com/angiechangpagne" >
     Github Open Source

@@ -2,7 +2,7 @@ import React from 'react';
 import FloatingComponent from './FloatingComponent'
 
 
-const Technologies = () => (
+const Technologies = (): JSX.Element => (
   <div id="technologies" className="techno">
     <h3> Technologies: </h3>
     <FloatingComponent />

@@ -13,7 +13,7 @@ import {
 import ScrollIntoView from 'react-scroll-into-view';
 
 
-const QuantumGrid = (props: any):JSX.Element => (
+const QuantumGrid = (props: any): JSX.Element => (
   <React.Fragment>
   <Navbar>
     <NavWrapper>

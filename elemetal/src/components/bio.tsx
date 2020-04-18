@@ -1,19 +1,20 @@
 /* tslint:disable */
 
 import React from 'react'
-
+import Layout from './layout';
 
 
 
 //      <button id="glow" className="glow" onClick={handleClick}> Some of My Favorite Quotes </button>
 
-const bio = (props:any):JSX.Element => {
+const bio = (props:any): JSX.Element => {
   const handleClick = () => {
     return;
   }
 
 
   return (
+    <Layout>
     <div id='bio'>
       <p> Welcome to My Digital Ether </p>
       <p> I&#39ve always loved philosophy, applying concepts and theories from different aspects of life to technology. Growing up, I would often contemplate our existence, the idea of void. </p> 
@@ -27,6 +28,7 @@ const bio = (props:any):JSX.Element => {
       <p> Some enlightening theories about the universe </p>
 
     </div>
+    </Layout>
   )
 
 }

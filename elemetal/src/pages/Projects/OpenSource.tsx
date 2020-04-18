@@ -4,7 +4,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Card from '../../components/Card';
 // import { Grid } from 'evergreen-ui';
-const OpenSource = () => (
+const OpenSource = (): JSX.Element => (
   <div id="os">
     <Card 
       photo={("../../images/ProjectArtemis.jpg")} 

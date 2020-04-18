@@ -1,13 +1,10 @@
 import React from 'react';
 
-interface iProps {
 
-}
-
-
-const Divider = ({ }: iProps) => {
-
-}
-
+const Divider = ({ }: any): JSX.Element => (
+  <div>
+    
+  </div>
+)
 
 export default Divider

@@ -10,7 +10,7 @@ import PortfolioItem from '../../components/PortfolioItem';
 
 // )
 
-const Publications = () => (
+const Publications = (): JSX.Element => (
   <PortfolioItem 
     title="The New Classical Age of GraphQL"
     link="https://www.medium.com/"

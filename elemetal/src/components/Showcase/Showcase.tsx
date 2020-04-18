@@ -1,7 +1,7 @@
 import React from 'react';
 import './styless.css';
 
-const Showcase = () => (
+const Showcase = (): JSX.Element => (
   <div id='showcase' className='showcase'>
     <h1> {'<Angie />'} </h1>
     <p> <br></br><hr />  </p>

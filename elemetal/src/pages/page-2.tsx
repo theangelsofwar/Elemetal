@@ -4,7 +4,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-const SecondPage = () => (
+const SecondPage = (): JSX.Element => (
   <Layout>
     <SEO title="Page two" />
     <h1>Honor The Machine</h1>

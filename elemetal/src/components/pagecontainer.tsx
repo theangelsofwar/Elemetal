@@ -1,6 +1,6 @@
 /* tslint:disable */
 import React from 'react'
 
-const PageContainer = () => <div />
+const PageContainer = (): JSX.Element => <div />
 
 export default PageContainer

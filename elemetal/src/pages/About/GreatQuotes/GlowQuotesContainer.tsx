@@ -2,7 +2,7 @@ import React from 'react'
 
 import GlowQuote from './GlowQuote'
 
-const GlowQuotesContainer = () => {
+const GlowQuotesContainer = (): JSX.Element => {
   return (
     <div>
       <GlowQuote />

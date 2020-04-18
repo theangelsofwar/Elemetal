@@ -40,12 +40,23 @@
 /** the sidebar panel for transition*/
 .bm-burger-button {
   position: fixed;
-  min-width: 9vw;
-  height: 4.2vh;
-  left: 3.7vw;
-  top: 3vh;
-  background-color: rgb(112, 216, 164);
+  box-sizing: border-box;
+  box-shadow: 3px solid rgb(240, 255, 240);
+  width: 4.2vw;
+  height: 9vh;
+  left: 4.2vw;
+  top: 15vh;
+  background-color: rgba(112, 188, 216, 0.372);
+  border-radius: 66px;
+  border: 6px groove ghostwhite;
   /* content: 'Side Nav Panel'; */
+}
+
+.bm-burger-button:hover {
+  border-radius: 33px;
+  width: 9vw;
+  height: 9vh;
+  background-color: rgba(215, 44, 132, 0.673);
 }
 
 /* .bm-burger-bars {

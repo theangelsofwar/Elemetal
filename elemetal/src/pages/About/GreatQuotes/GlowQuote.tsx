@@ -1,5 +1,5 @@
 import React from 'react'
 
-const GlowQuote = () => <div />
+const GlowQuote = (): JSX.Element => <div />
 
 export default GlowQuote

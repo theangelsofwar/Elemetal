@@ -12,7 +12,7 @@ interface Props {
   link: string,
   title: string
 }
-const PortfolioItem = ({ link, title }: Props) => (
+const PortfolioItem = ({ link, title }: Props):JSX.Element => (
   <li className="f4 portfolio-item flex items-center mb2">
     <a href={link}>
       {title}

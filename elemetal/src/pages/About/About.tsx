@@ -20,7 +20,7 @@ import Helmet from 'react-helmet'
 //       <li> Scaleability</li>
 //       <li> It's Hidde in Plain Sight</li>
 //     </ul> */}
-const About = () => {
+const About = (): JSX.Element => {
   // technology logos
   // const techLogos = []; //store images of technology logos to render clear,
   // have them float on the bottom

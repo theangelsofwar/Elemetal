@@ -14,7 +14,7 @@ interface Props {
 }
  
 
-const StyledLink = (props: Props) => {
+const StyledLink = (props: Props): JSX.Element => {
   const { href, children, ...rest} = props;
 
   if(!href){
@@ -34,7 +34,7 @@ export default styled(StyledLink)`
   text-decoration: none;
 
   &::before {
-    background-color: ${(props) => props.hoverColor || colors.defaultHovoer };
+    background-color: ${(props) => props.hoverColor || colors.defaultHover };
     bottom: -2px;
     content: '';
     height: 2px;

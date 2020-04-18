@@ -11,7 +11,7 @@ import React from 'react';
  * 
  */
 
-const EtherPane = () => (
+const EtherPane = ():JSX.Element => (
   <div id='etherpane'>
 
   </div>

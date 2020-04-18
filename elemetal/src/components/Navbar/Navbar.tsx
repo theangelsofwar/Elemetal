@@ -13,7 +13,7 @@ import NavBar, {ElementsWrapper} from 'react-scrolling-nav';
 //     <Link to="/contact"> Contact </Link>
 //   </Flex> */}
 
-const Navbar = () => {
+const Navbar = ():JSX.Element => {
   const navbarItems = [
     {
       label: 'Home',

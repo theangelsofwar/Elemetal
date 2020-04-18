@@ -1,8 +1,9 @@
 import React from 'react';
 //pages are camelcase
-
-const opensourceGrid = () => {
+import Layout from '../components/layout';
+const opensourceGrid = ():JSX.Element => {
   return (
+    <Layout>
     <div id='opensourcegrid' className='opensourcegrid'>
       <section>
 
@@ -11,6 +12,7 @@ const opensourceGrid = () => {
 
       <h4> Creative Writing, Poetry, Philosophy </h4>
     </div>
+    </Layout>
   )
 }
 

@@ -2,7 +2,7 @@ import React from 'react';
 // import './styless.css';
 import { Box, Heading, Button } from 'rebass';
 
-const FloatingComponent = () => {
+const FloatingComponent = (): JSX.Element => {
   return (
     <div id="floatingComponent">
       <Heading
