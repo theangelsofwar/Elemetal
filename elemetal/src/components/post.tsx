@@ -9,22 +9,24 @@ export const Post = ({ data }: Props ): JSX.Element => {
 
   return (
     <React.Fragment>
-      
+      <div id='malone'>
+        {post}
+      </div>
     </React.Fragment>
   )
 }
 
-export const query = graphql`
-  query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        title
-        keywords
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query($slug: String!) {
+//     markdownRemark(fields: { slug: { eq: $slug } }) {
+//       html
+//       frontmatter {
+//         title
+//         keywords
+//       }
+//     }
+//   }
+// `
 
 
 export default Post;

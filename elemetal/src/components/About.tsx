@@ -27,8 +27,8 @@ const About = (): JSX.Element => {
   // techLogos.map() render onto Flooating Clear Components horizontally
   return (
     <div id='about' className='about'>
-      <Helmet title={'About | angie.stack'} />
-      <h1> Cut Through the Edge of Reality</h1>
+      <Helmet title={'< angie.stack />'} />
+      <h1> Coding Through the Edge of Reality</h1>
       <p> Hello, My Name is Angie, I am a Frontend and Fullstack Web Developer </p>
       <p> I was raised in New York, but I am a Californian at heart. I am a huge proponent for React, Typescript, GraphQL, and progressive Web Apps. </p>
       <p> My background is in Java, MVC Architecture, Spring Framework and Maven</p>

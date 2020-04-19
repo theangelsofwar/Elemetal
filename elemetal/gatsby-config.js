@@ -1,9 +1,11 @@
 const path = require('path');
+const proxy = require('http-proxy-middleware');
+
 
 const siteMetadata= {
   name: `Elemetal`,
   author: `Yve Vestal Titan (angiechangpagne)`,
-  description: `Cutting Through the Edges of Reality`,
+  description: `Web Developer based in Los Angeles, Working to Code Through the Edges of Reality`,
   social: {
     linkedin: `angiechangpagne`,
   },
@@ -13,17 +15,65 @@ module.exports = {
   siteMetadata: {
     title: `Elemetal`,
     name: `YVT`,
-    tagline: `Cutting past the Edge of Reality`,
-    description: `Blade Runner in the Real World`,
+    tagline: `Coding Through the Edges of Reality`,
+    description: `Web Developer based in Los Angeles`,
     author: `@angiechangpagne`,
+    stacks: [
+      "React",
+      "GraphQL",
+      "Gatsby",
+      "MERN",
+      "Typescript",
+      "Redux",
+      "Hooks",
+      "MongoDB",
+      "PostgreSQL",
+      "Node",
+      "Blockchain",
+      "Ethereum",
+      "Web3",
+      "Solidity",
+      "Rust",
+      "dApp",
+      "NewAgeArchitecture",
+      "Algorithms",
+    ],
     siteUrl: `http://www.angiechangpagne.com`,
     social: {
       linkedin: `angiechangpagne`,
+      github: `angiechangpagne`,
     },
   },
   plugins: [
     `gatsby-plugin-chakra-ui`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-anchor-links`,
+      options: {
+        offset: -92,
+      },
+    },
     `gatsby-plugin-emotion`,
+    // {
+    //   resolve: `gatsby-plugin-sitemap`,
+    //   options: {
+    //     output: siteConfig.sitemapPath,
+    //   },
+    // },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://angiechangpagne.com`,
+      }
+    },
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve('./src/components/layout.tsx'),
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -31,14 +81,18 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     `gatsby-image`,
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `aliceblue`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         ...siteMetadata,
-        name: `Elemetal`,
+        name: `angie-chang`,
         lang: `en-US`,
         short_name: `YVT`,
         start_url: `/`,
@@ -50,7 +104,20 @@ module.exports = {
     },
     `gatsby-plugin-typescript`,
     // `gatsby-plugin-ipfs`,
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-external-links`,
+            options: {
+              target: `_blank`,
+              rel: `nofollow noopener noreferrer`,
+            },
+          },
+        ],
+      },
+    },
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-react-helmet`,
     {
@@ -113,7 +180,7 @@ module.exports = {
       resolve: `gatsby-plugin-page-creator`,
       options: {
         path: `${__dirname}/src/pages`
-      }
+      },
     },
     // {
     //   resolve: `gatsby-plugin-page-creator`,
