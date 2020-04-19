@@ -7,9 +7,9 @@ import {Web3Provider} from '@ethersproject/providers'
 import {useWeb3React} from '@web3-react/core'
 // import {Web3Container} from '../containers/Web3Container';
 // import Web3 provier context and the wrapper before importing React
-import {graphql, Link} from 'gatsby'
-import Img from 'gatsby-image'
-import React, {useEffect, useState} from 'react'
+import {graphql, Link} from 'gatsby';
+import Img from 'gatsby-image';
+import React, {useEffect, useState} from 'react';
 import './styles.scss';
 // import bio from '../components/bio';
 // import {Box, Flex} from 'rebass'
@@ -20,14 +20,14 @@ import Showcase from '../components/Showcase';
 //    <h1> Angie Chang </h1>
 // import Divider from '../components/Divider'
 import NavBar, {ElementsWrapper} from 'react-scrolling-nav';
-import Image from '../components/image'
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import {useEagerConnect, useInactiveListener} from '../lib/hooks'
-import {formatEthAddress} from '../lib/utils'
-import About from '../components/About'
-import OpenSource from '../components/Projects/OpenSource'
-import Publications from '../components/Publications'
+import Image from '../components/image';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import {useEagerConnect, useInactiveListener} from '../lib/hooks';
+import {formatEthAddress} from '../lib/utils';
+import About from '../components/About/About';
+import OpenSource from '../components/Projects/OpenSource';
+import Publications from '../components/Publications';
 import Contact from '../components/Info/Contact';
 import PageSlidebar from '../components/PageSlidebar';
 // import pkg from '../../package.json';
@@ -141,7 +141,7 @@ const IndexPage = (props: any): JSX.Element => {
           />
           </div>
 
-          <div id='container' className='container'>s
+          <div id='container' className='container'>
             <ElementsWrapper 
               items={navbarItems}>
               <div id='showcase' className='item'>
@@ -166,6 +166,11 @@ const IndexPage = (props: any): JSX.Element => {
           </div>
           </div>
       </div>
+      <footer>
+        © {new Date().getFullYear()},  Copyright {`Yve Vestal Titan `}
+        <a href="https://www.angiechangpagne.com">  Angie Chang (YVT) </a>
+        Sent from Mars 
+    </footer>
     </Layout>
   )
 }

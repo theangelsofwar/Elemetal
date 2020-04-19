@@ -4,15 +4,15 @@
  *
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
-import {graphql, useStaticQuery} from 'gatsby'
-import React from 'react'
-import {Helmet} from 'react-helmet'
+import {graphql, useStaticQuery} from 'gatsby';
+import React from 'react';
+import {Helmet} from 'react-helmet';
 // add floating icons to technologies used, source their logos with image sources addresses
-import './layout.scss'
+import './layout.scss';
 //add binary clock
 import PageSlidebar from './PageSlidebar';
-// import PropTypes from "prop-types"
-import Header from './header'
+// import PropTypes from "prop-types";
+import Header from './header';
 
 //<Header />
 
@@ -46,11 +46,7 @@ const Layout = ({children}: Props): JSX.Element => {
         }}
       >
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()},  Copyright {`Yve Vestal Titan `}
-        <a href="https://www.angiechangpagne.com">  Angie Chang(YVT) </a>
-        Sent from Mars 
-      </footer>
+    
       </div>
      
     </React.Fragment>

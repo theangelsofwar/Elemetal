@@ -29,12 +29,12 @@ const StyledLink = (props: Props): JSX.Element => {
 }
 
 export default styled(StyledLink)`
-  border-bottom: 2px solid ${(props) => props.linkColor || colors.defaultLink };
+  border-bottom: 2px solid ${(props: any) => props.linkColor || colors.defaultLink };
   position: relative;
   text-decoration: none;
 
   &::before {
-    background-color: ${(props) => props.hoverColor || colors.defaultHover };
+    background-color: ${(props: any) => props.hoverColor || colors.defaultHover };
     bottom: -2px;
     content: '';
     height: 2px;

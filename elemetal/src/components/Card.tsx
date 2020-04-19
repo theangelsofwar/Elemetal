@@ -1,6 +1,7 @@
 /* tslint:disable */
 import React from 'react';
 import styled from 'styled-components';
+import Image from './image';
 //nested styled component
 // box-shadow: 0 1px 4px rgba(0, 0, 0, .19), 0 1px 1px rgba(0, 0, 1, .24);
 const StyledContainer = styled.div`
@@ -52,7 +53,15 @@ const StyledPhoto = styled.img`
   border: 6px ridge rgba(222, 200, 255, .23);  
 `
 
-const Card = ({ title, description, photo, link }: any): JSX.Element => (
+
+interface Props {
+  title: String
+  description: String
+  photo: String
+  link: any
+}
+
+const Card = ({ title, description, photo, link }: Props): JSX.Element => (
   <StyledContainer>
     <StyledPhoto src={photo} />
     <Title> {title} </Title>

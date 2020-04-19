@@ -11,9 +11,13 @@ import NavBar, {ElementsWrapper} from 'react-scrolling-nav';
 //     <Link to="/resume"> Resume </Link>
 //     <Link to="/technologies"> Technologies</Link>
 //     <Link to="/contact"> Contact </Link>
+
+// {/* <div id='resume' className='item'>
+//             <Link to='#resume' />
+//           </div> */}
 //   </Flex> */}
 
-const Navbar = ():JSX.Element => {
+const Navbar = (): JSX.Element => {
   const navbarItems = [
     {
       label: 'Home',
@@ -30,10 +34,6 @@ const Navbar = ():JSX.Element => {
     {
       label: 'Publications',
       target: 'publications',
-    },
-    {
-      label: 'Resume',
-      target: 'resume',
     },
     {
       label: 'Technologies',
@@ -73,9 +73,7 @@ const Navbar = ():JSX.Element => {
           <div id='publications' className='item'>
             <Link to='#publications' />
           </div>
-          <div id='resume' className='item'>
-            <Link to='#resume' />
-          </div>
+          
           <div id='technologies' className='item'>
             <Link to='#technologies' />
           </div>

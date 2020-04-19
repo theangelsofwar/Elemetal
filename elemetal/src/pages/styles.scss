@@ -3,7 +3,7 @@
 html {
   background: url('../images/building-architecture.jpg') no-repeat center center fixed;
   background-size: cover;
-  color: blanchedalmond;
+  color: aliceblue;
   font-family: 'Oxanium';
 }
 
@@ -14,9 +14,15 @@ body {
 
 .container {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  display: inline-block;
+  // flex-direction: row;
+  // justify-content: flex-start;
+  .opensource {
+    display: grid;
+    grid-template-columns: 46vw 46vw;
+    grid-template-rows: 30vh 30vh 30vh;
+    grid-auto-flow: dense;
+  }
 }
 
 .nav-scroll {

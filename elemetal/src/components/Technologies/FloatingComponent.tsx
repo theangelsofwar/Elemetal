@@ -1,16 +1,18 @@
 import React from 'react';
-// import styles from './styless.css';
-import { Box, Heading, Button } from 'rebass';
+// import './styless.css';
+// import { Box, Heading, Button } from 'rebass';
 
 const quotes=[];
 //put in json file, and add to static folder
 
 //incorporate "add a quote" feature to see it float
-const FloatingComponent = (): JSX.Element => {
+const FloatingComponent = (props: any): JSX.Element => {
   return (
+    <React.Fragment>
     <div id='floatingcomponent' className='floatingcomponent'>
-      <Heading> </Heading>
+      <h1>{props.children}</h1>
     </div>
+    </React.Fragment>
   )
 }
 

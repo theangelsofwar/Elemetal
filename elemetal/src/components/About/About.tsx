@@ -26,6 +26,7 @@ const About = (): JSX.Element => {
   // have them float on the bottom
   // techLogos.map() render onto Flooating Clear Components horizontally
   return (
+    <React.Fragment>
     <div id='about' className='about'>
       <Helmet title={'< angie.stack />'} />
       <h1> Coding Through the Edge of Reality</h1>
@@ -38,6 +39,7 @@ const About = (): JSX.Element => {
       <p> Coding is like an Art. I like to take inspiration from Architecture, Fashion, Chemistry and Biology when ideating my projects. </p>
      <hr />
     </div>
+    </React.Fragment>
   )
 }
 
