@@ -57,7 +57,7 @@ const StyledPhoto = styled.img`
 interface Props {
   title: String
   description: String
-  photo: String
+  photo: any
   link: any
 }
 

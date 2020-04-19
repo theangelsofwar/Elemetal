@@ -14,15 +14,17 @@ body {
 
 .container {
   width: 100%;
-  display: inline-block;
-  // flex-direction: row;
-  // justify-content: flex-start;
-  .opensource {
-    display: grid;
-    grid-template-columns: 46vw 46vw;
-    grid-template-rows: 30vh 30vh 30vh;
-    grid-auto-flow: dense;
-  }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: auto;
+  // #opensource {
+  //   display: inline-grid;
+  //   grid-template-columns: 46vw 46vw;
+  //   // grid-template-rows: 30vh 30vh 30vh;
+  //   grid-auto-flow: dense;
+  // }
 }
 
 .nav-scroll {
