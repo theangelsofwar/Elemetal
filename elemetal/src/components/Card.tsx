@@ -52,7 +52,7 @@ const StyledPhoto = styled.img`
   border: 6px ridge rgba(222, 200, 255, .23);  
 `
 
-const Card = ({ title, description, link, photo }: any): JSX.Element => (
+const Card = ({ title, description, photo, link }: any): JSX.Element => (
   <StyledContainer>
     <StyledPhoto src={photo} />
     <Title> {title} </Title>

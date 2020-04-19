@@ -65,6 +65,7 @@
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-remark": "^2.7.3",
     "gatsby-transformer-sharp": "^2.4.3",
+    "gatsby-transformer-yaml": "^2.3.3",
     "gray-percentage": "^2.0.0",
     "husky": "^4.2.5",
     "jest": "^25.3.0",

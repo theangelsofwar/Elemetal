@@ -121,6 +121,13 @@ module.exports = {
     //     path: `${__dirname}/src/components`,
     //   },
     // },
+    `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/data/`,
+      },
+    },
     `gatsby-plugin-netlify`,
     `gatsby-plugin-sass`,
     // this (optional) plugin enables Progressive Web App + Offline functionality

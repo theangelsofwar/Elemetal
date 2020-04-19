@@ -12,7 +12,8 @@ interface Props {
 }
 
 export const opensourceGrid = ({ data }: Props): JSX.Element => {
-  const opensourcegridlist=data.allProjectsYaml.edges;
+  const opensourcegridlist=data;
+  console.log(data);
   return (
     <Layout>
     
@@ -28,7 +29,7 @@ export const opensourceGrid = ({ data }: Props): JSX.Element => {
               title={node.title}
               link={node.link}
               description={node.description}
-              photo={node.image}
+              photo={node.photo}
               key={node.id}
             />
           )
@@ -41,20 +42,20 @@ export const opensourceGrid = ({ data }: Props): JSX.Element => {
   )
 }
 
-export const query= graphql`
-  {
-    allProjectsYaml {
-      edges {
-        node {
-          id
-          title
-          description
-          photo
-          link
-        }
-      }
-    }
-  }
-`
+// export const query= graphql`
+//   {
+//     allProjectsYaml {
+//       edges {
+//         node {
+//           id
+//           title
+//           description
+//           photo
+//           link
+//         }
+//       }
+//     }
+//   }
+// `
 
 export default opensourceGrid;
