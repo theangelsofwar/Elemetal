@@ -37,23 +37,16 @@ const Layout = ({children}: Props): JSX.Element => {
       <Helmet titleTemplate={`%s 0 ${data.site.siteMetadata.name}`} defaultTitle={data.site.siteMetadata.name}>
         <meta name='description' content={data.site.siteMetadata.description} />
       </Helmet>
-      <div 
+      <div
         style={{
-            margin: `0 auto`,
-            maxWidth: `100%`,
-            border: `none`,
-          }}
+          margin: `0 auto`,
+          maxWidth: `100%`,
+          border: `none`,
+        }}
       >
-        
-        <div
-          id="carraway">
-          <PageSlidebar />
-          
-          <main>
-              {children} 
-          </main>
-        </div>
-        
+        <main>
+            {children}
+        </main>
       </div>
     </React.Fragment>
   )

@@ -4,12 +4,16 @@
 html {
   font-family: 'Oxanium', sans-serif;
   box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   overflow-y: auto;
 }
 body {
   margin: 0;
+  height: 100vh;
+  width: 100vw;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -24,6 +28,8 @@ menu,
 section,
 summary {
   display: inherit;
+  height: 100%;
+  width: 100%;
   // flex-direction: column;
   // overflow-y: auto;
 }
@@ -255,7 +261,7 @@ h1 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
-  line-height: 1.1;
+  // line-height: 1.1;
 }
 h2 {
   margin-left: 0;
@@ -272,7 +278,7 @@ h2 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
-  line-height: 1.1;
+  // line-height: 1.1;
 }
 h3 {
   margin-left: 0;
@@ -289,7 +295,7 @@ h3 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
-  line-height: 1.1;
+  // line-height: 1.1;
 }
 h4 {
   margin-left: 0;
@@ -306,7 +312,7 @@ h4 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
-  line-height: 1.1;
+  // line-height: 1.1;
 }
 h5 {
   margin-left: 0;
@@ -323,7 +329,7 @@ h5 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
-  line-height: 1.1;
+  // line-height: 1.1;
 }
 h6 {
   margin-left: 0;
@@ -340,7 +346,7 @@ h6 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
-  line-height: 1.1;
+  // line-height: 1.1;
 }
 hgroup {
   margin-left: 0;
@@ -422,7 +428,7 @@ pre {
   margin-top: 0;
   margin-bottom: 1.45rem;
   font-size: 0.85rem;
-  line-height: 1.42;
+  // line-height: 1.42;
   background: hsla(226, 100%, 87%, 0.68);
   border-radius: 3px;
   overflow: auto;
@@ -439,7 +445,7 @@ table {
   padding-top: 0;
   margin-bottom: 1.45rem;
   font-size: 1rem;
-  line-height: 1.45rem;
+  // line-height: 1.45rem;
   border-collapse: collapse;
   width: 100%;
 }
@@ -561,15 +567,15 @@ li > p {
 }
 code {
   font-size: 0.85rem;
-  line-height: 1.45rem;
+  // line-height: 1.45rem;
 }
 kbd {
   font-size: 0.85rem;
-  line-height: 1.45rem;
+  // line-height: 1.45rem;
 }
 samp {
   font-size: 0.85rem;
-  line-height: 1.45rem;
+  // line-height: 1.45rem;
 }
 abbr {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
@@ -620,7 +626,7 @@ code {
 }
 pre code {
   background: none;
-  line-height: 1.42;
+  // line-height: 1.42;
 }
 code:before,
 code:after,

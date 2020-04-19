@@ -1,5 +1,4 @@
 /* tslint:disable */
-
 // Yve Vestal Titan (YVT Create Logo)
 // import '../../node_modules/augmented-ui/augmented.css';
 // import { Grid, Heading} from '@chakra-ui/core'
@@ -29,7 +28,7 @@ import About from '../components/About/About';
 import OpenSource from '../components/Projects/OpenSource';
 import Publications from '../components/Publications';
 import Contact from '../components/Info/Contact';
-// import PageSlidebar from '../components/PageSlidebar';
+import PageSlidebar from '../components/PageSlidebar';
 // import pkg from '../../package.json';
 // import QuantumGrid from '../components/QuantumGrid';
 
@@ -123,19 +122,20 @@ const IndexPage = (props: any): JSX.Element => {
         ]}
       />
 
-
+      <div id="carraway">
+        <PageSlidebar />
         <div id='page-wrap'>
       
           <div className='nav-scroll'>   
           <NavBar
             items={navbarItems}
-            offset={-60}
+            offset={-17}
             duration={500}
             delay={0}
             height={85}
             backgroundColor='rgba(29, 24, 31, 0.872)'
             color='ghostwhite'
-            coverWidth={`100%`}
+            coverWidth={`96%`}
             navWidth={`65%`}
             linkClass='link'
             activeLinkClass='activeLink'
@@ -166,14 +166,14 @@ const IndexPage = (props: any): JSX.Element => {
             </ElementsWrapper>
           </div>
      
+        </div>
+      
         <footer>
           © {new Date().getFullYear()},  Copyright {`Yve Vestal Titan `}
           <a href="https://www.angiechangpagne.com">  Angie Chang (YVT) </a>
           Sent from Mars 
         </footer>
-        
-        </div>
-
+      </div>
     </Layout>
   )
 }
