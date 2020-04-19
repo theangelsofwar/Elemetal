@@ -4,6 +4,8 @@
 .about{
   justify-content: center;
   color: ghostwhite;
+  text-shadow: rgba(92, 119, 121, 0.769) 1.7px 1.7px .6px;
+
   background-color: rgba(95, 158, 160, 0.83);
   margin: auto;
   padding: 1.5rem;
@@ -13,6 +15,8 @@
 h1 {
   font-size: 1.7em;
   align-content: center;
+  text-shadow: rgba(92, 119, 121, 0.769) 1.7px 1.7px .6px;
+
 }
 
 

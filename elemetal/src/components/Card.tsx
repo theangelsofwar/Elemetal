@@ -11,7 +11,6 @@ const StyledContainer = styled.div`
   align-items: center;
   border-radius: 42px;
   padding: 17px;
-  overflow-y: scroll;
   box-sizing: border-box;
   background: rgba(54, 32, 65, 0.782);
   .projectLink {

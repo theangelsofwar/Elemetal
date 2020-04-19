@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap');
 
 .opensource {
-  display: inherit;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: row wrap;
+  flex-grow: 3;
+  overflow-y: auto;
   // grid-template-columns: 30vw 30vw 30vw;
   // grid-template-rows: 30vh 30vh 30vh;
 }

@@ -5,12 +5,13 @@
 .showcase {
   display: flex;
   flex-direction: row;
-  /* flex-flow: row wrap; */
+  flex-flow: column wrap;
+  flex-grow: 1;
   background-color: rgba(142, 166, 187, 0.296);
   color: darkslategrey;
+  font-weight: bold;
   max-height: 30vh;
   text-align: center;
-  text-shadow: 2px solid blanchedalmond;
   margin-top: 5.1em;
   padding-top: 1.7rem;
   padding-bottom: 1.5rem;
@@ -18,8 +19,14 @@
 }
 
 h1, h3 {
-  font-size: 3.7em;
-  text-shadow: 12px solid midnightblue;
+  font-size: 4.2em;
   color: aliceblue;
   text-align: center;
+  text-shadow: rgba(80, 53, 82, 0.789) 1.7px 1.7px .6px;
+
+}
+
+p {
+  text-shadow: lightgoldenrodyellow 1.7px 1.7px .6px;
+
 }
