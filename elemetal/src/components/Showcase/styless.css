@@ -3,9 +3,13 @@
 
 
 .showcase {
+  display: flex;
+  flex-direction: row;
+  /* flex-flow: row wrap; */
   background-color: rgba(142, 166, 187, 0.296);
   color: darkslategrey;
   max-height: 30vh;
+  text-align: center;
   text-shadow: 2px solid blanchedalmond;
   margin-top: 5.1em;
   padding-top: 1.7rem;
