@@ -97,6 +97,15 @@ Run:
 gatsby-develop
 >Links to Gatsby's internal development server, located in East Egg. 
 
+Build Deploy:
+>gatsby build
+>gatsby serve
+>netflify, has custom domain, currently I am using Web2, but later will be hosting static files to IPFS and get an ENS domain
+
+Other options:
+> npm install --global surge
+> surge
+
 
 Im going to do a post on the underlying theories and workings behind Gatsby, as it has even more Abstractions from Javascript than Angular does!
 

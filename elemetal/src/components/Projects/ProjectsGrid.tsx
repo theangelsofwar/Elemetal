@@ -1,7 +1,11 @@
 import React from 'react'
 
 const ProjectsGrid = (): JSX.Element => (
-  <div></div>
+  <React.Fragment>
+    <div id='projectsgrid'>
+      
+    </div>
+  </React.Fragment>
 )
 
 export default ProjectsGrid

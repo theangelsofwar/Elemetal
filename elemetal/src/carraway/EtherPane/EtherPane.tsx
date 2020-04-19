@@ -11,11 +11,11 @@ import React from 'react';
  * 
  */
 
-const EtherPane = ():JSX.Element => (
-  <div id='etherpane'>
-
-  </div>
-  
+const EtherPane = (): JSX.Element => (
+  <React.Fragment>
+      <div id='etherpane'> 
+      </div>
+  </React.Fragment>
 );
 
 

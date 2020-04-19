@@ -42,15 +42,16 @@ module.exports = {
         lang: `en-US`,
         short_name: `YVT`,
         start_url: `/`,
-        background_color: `gainsboro`,
+        background_color: `darkslategray`,
         theme_color: `ghostwhite`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/yvtfavicon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-typescript`,
     // `gatsby-plugin-ipfs`,
     `gatsby-transformer-remark`,
+    `gatsby-plugin-transition-link`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-feed`,
@@ -114,12 +115,12 @@ module.exports = {
         path: `${__dirname}/src/pages`
       }
     },
-    {
-      resolve: `gatsby-plugin-page-creator`,
-      options: {
-        path: `${__dirname}/src/components`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-page-creator`,
+    //   options: {
+    //     path: `${__dirname}/src/components`,
+    //   },
+    // },
     `gatsby-plugin-netlify`,
     `gatsby-plugin-sass`,
     // this (optional) plugin enables Progressive Web App + Offline functionality

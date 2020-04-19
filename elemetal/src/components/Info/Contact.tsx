@@ -1,7 +1,7 @@
 import { withPrefix } from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
-import StyledLink from '../../components/StyledLink';
+import StyledLink from '../StyledLink';
 
 //<StyledLink className="b" href="mailto:yvevestal@gmail.com" >
 // Email

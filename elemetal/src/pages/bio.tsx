@@ -1,6 +1,6 @@
 /* tslint:disable */
 import React from 'react'
-import Layout from './layout';
+import Layout from '../components/layout';
 
 //      <button id="glow" className="glow" onClick={handleClick}> Some of My Favorite Quotes </button>
 

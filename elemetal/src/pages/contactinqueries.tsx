@@ -2,7 +2,7 @@
 import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-const contactInqueries = ():JSX.Element => {
+const contactinqueries = ():JSX.Element => {
 
   const handleClick = () => {
     //mail to my email, insert message from their text body and sent it behind the scenes, inquiry Q/A
@@ -21,4 +21,4 @@ const contactInqueries = ():JSX.Element => {
   )
 }
 
-export default contactInqueries;
+export default contactinqueries;

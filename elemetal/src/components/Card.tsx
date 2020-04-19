@@ -1,6 +1,6 @@
 /* tslint:disable */
 import React from 'react';
-import styled from "styled-components";
+import styled from 'styled-components';
 //nested styled component
 // box-shadow: 0 1px 4px rgba(0, 0, 0, .19), 0 1px 1px rgba(0, 0, 1, .24);
 const StyledContainer = styled.div`

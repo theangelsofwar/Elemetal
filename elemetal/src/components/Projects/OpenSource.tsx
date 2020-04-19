@@ -2,7 +2,7 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import Card from '../../components/Card';
+import Card from '../Card';
 // import { Grid } from 'evergreen-ui';
 const OpenSource = (): JSX.Element => (
   <React.Fragment>

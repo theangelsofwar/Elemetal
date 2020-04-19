@@ -26,6 +26,7 @@ const Layout = ({children}: Props): JSX.Element => {
       site {
         siteMetadata {
           name
+          title
           description
         }
       }

@@ -12,9 +12,9 @@ import Img from 'gatsby-image'
 import React, {useEffect, useState} from 'react'
 import './styles.scss';
 // import bio from '../components/bio';
-import {Box, Flex} from 'rebass'
-import Resume from '../carraway/Resume';
-import Technologies from './Technologies';
+// import {Box, Flex} from 'rebass'
+import Resume from './Resume';
+import Technologies from '../components/Technologies';
 //<Link to="/page-2/" />
 import Showcase from '../components/Showcase';
 //    <h1> Angie Chang </h1>
@@ -25,10 +25,10 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import {useEagerConnect, useInactiveListener} from '../lib/hooks'
 import {formatEthAddress} from '../lib/utils'
-import About from './About/About'
-import OpenSource from './Projects/OpenSource'
-import Publications from './Publications'
-import Contact from './Info/Contact';
+import About from '../components/About'
+import OpenSource from '../components/Projects/OpenSource'
+import Publications from '../components/Publications'
+import Contact from '../components/Info/Contact';
 import PageSlidebar from '../components/PageSlidebar';
 // import pkg from '../../package.json';
 import QuantumGrid from '../components/QuantumGrid';
