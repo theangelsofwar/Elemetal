@@ -67,7 +67,7 @@ const OpenSource = (): JSX.Element => (
         description="Vote-aire is an Enlightened way of Voting, demonstrated on the the Ethereum Blockchain, with use of IPFS as a way to open the portal to equality through decentralized systems"
         />
         <Card 
-        photo={require("../../images/escalate.jpg")}
+        photo={require("../../images/Ethermint.jpg")}
         title="Oil Rig: An Ethereum Mine"
         link={{
           url: "",
@@ -76,7 +76,7 @@ const OpenSource = (): JSX.Element => (
         description="Coming Soon..."
         />
       <Card 
-        photo={require("../../images/escalate.jpg")}
+        photo={require("../../images/ProjectRedEther.jpg")}
         title="Project Red Ether: A Decentralized Development"
         link={{
           url: "",

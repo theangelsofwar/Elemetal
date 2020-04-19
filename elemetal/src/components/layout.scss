@@ -52,7 +52,8 @@ template {
 
 footer {
   color: ghostwhite;
-  text-shadow: 13px hotpink;
+  text-align: center;
+  text-shadow: hotpink 1.7px 1.7px .6px;
   background-color: rgba(54, 32, 65, 0.782);
   margin: auto;
   padding: .66rem;
@@ -169,7 +170,7 @@ fieldset {
 }
 legend {
   box-sizing: border-box;
-  color: inherit;
+  // color: inherit;
   display: table;
   max-width: 100%;
   padding: 0;
@@ -196,7 +197,7 @@ textarea {
   -webkit-appearance: none;
 }
 ::-webkit-input-placeholder {
-  color: inherit;
+  // color: inherit;
   opacity: 0.54;
 }
 ::-webkit-file-upload-button {

@@ -4,10 +4,10 @@ import './styless.css';
 const Showcase = (): JSX.Element => (
   <React.Fragment>
   <div id='showcase' className='showcase'>
-    <h1> {'<Angie />'} </h1>
-    <p> <br></br><hr /> </p>
+    <h1> {'< '} Angie {' />'} </h1>
+    <p> <br/></p>
     <h3> Software Developer </h3>
-    <p> Los Angeles, CA </p>
+    <span id='lalocals' className='lalocals'> <p> Los Angeles, CA </p> </span>
   </div>
   </React.Fragment>
 )

@@ -22,11 +22,11 @@ h1, h3 {
   font-size: 4.2em;
   color: aliceblue;
   text-align: center;
-  text-shadow: rgba(80, 53, 82, 0.789) 1.7px 1.7px .6px;
+  /* text-shadow: rgba(66, 49, 67, 0.789) 1.7px 1.7px .6px; */
 
 }
 
-p {
-  text-shadow: lightgoldenrodyellow 1.7px 1.7px .6px;
-
+.lalocals {
+  font-size: larger;
+  text-shadow: lightgoldenrodyellow 2px 2px 2px;
 }

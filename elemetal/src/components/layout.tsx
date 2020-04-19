@@ -13,7 +13,6 @@ import './layout.scss';
 import PageSlidebar from './PageSlidebar';
 // import PropTypes from "prop-types";
 import Header from './header';
-
 //<Header />
 
 interface Props {
@@ -38,17 +37,24 @@ const Layout = ({children}: Props): JSX.Element => {
       <Helmet titleTemplate={`%s 0 ${data.site.siteMetadata.name}`} defaultTitle={data.site.siteMetadata.name}>
         <meta name='description' content={data.site.siteMetadata.description} />
       </Helmet>
-      <div
+      <div 
         style={{
-          margin: `0 auto`,
-          maxWidth: `100%`,
-          border: `none`,
-        }}
+            margin: `0 auto`,
+            maxWidth: `100%`,
+            border: `none`,
+          }}
       >
-      <main>{children}</main>
-    
+        
+        <div
+          id="carraway">
+          <PageSlidebar />
+          
+          <main>
+              {children} 
+          </main>
+        </div>
+        
       </div>
-     
     </React.Fragment>
   )
 }

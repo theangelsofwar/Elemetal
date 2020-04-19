@@ -22,7 +22,7 @@
     background-attachment: fixed;
 
     /* Set the text to transparent for the fading background to show through */
-    > * { color: transparent; }
+   /* { color: transparent; } */
   }
 }
 

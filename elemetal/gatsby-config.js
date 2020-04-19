@@ -96,6 +96,7 @@ module.exports = {
         lang: `en-US`,
         short_name: `YVT`,
         start_url: `/`,
+        color: `aliceblue`,
         background_color: `darkslategray`,
         theme_color: `ghostwhite`,
         display: `minimal-ui`,

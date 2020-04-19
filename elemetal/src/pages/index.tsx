@@ -1,7 +1,7 @@
 /* tslint:disable */
 
 // Yve Vestal Titan (YVT Create Logo)
-import '../../node_modules/augmented-ui/augmented.css';
+// import '../../node_modules/augmented-ui/augmented.css';
 // import { Grid, Heading} from '@chakra-ui/core'
 import {Web3Provider} from '@ethersproject/providers'
 import {useWeb3React} from '@web3-react/core'
@@ -29,9 +29,9 @@ import About from '../components/About/About';
 import OpenSource from '../components/Projects/OpenSource';
 import Publications from '../components/Publications';
 import Contact from '../components/Info/Contact';
-import PageSlidebar from '../components/PageSlidebar';
+// import PageSlidebar from '../components/PageSlidebar';
 // import pkg from '../../package.json';
-import QuantumGrid from '../components/QuantumGrid';
+// import QuantumGrid from '../components/QuantumGrid';
 
 // augmented ui
 // Homepage
@@ -122,10 +122,11 @@ const IndexPage = (props: any): JSX.Element => {
           `builtinla`,
         ]}
       />
-      <div id='carraway'>
-        <PageSlidebar />
+
+
         <div id='page-wrap'>
-          <div className="nav-scroll">   
+      
+          <div className='nav-scroll'>   
           <NavBar
             items={navbarItems}
             offset={-60}
@@ -137,10 +138,10 @@ const IndexPage = (props: any): JSX.Element => {
             coverWidth={`100%`}
             navWidth={`65%`}
             linkClass='link'
-            activeLinkClass='activeLink"'
+            activeLinkClass='activeLink'
           />
           </div>
-
+          
           <div id='container' className='container'>
             <ElementsWrapper 
               items={navbarItems}>
@@ -160,17 +161,19 @@ const IndexPage = (props: any): JSX.Element => {
                 <Technologies />
               </div>
               <div id='contact' className='item'>
-              <Contact />
+                <Contact />
               </div>
             </ElementsWrapper>
           </div>
-          </div>
-      </div>
-      <footer>
-        © {new Date().getFullYear()},  Copyright {`Yve Vestal Titan `}
-        <a href="https://www.angiechangpagne.com">  Angie Chang (YVT) </a>
-        Sent from Mars 
-    </footer>
+     
+        <footer>
+          © {new Date().getFullYear()},  Copyright {`Yve Vestal Titan `}
+          <a href="https://www.angiechangpagne.com">  Angie Chang (YVT) </a>
+          Sent from Mars 
+        </footer>
+        
+        </div>
+
     </Layout>
   )
 }
