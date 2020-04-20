@@ -1,8 +1,8 @@
 import { withPrefix } from 'gatsby';
-import PortfolioItem from '../../components/PortfolioItem';
+import PortfolioItem from '../components/PortfolioItem';
 import React from 'react';
-import Layout from '../../components/layout';
-import PageSlidebar from '../../components/PageSlidebar';
+import Layout from '../components/layout';
+import PageSlidebar from '../components/PageSlidebar';
 
 const Resume = (): JSX.Element => (
   <Layout>
