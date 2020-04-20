@@ -4,7 +4,6 @@ import Layout from '../components/layout';
 //this will only be redirected from a specific page only..
 
 const Archives = (): JSX.Element => (
-  <React.Fragment>
   <Layout>
     <div id="carraway">
         <PageSlidebar />
@@ -15,7 +14,6 @@ const Archives = (): JSX.Element => (
           </div>
     </div>
   </Layout>
-  </React.Fragment>
 )
 
 export default Archives;

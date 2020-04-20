@@ -4,7 +4,7 @@ import React from 'react';
 import Layout from '../../components/layout';
 import PageSlidebar from '../../components/PageSlidebar';
 
-const Resume = ():JSX.Element => (
+const Resume = (): JSX.Element => (
   <Layout>
   <div id="carraway">
     <PageSlidebar />

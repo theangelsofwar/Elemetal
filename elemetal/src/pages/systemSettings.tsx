@@ -3,7 +3,6 @@ import PageSlidebar from '../components/PageSlidebar';
 import Layout from '../components/layout';
 const SystemSettings = (): JSX.Element => {
   return (
-    <React.Fragment>
     <Layout>
     <div id="carraway">
       <PageSlidebar />
@@ -14,7 +13,6 @@ const SystemSettings = (): JSX.Element => {
         </div>
     </div>
     </Layout>
-    </React.Fragment>
   )
 }
 

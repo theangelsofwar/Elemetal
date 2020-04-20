@@ -10,7 +10,6 @@ const bio = (): JSX.Element => {
   }
 
   return (
-    <React.Fragment>
     <Layout>
 
     <div id="carraway">
@@ -30,7 +29,6 @@ const bio = (): JSX.Element => {
 
     </div>
     </Layout>
-    </React.Fragment>
   )
 
 }
