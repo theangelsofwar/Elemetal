@@ -93,6 +93,7 @@ Handling Ethereum Events:
 
 
 Fortmatic: For integrating a dApp into the Ethereum Blockchain(currently in testing mode)
+> npm i --save fortmatic@latest
 For more information, check out:
 https://docs.fortmatic.com/web3-integration 
 

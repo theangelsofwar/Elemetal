@@ -1,6 +1,9 @@
 const path = require('path');
 // const proxy = require('http-proxy-middleware');
-
+// const Fortmatic = require('fortmatic');
+// const Web3= require('web3');
+// let fm = new Fortmatic(`pk_test_A34C21EE11FC5E45`);
+// web3 = new Web3(fm.getProvider());
 
 const siteMetadata= {
   name: `Elemetal`,
@@ -48,7 +51,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-chakra-ui`,
     `gatsby-plugin-styled-components`,
-    `gatsby-transformer-sharp`
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-dat`,
       options: {

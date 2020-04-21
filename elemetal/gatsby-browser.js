@@ -4,14 +4,14 @@ import './global.css';
 import React from 'react';
 
 
-function getLibrary(provider) {
-  const library = new Web3Provider(provider);
-  library.pollingInterval = 12000;
-  return library;
+// function getLibrary(provider) {
+//   const library = new Web3Provider(provider);
+//   library.pollingInterval = 12000;
+//   return library;
 
-}
-export const wrapRootElement = ({ element }) => (
-    <Web3ReactProvider getLibrary={getLibrary}>{element}</Web3ReactProvider>
-);
+// }
+// export const wrapRootElement = ({ element }) => (
+//     <Web3ReactProvider getLibrary={getLibrary}>{element}</Web3ReactProvider>
+// );
 
 

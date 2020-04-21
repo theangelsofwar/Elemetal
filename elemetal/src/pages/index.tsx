@@ -61,19 +61,19 @@ export const indexPageQuery = graphql`
 `
 
 const IndexPage = (props: any): JSX.Element => {
-  const {connector, account} = useWeb3React<Web3Provider>()
+  // const {connector, account} = useWeb3React<Web3Provider>()
 
   // handle logic to recognize connector activated
-  const [activatingConnector, setActivatingConnector] = useState()
-  useEffect(() => {
-    if (activatingConnector && activatingConnector === connector) {
-      setActivatingConnector(undefined)
-    }
-  }, [activatingConnector, connector])
+  // const [activatingConnector, setActivatingConnector] = useState()
+  // useEffect(() => {
+  //   if (activatingConnector && activatingConnector === connector) {
+  //     setActivatingConnector(undefined)
+  //   }
+  // }, [activatingConnector, connector])
 
-  const triedEager = useEagerConnect()
-  // handle eager activation
-  useInactiveListener(!triedEager || !!activatingConnector)
+  // const triedEager = useEagerConnect()
+  // // handle eager activation
+  // useInactiveListener(!triedEager || !!activatingConnector)
   // const { data } = props;
   // const siteTitle = data.site.siteMetadata.title;
   // const posts = data.allMarkdownRemark.edges;
