@@ -1,11 +1,11 @@
 const path = require('path');
-const proxy = require('http-proxy-middleware');
+// const proxy = require('http-proxy-middleware');
 
 
 const siteMetadata= {
   name: `Elemetal`,
   author: `Yve Vestal Titan (angiechangpagne)`,
-  description: `Web Developer based in Los Angeles, Working to Code Through the Edges of Reality`,
+  description: `Software Developer based in Los Angeles, Working to Code Through the Edges of Reality`,
   social: {
     linkedin: `angiechangpagne`,
   },
@@ -44,10 +44,23 @@ module.exports = {
       github: `angiechangpagne`,
     },
   },
+  pathPrefix: `__GATSBY_IPFS_PATH_PREFIX__`,
   plugins: [
     `gatsby-plugin-chakra-ui`,
     `gatsby-plugin-styled-components`,
-    `gatsby-transformer-sharp`,
+    `gatsby-transformer-sharp`
+    {
+      resolve: `gatsby-plugin-dat`,
+      options: {
+        pinning_service: {
+          domain: 'https://hashbase.io/',
+          // If your pinning service does not need authentication,
+          // you can omit these fields.
+          username: process.env.HASHBASE_USER,
+          password: process.env.HASHBASE_PASSWORD,
+        },
+      },
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-anchor-links`,
@@ -104,7 +117,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-typescript`,
-    // `gatsby-plugin-ipfs`,
+    `gatsby-plugin-ipfs`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -200,6 +213,6 @@ module.exports = {
     `gatsby-plugin-sass`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    `gatsby-plugin-offline`,
+    // `gatsby-plugin-offline`,
   ],
 };

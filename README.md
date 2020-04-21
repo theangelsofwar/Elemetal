@@ -70,6 +70,24 @@ For Browser Configuration:
 >npm install @ethersproject/providers
 >npm install @web3-react/core
 
+>npm install gatsby-plugin-dat dat 
+Pinning Content to Hashbase:
+> plugins: [
+  {
+    resolve: `gatsby-plugin-dat`,
+    options: {
+      pinning_service: {
+        domain: 'https://hashbase.io/',
+        // If your pinning service does not need authentication,
+        // you can omit these fields.
+        username: 'YOUR USERNAME HERE',
+        password: 'YOUR PASSWORD HERE',
+      },
+    },
+  },
+];
+
+
 Handling Ethereum Events:
 >hooks.ts file in lib folder
 
@@ -107,7 +125,7 @@ Other options:
 > surge
 
 
-Im going to do a post on the underlying theories and workings behind Gatsby, as it has even more Abstractions from Javascript than Angular does!
+Im going to do a post on the underlying theories and workings behind Gatsby, look into how they bundle their webpack, as it has even more Abstractions from Javascript than Angular does!
 
 
 
