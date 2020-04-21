@@ -5,12 +5,11 @@ interface Props {
   data: any
 }
 export const Post = ({ data }: Props ): JSX.Element => {
-  const post = data.markdownRemark;
+  // const post = data.markdownRemark;
 
   return (
     <React.Fragment>
       <div id='malone'>
-        {post}
       </div>
     </React.Fragment>
   )
