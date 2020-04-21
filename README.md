@@ -59,8 +59,7 @@ useStaticQuery
 useWeb3React
 
 Query on localhost:8000/___graphql (three underscores)
->frontmatter
->markdown remark plugin
+
 
 There are two Versions of this current version of my Gatsby Portfolio site-
 >One of them is centralized
