@@ -47,23 +47,10 @@ module.exports = {
       github: `angiechangpagne`,
     },
   },
-  pathPrefix: `__GATSBY_IPFS_PATH_PREFIX__`,
   plugins: [
     `gatsby-plugin-chakra-ui`,
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
-    {
-      resolve: `gatsby-plugin-dat`,
-      options: {
-        pinning_service: {
-          domain: 'https://hashbase.io/',
-          // If your pinning service does not need authentication,
-          // you can omit these fields.
-          username: process.env.HASHBASE_USER,
-          password: process.env.HASHBASE_PASSWORD,
-        },
-      },
-    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-anchor-links`,
@@ -120,7 +107,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-typescript`,
-    `gatsby-plugin-ipfs`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
