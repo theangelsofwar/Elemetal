@@ -1,11 +1,6 @@
 /* tslint:disable */
 // Yve Vestal Titan (YVT Create Logo)
 // import '../../node_modules/augmented-ui/augmented.css';
-import { Web3Provider } from '@ethersproject/providers'
-import { AbstractConnector } from '@web3-react/abstract-connector';
-import { Web3ReactProvider, useWeb3React, UnsupportedChainIdError } from '@web3-react/core'
-// import {Web3Container} from '../containers/Web3Container';
-// import Web3 provier context and the wrapper before importing React
 import {graphql, Link} from 'gatsby';
 import Img from 'gatsby-image';
 import React, {useEffect, useState} from 'react';
