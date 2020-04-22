@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap');
 
 
-.about{
+.about {
   justify-content: center;
   color: ghostwhite;
   /* text-shadow: rgba(92, 119, 121, 0.769) 1.7px 1.7px .6px; */
@@ -11,6 +11,33 @@
   padding: 1.5rem;
   border: 3px solid rgba(95, 158, 160, 0.283);
   border-radius: 6px;
+  
+  .tao {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    padding: 25px;
+  
+  }
+  
+  .tao-1 {
+    position: relative;
+    // padding: 55px;
+    // display: inline-flex;
+    flex-wrap: nowrap;
+    padding-right: 25px;
+  } 
+  
+  img {
+    position: relative;
+    display: inline-flex;
+    /* flex-direction: row; */
+    max-block-size: 17vw;
+    flex-wrap: nowrap;
+    border-radius: 33px;
+    border: .5px rgba(35, 36, 38, 0.666);
+  }
 }
 
 h1 {
@@ -19,6 +46,10 @@ h1 {
   /* text-shadow: rgba(92, 119, 121, 0.769) 1.7px 1.7px .6px; */
 
 }
+
+
+
+
 
 
 .floatingComponent{

@@ -3,6 +3,7 @@ import React from 'react'
 import Layout from '../components/layout';
 import PageSlidebar from '../components/PageSlidebar';
 import './archetype.css';
+import Image from '../components/image';
 //      <button id="glow" className="glow" onClick={handleClick}> Some of My Favorite Quotes </button>
 const bio = (): JSX.Element => {
   const handleClick = () => {
@@ -24,7 +25,8 @@ const bio = (): JSX.Element => {
             <h1> Hi There, </h1> 
             <br />
             <span id='tao' className='tao'> 
-            <p> My name is Angela, but you can call me Angie. I am a Frontend and Fullstack Developer based in Los Angeles, CA.  I work predominantly with React, Typescript, GraphQL and Progressive Web Apps as well as Node Express, MongoDB, PostgresQL. </p>
+            <p> My name is Angela, but you can call me Angie. I am a Frontend and Fullstack Developer based in Los Angeles, CA.  
+                I work predominantly with React, Typescript, GraphQL, Webpack and Progressive Web Apps as well as Node Express, MongoDB, PostgresQL, and Docker. </p>
             <img src={require('../images/toptal.jpg')} alt="Angie.Stack" />            
             </span>
             <br />
@@ -32,7 +34,7 @@ const bio = (): JSX.Element => {
             <p> I've later reached the conclusion that when you try to understand life, you figure that coding is a much simpler thing to understand... I then realized that my aim in life is to push past the edges of reality. </p>
          
             <p> Born and raised in a small bubble of a suburb right outside of Manhattan, I quickly moved to Los Angeles after College because deep down I knew that I am a Californian at heart. I wasn't wrong! </p>
-            <p> Hollywood and the growth in Tech in this amazing city is what excites and inspires me. My original background is in FinTech and Java, thought these days I have become engrossed by Javascript in the Web, especially with flux architecturural patterns like React and Redux. </p>
+            <p> Hollywood and the growth in Tech in this amazing city is what excites and inspires me. My original background is in FinTech and Java, thought these days I have become encapsulated by Javascript in the Web, especially with flux architecturural patterns like React and Redux. </p>
             <p> I believe that Programming is like an Art form, and Art is what life is all about. </p>
             <p> I would also say that I am a futurist. I've been quite intrigued by blockchain technology, designing decentralized systems and applications with React, Typescript, GraphQL: merging major Web2 patterns into Solidity Smart Contracts, AssemblyScript and Rust Programming Language. I am excited to see what the future of the decentralized Internet holds and am eager to take that step in joining the movement. </p> 
             

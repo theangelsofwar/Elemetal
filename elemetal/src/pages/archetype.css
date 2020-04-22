@@ -27,11 +27,12 @@ h2, h3 {
   padding: 25px;
 
 }
-/* .tao:child {
+.tao:child {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-} */
+  padding: 55px;
+  display: inline-flex;
+  flex-wrap: nowrap;
+}
 
 img {
   position: relative;
@@ -39,6 +40,6 @@ img {
   /* flex-direction: row; */
   max-block-size: 24vw;
   flex-wrap: nowrap;
-  border-radius: 25px;
-  border: 3px rgba(35, 36, 38, 0.666);
+  border-radius: 33px;
+  border: 2px rgba(35, 36, 38, 0.666);
 }
