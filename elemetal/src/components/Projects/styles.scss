@@ -5,7 +5,8 @@
   flex-direction: row;
   flex-wrap: row wrap;
   flex-grow: 3;
-  overflow-y: auto;
+  // overflow-y: auto;
+  min-height: 92vh;
   // grid-template-columns: 30vw 30vw 30vw;
   // grid-template-rows: 30vh 30vh 30vh;
 }

@@ -5,11 +5,12 @@ import Image from './image';
 //nested styled component
 // box-shadow: 0 1px 4px rgba(0, 0, 0, .19), 0 1px 1px rgba(0, 0, 1, .24);
 const StyledContainer = styled.div`
-  border: 17px ridge rgba(43, 221, 168, 0.406);
+  border: 17px ridge rgba(149, 210, 232, 0.502);
   display: inline-block;
   justify-content: center;
   align-items: center;
   border-radius: 42px;
+  magin: auto;
   padding: 17px;
   box-sizing: border-box;
   background: rgba(54, 32, 65, 0.782);
@@ -34,7 +35,7 @@ const Title = styled.h2`
 
 const Description = styled.p`
   color: ghostwhite;
-  font-weight: 300;
+  font-weight: 2px;
   margin: auto;
   padding: 2px;
   @media (max-width: 500px) {

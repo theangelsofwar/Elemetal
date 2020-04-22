@@ -137,7 +137,8 @@ const IndexPage = (props: any): JSX.Element => {
       
         <footer>
           © {new Date().getFullYear()},  Copyright {`Yve Vestal Titan `}
-          <a href="https://www.angiechangpagne.com">  Angie Chang (YVT) </a>
+          <a href="https://www.angiechangpagne.com"> ( Angie Chang) </a>
+          <br />
           Sent from Mars 
         </footer>
       </div>

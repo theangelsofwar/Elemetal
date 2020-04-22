@@ -4,12 +4,12 @@ import styled from 'styled-components';
 import Card from '../Card';
 import Image from '../image';
 import { Grid } from '@chakra-ui/core';
-// import './styles.scss';
+import './styles.scss';
 
 const OpenSource = (): JSX.Element => (
   <React.Fragment>
   <div id='opensource' className='opensource'>
-    <section>
+
       <Grid templateColumns="repeat(2, 1fr)" gap={6}>
       <Card 
         photo={require("../../images/ProjectArtemis.jpg")} 
@@ -85,8 +85,6 @@ const OpenSource = (): JSX.Element => (
         description="Coming Soon..."
         />
       </Grid>
-      
-      </section>
       
   </div>
   </React.Fragment>

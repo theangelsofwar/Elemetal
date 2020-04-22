@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap');
 
 
-
 .showcase {
   display: flex;
   flex-direction: row;
@@ -10,16 +9,16 @@
   background-color: rgba(142, 166, 187, 0.296);
   color: darkslategrey;
   font-weight: bold;
-  max-height: 30vh;
+  max-height: 42vh;
   text-align: center;
-  margin-top: 5.1em;
+  margin-top: 2.4em;
   padding-top: 1.7rem;
   padding-bottom: 1.5rem;
   justify-content: center;
 }
 
 h1, h3 {
-  font-size: 4.2em;
+  font-size: 6.2em;
   color: aliceblue;
   text-align: center;
   /* text-shadow: rgba(66, 49, 67, 0.789) 1.7px 1.7px .6px; */

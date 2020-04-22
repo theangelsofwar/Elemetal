@@ -2,13 +2,13 @@ import React from 'react';
 //only pages will have Layout component, specify from page creator plugin
 import { graphql } from 'gatsby';
 import Card from '../components/Card';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 import { Grid } from '@chakra-ui/core';
 //styles
 import SEO from '../components/seo';
 import Layout from '../components/layout';
 import PageSlidebar from '../components/PageSlidebar';
-
+import './archetype.css';
 //add ufo logo for home icon
 //retro futuristic wave.net
 //{opensourcegridlist.map(( { node }: any) => {
@@ -36,10 +36,8 @@ export const opensourceGrid = (): JSX.Element => {
     <div id="carraway">
       <PageSlidebar />
         <div id='page-wrap'>
-          <Link to="/">
             <br />
-          <h1> <h1> Home </h1> </h1>
-          </Link>
+          <h1> Open Source Projects </h1>
           <SEO title="Open Source Projects" />
           <br />
           <div id='opensourcegrid' className='opensourcegrid'>

@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  color: rgba(29, 24, 31, 0.872);
+  color: ghostwhite;
   font-family: 'Oxanium';
   // text-shadow: rgba(92, 119, 121, 0.769) 1.7px 1.7px .6px;
 
@@ -33,8 +33,18 @@ body {
     display: flex;
     flex-direction: row;
     overflow-y: auto;
-
     flex-flow: row wrap;
+    color: ghostwhite;
+    height: inherit;
+    justify-content: center;
+    margin: auto;
+    padding: 42px;
+    border-color: rgba(159, 203, 226, 0.803);
+    border-radius: 25px;
+  }
+
+  h1 {
+    font-size: 1.7em;
   }
   // #opensource {
   //   display: inline-grid;

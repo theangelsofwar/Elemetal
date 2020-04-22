@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import PageSlidebar from '../components/PageSlidebar';
-
+import './archetype.css';
 const contactInqueries = (): JSX.Element => {
 
   const handleClick = () => {
@@ -17,10 +17,13 @@ const contactInqueries = (): JSX.Element => {
       <PageSlidebar />
         <div id='page-wrap'>
           <div id='contactinqueries' className='contactinqueries'>
+          <text> Let's Talk Business...</text>
             <section>
             <h1> Contact for Queries </h1>
-            <text></text>
-            <button onClick={handleClick}> <a className='email' href="mailto:yvevestal@gmail.com"> Send It</a></button>
+            <form>
+
+            <button onClick={handleClick}> <a className='email' href="mailto:yvevestal@gmail.com"> Send It </a></button>
+            </form>
             </section>
           </div>
         </div>

@@ -12,7 +12,7 @@ import SEO from '../seo';
 
 const PageSlidebar = (): JSX.Element => {
 
-  const showSettings= (event:any) => {
+  const showSettings= (event: any) => {
     event.preventDefault();
   }
 
