@@ -1,5 +1,5 @@
 import React from 'react';
-import './styless.css';
+import './styless.scss';
 
 const Showcase = (): JSX.Element => (
   <React.Fragment>

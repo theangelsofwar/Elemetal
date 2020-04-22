@@ -48,10 +48,14 @@
   box-shadow: 3px solid rgb(240, 255, 240);
   width: 4.2vw;
   height: 9vh;
+  text-decoration: none;
   left: 4.2vw;
   top: 15vh;
   background-color: rgba(112, 188, 216, 0.372);
   border-radius: 66px;
+  -webkit-border-radius: 66px;
+  -moz-border-radius: 66px;
+  // -webkit-transition: all .1s ease-in-out;
   border: 6px groove ghostwhite;
   /* content: 'Side Nav Panel'; */
 }
@@ -88,6 +92,8 @@
   flex-direction: row;
   position: relative;
   flex-wrap: wrap;
+  text-decoration: none;
+  cursor: pointer;
   /* position: absolute; */ 
   font-size: 1.1em;
   font-weight: 4.2px;
@@ -95,9 +101,10 @@
 }
 
 .menu-item:hover {
-  background-color: rgba(101, 209, 233, 0.762);
+  background-color: rgba(145, 205, 218, 0.591);
   color: floralwhite;
   text-shadow: powderblue .6px .6px;
   border-radius: 66px 17px 66px 17px;
+  border: 3px solid rgba(240, 243, 244, 0.358);
   font-weight: 6px;
 }

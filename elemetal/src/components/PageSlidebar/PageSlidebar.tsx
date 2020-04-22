@@ -2,7 +2,7 @@
 import { Link } from 'gatsby';
 import React from 'react';
 import { scaleRotate as Slider } from 'react-burger-menu';
-import './styless.css';
+import './styless.scss';
 // import '../../../node_modules/augmented-ui/augmented.css';
 import Layout from '../layout';
 import SEO from '../seo';
