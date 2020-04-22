@@ -5,7 +5,6 @@ interface Props {
   data: any
 }
 export const Post = ({ data }: Props ): JSX.Element => {
-  // const post = data.markdownRemark;
 
   return (
     <React.Fragment>
@@ -14,18 +13,6 @@ export const Post = ({ data }: Props ): JSX.Element => {
     </React.Fragment>
   )
 }
-
-// export const query = graphql`
-//   query($slug: String!) {
-//     markdownRemark(fields: { slug: { eq: $slug } }) {
-//       html
-//       frontmatter {
-//         title
-//         keywords
-//       }
-//     }
-//   }
-// `
 
 
 export default Post;

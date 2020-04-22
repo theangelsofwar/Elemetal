@@ -29,26 +29,8 @@ import OpenSource from '../components/Projects/OpenSource';
 import Publications from '../components/Publications';
 import Contact from '../components/Info/Contact';
 import PageSlidebar from '../components/PageSlidebar';
-// import pkg from '../../package.json';
-// import QuantumGrid from '../components/QuantumGrid';
 
 // augmented ui
-// Homepage
-// HE110, {formatEthAddress(account)}!
-// interface iProps {
-//   data: {
-//     site: {
-//       siteMetadata: {
-//         title: string;
-//         name: string;
-//       },
-//     },
-//   };
-// } must be on the same page
-
-//<div id='resume' className='item'>
-// {/* <Resume />
-// </div> */}
 
 export const indexPageQuery = graphql`
   query {
@@ -61,22 +43,7 @@ export const indexPageQuery = graphql`
 `
 
 const IndexPage = (props: any): JSX.Element => {
-  // const {connector, account} = useWeb3React<Web3Provider>()
 
-  // handle logic to recognize connector activated
-  // const [activatingConnector, setActivatingConnector] = useState()
-  // useEffect(() => {
-  //   if (activatingConnector && activatingConnector === connector) {
-  //     setActivatingConnector(undefined)
-  //   }
-  // }, [activatingConnector, connector])
-
-  // const triedEager = useEagerConnect()
-  // // handle eager activation
-  // useInactiveListener(!triedEager || !!activatingConnector)
-  // const { data } = props;
-  // const siteTitle = data.site.siteMetadata.title;
-  // const posts = data.allMarkdownRemark.edges;
   const navbarItems = [
     {
       label: 'Home',
