@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
 import PageSlidebar from '../components/PageSlidebar';
+import './archetype.css';
 
 const publicationsGrid = (): JSX.Element => {
 
@@ -10,7 +11,8 @@ const publicationsGrid = (): JSX.Element => {
       <PageSlidebar />
         <div id='page-wrap'>
           <div id='publicationsgrid' className='publicationsgrid'>
-            <h4> Creative Writing, Poetry, Philosophy </h4>
+            <h2> Publications </h2>
+            <a href="">    </a>
           </div>
 
         </div>

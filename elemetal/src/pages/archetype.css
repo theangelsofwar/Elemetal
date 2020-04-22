@@ -1,12 +1,20 @@
-.bio, .opensourcegrid, .contactinqueries {
+.bio, .opensourcegrid, .contactinqueries, .publicationsgrid {
   min-height: 90vh;
-  margin: auto;
+  margin: 25px;
   max-width: 90vw;
-  background-image: linear-gradient(to bottom right,rgba(22,22,22,.2), rgba(42,42,42,.6));
+  justify-content: center;
+  background-image: linear-gradient(to bottom right,rgba(35, 36, 38, 0.755), rgba(81, 79, 82, 0.625));
   padding: 42px;
   border-radius: 24px;
 }
 
-h1{
-  font-size: 2.4em;
+h1 {
+  font-size: 3.7em;
+  font-weight: 3px;
+  text-align: center;
+}
+
+h2, h3 {
+  font-size: 3.4em;
+  text-align: center;
 }

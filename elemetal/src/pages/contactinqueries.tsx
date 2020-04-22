@@ -4,6 +4,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import PageSlidebar from '../components/PageSlidebar';
 import './archetype.css';
+
 const contactInqueries = (): JSX.Element => {
 
   const handleClick = () => {
@@ -21,7 +22,7 @@ const contactInqueries = (): JSX.Element => {
             <section>
             <h1> Contact for Queries </h1>
             <form>
-
+              {/* <input type='text'> First Name</input> */}
             <button onClick={handleClick}> <a className='email' href="mailto:yvevestal@gmail.com"> Send It </a></button>
             </form>
             </section>

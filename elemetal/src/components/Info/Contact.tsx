@@ -16,6 +16,7 @@ const Contact = (): JSX.Element => (
   <div id='contact'>
   <h5> Contact for Queries </h5>
     <a href="https://www.linkedin.com/in/angiechangpagne/"> LinkedIn </a>
+    <a href="" > Angelist </a>
     <br />
     <a href="https://github.com/angiechangpagne"> Github </a>
     <Link to='/contactInqueries/'> Email </Link>

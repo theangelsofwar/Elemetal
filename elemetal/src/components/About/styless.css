@@ -5,11 +5,12 @@
   justify-content: center;
   color: ghostwhite;
   /* text-shadow: rgba(92, 119, 121, 0.769) 1.7px 1.7px .6px; */
-
-  background-color: rgba(95, 158, 160, 0.83);
+  background-image: linear-gradient(to bottom right,rgba(95, 158, 160, 0.639), rgba(152, 181, 182, 0.6));
+  /* background-color: rgba(95, 158, 160, 0.83); */
   margin: auto;
   padding: 1.5rem;
-  border: 3px solid rgba(95, 158, 160, 0.83);
+  border: 3px solid rgba(95, 158, 160, 0.283);
+  border-radius: 6px;
 }
 
 h1 {
