@@ -1,4 +1,4 @@
-.bio, .opensourcegrid, .contactinqueries, .publicationsgrid {
+.bio, .opensourcegrid, .contactinqueries, .publicationsgrid, .resume{
   min-height: 90vh;
   margin: 25px;
   max-width: 90vw;
@@ -17,4 +17,28 @@ h1 {
 h2, h3 {
   font-size: 3.4em;
   text-align: center;
+}
+
+.tao {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: auto;
+  padding: 25px;
+
+}
+/* .tao:child {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+img {
+  position: relative;
+  display: inline-flexbox;
+  /* flex-direction: row; */
+  max-block-size: 24vw;
+  flex-wrap: nowrap;
+  border-radius: 25px;
+  border: 3px rgba(35, 36, 38, 0.666);
 }
