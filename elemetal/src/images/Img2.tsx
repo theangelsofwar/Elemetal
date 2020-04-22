@@ -10,14 +10,3 @@ const Img2 = ({data}: any): JSX.Element => (
 )
 
 export default Img2
-// export const query = graphql`
-//   query {
-//     file(relativePath: { eq: "gatsby-icon.png" }) {
-//       childImageSharp {
-//         fixed(width: 125, height: 125) {
-//           ...GatsbyImageSharpFixed
-//         }
-//       }
-//     }
-//   }
-// `;

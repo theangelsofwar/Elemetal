@@ -11,17 +11,6 @@ import PageSlidebar from '../components/PageSlidebar';
 import './archetype.css';
 //add ufo logo for home icon
 //retro futuristic wave.net
-//{opensourcegridlist.map(( { node }: any) => {
-//   return (
-//     <Card 
-//       title={node.title}
-//       link={node.link}
-//       description={node.description}
-//       photo={node.photo}
-//       key={node.id}
-//     />
-//   )
-// })}
 
 
 // interface Props {
@@ -29,8 +18,7 @@ import './archetype.css';
 // }
 
 export const opensourceGrid = (): JSX.Element => {
-  // const opensourcegridlist=data;
-  // console.log(data);
+
   return (
     <Layout>
     <div id="carraway">
@@ -139,21 +127,5 @@ export const opensourceGrid = (): JSX.Element => {
     </Layout>
   )
 }
-
-// export const query= graphql`
-//   {
-//     allProjectsYaml {
-//       edges {
-//         node {
-//           id
-//           title
-//           description
-//           photo
-//           link
-//         }
-//       }
-//     }
-//   }
-// `
 
 export default opensourceGrid;
