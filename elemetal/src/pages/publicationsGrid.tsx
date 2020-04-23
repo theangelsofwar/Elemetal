@@ -14,7 +14,7 @@ const publicationsGrid = (): JSX.Element => {
         <div id='page-wrap'>
           <div id='publicationsgrid' className='publicationsgrid'>
             <h2> Publications </h2>
-            <Publications path="/blog" />
+            <Publications />
             <a href="">    </a>
           </div>
 

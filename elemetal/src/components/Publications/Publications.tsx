@@ -12,12 +12,15 @@ import { useStaticQuery, graphql, Link } from 'gatsby';
   // />
 // )
 
-const Publications = (): JSX.Element => {
+
+const mediumCDNUrl = `https://cdn-images-1.medium.com/max/150/`
+
+const Publications = ({ data }: any): JSX.Element => {
+  // const posts = data.allMediumPost.edges;
 
 return (
   <React.Fragment>
     <div className="blog-list">
-
     </div>
     </React.Fragment>
     );
