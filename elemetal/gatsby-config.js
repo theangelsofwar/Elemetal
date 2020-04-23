@@ -84,6 +84,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/content/blog/`,
+      },
+    },
+    `gatsby-transformer-json`,
     `gatsby-image`,
     {
       resolve: `gatsby-plugin-nprogress`,
@@ -107,38 +115,59 @@ module.exports = {
       },
     },
     `gatsby-plugin-typescript`,
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-external-links`,
-            options: {
-              target: `_blank`,
-              rel: `nofollow noopener noreferrer`,
-            },
-          },
-        ],
-      },
-    },
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `
-        {
-          site {
-            siteMetadata {
-              title
-              description
-              siteUrl
-              site_url: siteUrl
-
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
             }
           }
-        }
-        `
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges
+                .filter(
+                  edgePost =>
+                    edgePost.node.frontmatter.isPublished === 'true',
+                )
+                .map(edge => {
+                  return Object.assign({}, edge.node.frontmatter, {
+                    description: edge.node.frontmatter.description,
+                    date: edge.node.frontmatter.datePublished,
+                    url:
+                      site.siteMetadata.siteUrl +
+                      edge.node.frontmatter.path,
+                    guid:
+                      site.siteMetadata.siteUrl +
+                      edge.node.frontmatter.path,
+                    custom_elements: [
+                      { 'content:encoded': edge.node.html },
+                      { tags: edge.node.frontmatter.tags.join(',') },
+                      {
+                        featuredImage:
+                          site.siteMetadata.siteUrl +
+                          edge.node.frontmatter.titleImage
+                            .childImageSharp.fixed.src,
+                      },
+                    ],
+                  })
+                })
+            },
+            query: blogPostsQuery,
+            output: '/rss.xml',
+            title: "Mario's RSS Feed",
+          },
+        ],
       },
     },
     {
