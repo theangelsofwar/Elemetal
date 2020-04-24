@@ -73,6 +73,7 @@
     "gatsby-transformer-remark": "^2.7.3",
     "gatsby-transformer-sharp": "^2.4.6",
     "gatsby-transformer-yaml": "^2.3.3",
+    "graphql-types": "^1.1.0",
     "gray-percentage": "^2.0.0",
     "http-proxy-middleware": "^1.0.3",
     "http-server": "^0.12.1",
