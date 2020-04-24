@@ -50,6 +50,8 @@ module.exports = {
   plugins: [
     `gatsby-plugin-chakra-ui`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sitemap`,
+
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -59,12 +61,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-emotion`,
-    // {
-    //   resolve: `gatsby-plugin-sitemap`,
-    //   options: {
-    //     output: siteConfig.sitemapPath,
-    //   },
-    // },
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
@@ -84,6 +80,20 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/posts/`,
+        name: `posts`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/assets`,
+        name: `assets`,
+      },
+    },
     // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {
@@ -97,6 +107,34 @@ module.exports = {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         color: `aliceblue`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 820,
+              showCaptions: true,
+            },
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              inlineCodeMarker: `÷`,
+            },
+          },
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-smartypants`,
+        ],
       },
     },
     {
@@ -123,6 +161,12 @@ module.exports = {
         path: `${__dirname}/src/pages`
       },
     },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
     `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -132,6 +176,12 @@ module.exports = {
     },
     `gatsby-plugin-netlify`,
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-generate-typings`,
+      options: {
+        dest: `./src/types/graphql.ts`,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
