@@ -43,14 +43,15 @@ const Description = styled.p`
   }
 `
 
-const StyledPhoto = styled.img`
+const StyledPhoto = styled.img`{
   width: 96%;
   height: 40vh;
   max-height: 40vh;
   margin: auto;
   object-fit: cover;
   border-radius: 66px;
-  border: 6px ridge rgba(222, 200, 255, .23);  
+  border: 6px ridge rgba(222, 200, 255, .23);
+}  
 `
 
 
@@ -68,7 +69,7 @@ const Card = ({ title, description, photo, link }: Props): JSX.Element => (
     <Description> {description} </Description>
     {link && (
       <p 
-        className="projectLink"
+        className='projectLink'
         onClick={() => window.open(`${link.url}`, "_blank")}
       >
         {link.title}

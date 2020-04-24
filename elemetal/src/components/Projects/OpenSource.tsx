@@ -1,6 +1,5 @@
 /* tslint:disable */
 import React from 'react';
-import styled from 'styled-components';
 import Card from '../Card';
 import Image from '../image';
 import { Grid } from '@chakra-ui/core';
