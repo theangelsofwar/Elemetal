@@ -24,7 +24,7 @@ import OpenSource from '../components/Projects/OpenSource';
 import Publications from '../components/Publications';
 import Contact from '../components/Info/Contact';
 import PageSlidebar from '../components/PageSlidebar';
-
+import '../fonts/Vogue.ttf';
 // augmented ui
 
 export const indexPageQuery = graphql`

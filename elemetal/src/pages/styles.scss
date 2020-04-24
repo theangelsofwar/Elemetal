@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap');
-
+@font-face {
+  font-family: 'Vogue';
+  src: local('Vogue'), url(../fonts/Vogue.ttf) format('truetype');
+}
 html {
   background: url('../images/building-architecture.jpg') no-repeat center center fixed;
   background-size: cover;
   color: aliceblue;
   // text-shadow: rgba(92, 119, 121, 0.769) 1.7px 1.7px .6px;
 
-  font-family: 'Oxanium';
+  font-family: 'Vogue';
 }
 
 body {
   color: ghostwhite;
-  font-family: 'Oxanium';
+  font-family: 'Vogue';
   // text-shadow: rgba(92, 119, 121, 0.769) 1.7px 1.7px .6px;
 
 }

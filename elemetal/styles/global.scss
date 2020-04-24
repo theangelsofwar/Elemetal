@@ -1,1 +1,5 @@
 $color-palette-1: rgba(36, 24, 42, 0.666);
+@font-face {
+  font-family: 'Vogue';
+  src: local('Vogue'), url(../fonts/Vogue.ttf) format('truetype');
+}
