@@ -19,20 +19,7 @@ const Content = styled.p`
   margin: 0;
 `;
 
-interface Props {
-  title: string;
-  slug: string;
-  description: string;
-  date: string;
-  timeToRead: number;
-}
-const GlassCard = ({ 
-  title,
-  slug,
-  description,
-  date,
-  timeToRead,
-}: Props): JSX.Element => {
+const GlassCard = (): JSX.Element => {
 
   return (
     <React.Fragment>

@@ -5,7 +5,7 @@ import Image from './image';
 //nested styled component
 // box-shadow: 0 1px 4px rgba(0, 0, 0, .19), 0 1px 1px rgba(0, 0, 1, .24);
 const StyledContainer = styled.div`
-  border: 17px ridge rgba(149, 210, 232, 0.502);
+  border: 17px ridge rgba(238, 239, 249, 0.926);
   display: inline-block;
   justify-content: center;
   align-items: center;
@@ -13,7 +13,7 @@ const StyledContainer = styled.div`
   magin: auto;
   padding: 17px;
   box-sizing: border-box;
-  background: rgba(54, 32, 65, 0.782);
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.83), rgba(112, 98, 119, 0.303));
   .projectLink {
     color: lightsteelblue;
     &:hover {

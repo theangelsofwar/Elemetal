@@ -5,14 +5,13 @@ import PortfolioItem from '../PortfolioItem';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import GlassCard from '../GlassCard';
 
-// import Fade from 'react-reveal/Fade';
-// import icon
-// const Background = () => (
+
+//post preview
   // <PortfolioItem 
   // title="The New Classical Age of GraphQL"
   // link="https://www.medium.com/"
   // />
-// )
+
 
 // const mediumCDNUrl = `https://cdn-images-1.medium.com/max/150/`
 //

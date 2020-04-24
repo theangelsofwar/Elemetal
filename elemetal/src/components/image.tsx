@@ -17,7 +17,7 @@ interface Props {
 const Image = (imageName : Props): JSX.Element => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: {eq: "../images/toptal.jpg" }) {
+      placeholderImage: file(relativePath: {eq: "../images/" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid

@@ -6,7 +6,9 @@
   flex-direction: row;
   flex-flow: column wrap;
   flex-grow: 1;
-  background-color: rgba(142, 166, 187, 0.296);
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.83), rgba(112, 98, 119, 0.303));
+  border-radius: 17px;
+  // background-color: rgba(142, 166, 187, 0.296);
   color: darkslategrey;
   font-weight: bold;
   max-height: 42vh;
