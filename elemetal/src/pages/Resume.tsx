@@ -24,8 +24,7 @@ const Resume = (): JSX.Element => (
             <DownloadURL 
               href={require('../../static/Resume/AngieYveRoaring20sResume.pdf')} 
               type="application/pdf"
-              ref={require('../../static/Resume/AngieYveRoaring20sResume.pdf')}
-              />
+              > <h2> Resume </h2> </DownloadURL>
           </div>
     </div>
   </div>

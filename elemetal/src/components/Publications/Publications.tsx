@@ -15,10 +15,9 @@ import GlassCard from '../GlassCard';
 // )
 
 // const mediumCDNUrl = `https://cdn-images-1.medium.com/max/150/`
-
+//
 const Publications = (): JSX.Element => {
   
-
   return (
     <React.Fragment>
       <div className="blog-list">
