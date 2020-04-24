@@ -5,7 +5,7 @@ import Layout from '../components/layout';
 import PageSlidebar from '../components/PageSlidebar';
 import './archetype.css';
 import styled from 'styled-components';
-import { File } from 'graphql-types';
+// import { File } from 'graphql-types';
 
 const DownloadURL = styled.a`
   display: none;
@@ -22,9 +22,9 @@ const Resume = (): JSX.Element => (
         <div id='page-wrap'>
           <div id='resume' className='resume'>
             <DownloadURL 
-              href={require('../../static/Resume/AngieYveRoaring20sResume.docx')} 
+              href={require('../../static/Resume/AngieYveRoaring20sResume.pdf')} 
               type="application/pdf"
-              ref={require('../../static/Resume/AngieYveRoaring20sResume.docx')}
+              ref={require('../../static/Resume/AngieYveRoaring20sResume.pdf')}
               />
           </div>
     </div>

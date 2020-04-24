@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Vogue';
+  src: local('Vogue'), url(../fonts/Vogue.ttf) format('truetype');
+}
+
 .bio, .opensourcegrid, .contactinqueries, .publicationsgrid, .resume {
   min-height: 90vh;
   margin: 25px;

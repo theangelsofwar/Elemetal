@@ -94,47 +94,12 @@ module.exports = {
         name: `assets`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `blog`,
-    //     path: `${__dirname}/content/blog/`,
-    //   },
-    // },
     `gatsby-transformer-json`,
     `gatsby-image`,
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         color: `aliceblue`,
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 820,
-              showCaptions: true,
-            },
-          },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {
-              inlineCodeMarker: `÷`,
-            },
-          },
-          `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
-        ],
       },
     },
     {
@@ -161,12 +126,6 @@ module.exports = {
         path: `${__dirname}/src/pages`
       },
     },
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
     `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -176,12 +135,6 @@ module.exports = {
     },
     `gatsby-plugin-netlify`,
     `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-plugin-generate-typings`,
-      options: {
-        dest: `./src/types/graphql.ts`,
-      },
-    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

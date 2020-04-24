@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap');
-
+@font-face {
+  font-family: 'Vogue';
+  src: local('Vogue'), url(../fonts/Vogue.ttf) format('truetype');
+}
 
 html {
-  font-family: 'Oxanium', sans-serif;
+  font-family: 'Vogue','Oxanium', sans-serif;
   box-sizing: border-box;
   height: 100vh;
   width: 100vw;
@@ -121,7 +124,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: 'Oxanium', monospace, monospace;
+  font-family:  'Vogue','Oxanium', monospace, monospace;
   font-size: 1em;
 }
 figure {
@@ -212,7 +215,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em 'Oxanium', georgia, serif;
+  font: 112.5%/1.45em 'Vogue','Oxanium', georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -227,7 +230,7 @@ html {
 }
 body {
   color: hsla(122, 13%, 54%, 0.8);
-  font-family: 'Oxanium', georgia, serif;
+  font-family: 'Vogue','Oxanium', georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -257,7 +260,7 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Oxanium', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Vogue','Oxanium', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -274,7 +277,7 @@ h2 {
   padding-top: 0;
   margin-bottom: inherit;
   color: inherit;
-  font-family: 'Oxanium', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Vogue','Oxanium', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -291,7 +294,7 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Oxanium', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Vogue','Oxanium', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -308,7 +311,7 @@ h4 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Oxanium', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Vogue','Oxanium', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -325,7 +328,7 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Oxanium', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Vogue','Oxanium', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -342,7 +345,7 @@ h6 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Oxanium', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Vogue','Oxanium', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
