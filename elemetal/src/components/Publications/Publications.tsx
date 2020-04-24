@@ -3,7 +3,7 @@ import React from 'react';
 // import { useStaticQuery, graphql, Link } from 'gatsby';
 import GlassCard from '../GlassCard';
 import { Grid } from '@chakra-ui/core';
-
+import '../styless.css';
 
 //post preview
   // <PortfolioItem 
@@ -17,6 +17,7 @@ import { Grid } from '@chakra-ui/core';
 const Publications = (): JSX.Element => (
   <React.Fragment>
     <div className='publications' id='publications'>
+      
       <Grid templateColumns="repeat(2, 1fr)" gap={6}>
         <GlassCard 
           photo={require("../../images/artemis_publications.jpg")}
@@ -27,8 +28,7 @@ const Publications = (): JSX.Element => (
           }}
           description="Featured in Developer recommended section"
         />
-
-GlassCard 
+        <GlassCard 
           photo={require("../../images/projectartemismedium.jpg")}
           title="The New Classical Age of GraphQL: Artemis Developer Tools"
           link={{
@@ -37,8 +37,7 @@ GlassCard
           }}
           description="RESTful architecture, though still relevant, is intensely antiquated in our systems today, in government and in private organizations. "
         />
-
-        GlassCard 
+        <GlassCard 
           photo={require("../../images/redethermanifesto.jpg")}
           title="What is the Red Ether Project?"
           link={{

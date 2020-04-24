@@ -72,21 +72,17 @@ state={{ prevPath: location.pathname }}
 
 const GlassCard = ({ title, description, photo, link }: Props): JSX.Element => (
   <StyledGlass>
-  <div id='glassanimals' >
- 
     <StyledPhoto src={photo} />
       <Title> {title} </Title>
       <Description> {description} </Description>
       {link && (
         <p
-          className='glasscard'>
+          className='glasscard'
           onClick={() => window.open(`${link.url}`, "_blank")} 
           >
           {link.title}
         </p>
       )}
-   
-    </div>
     </StyledGlass>
   );
 

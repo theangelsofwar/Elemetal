@@ -55,7 +55,6 @@ const OpenSource = (): JSX.Element => (
         }}
         description="Verifire-Track California Wild Fires on the Map in Real Time, using React, Socket IO, Maps API"
         />
-    
         <Card 
         photo={require("../../images/voltaire.jpg")}
         title="Vote-aire A Decentralized Voting App for Equality"
