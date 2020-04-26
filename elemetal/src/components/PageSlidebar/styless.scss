@@ -9,7 +9,8 @@
 .bm-menu {
   box-sizing: border-box;
   box-shadow: rgba(171, 178, 191, 0.817) 3px -3px 3px;
-  background: rgba(143, 121, 210, 0.433);
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.83), rgba(112, 98, 119, 0.303));
+  // background: rgba(143, 121, 210, 0.433);
   margin: auto;
   font-size: 1.1em;
   font-weight: 4.2px;
@@ -22,7 +23,7 @@
   box-sizing: border-box;
   box-shadow: 3px floralwhite;
   display: inline-flex;
-
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.83), rgba(112, 98, 119, 0.303));
   /* flex-direction: row; */
   
   /* flex: 0 0 190px; */
@@ -37,7 +38,7 @@
 }
 
 .bm-cross {
-  background-color: rgba(255, 0, 68, 0.762);
+  background-color: rgba(54, 58, 55, 0.762);
 }
 
 
@@ -64,7 +65,7 @@
   border-radius: 33px;
   width: 9vw;
   height: 9vh;
-  background-color: rgba(255, 0, 68, 0.762);
+  background-color: rgba(244, 249, 158, 0.762);
 }
 
 /* .bm-burger-bars {
@@ -104,7 +105,7 @@
   background-color: rgba(145, 205, 218, 0.591);
   color: floralwhite;
   text-shadow: powderblue .6px .6px;
-  border-radius: 66px 17px 66px 17px;
-  border: 3px solid rgba(240, 243, 244, 0.358);
+  border-radius: 17px;
+  border: 3px solid rgba(209, 214, 215, 0.043);
   font-weight: 6px;
 }
