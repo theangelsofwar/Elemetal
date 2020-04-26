@@ -22,7 +22,7 @@ const Resume = (): JSX.Element => (
         <div id='page-wrap'>
           <div id='resume' className='resume'>
             <DownloadURL 
-              href={require('../../static/Resume/AngieYveRoaring20sResume.pdf')} 
+              href={require('../../static/Resume/AngieYveCV.docx.pdf')} 
               type="application/pdf"
               > <h2> Resume </h2> </DownloadURL>
           </div>
