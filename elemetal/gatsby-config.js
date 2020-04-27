@@ -43,8 +43,8 @@ module.exports = {
     ],
     siteUrl: `http://www.angiechangpagne.com`,
     social: {
-      linkedin: `angiechangpagne`,
-      github: `angiechangpagne`,
+      linkedin: `@angiechangpagne`,
+      github: `@angiechangpagne`,
     },
   },
   plugins: [

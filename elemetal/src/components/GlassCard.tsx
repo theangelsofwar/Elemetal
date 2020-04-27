@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'gatsby';
 //for medium artcles
 import Image from './image';
+import Glow  from 'hoverglow';
 
 const StyledGlass = styled.div`
   border: 17px ridge rgba(238, 239, 249, 0.926);
@@ -36,9 +37,8 @@ const Title = styled.h2`
 
 const StyledPhoto = styled.img`
 {
-  width: 96%;
-  height: 40vh;
-  max-height: 40vh;
+  width: 76vw;
+  min-height: 40vh;
   margin: auto;
   object-fit: cover;
   border-radius: 66px;
@@ -71,7 +71,21 @@ state={{ prevPath: location.pathname }}
 </Link> */}
 
 const GlassCard = ({ title, description, photo, link }: Props): JSX.Element => (
+ 
   <StyledGlass>
+     <Glow 
+      full
+      inverse
+      scale={0.9}
+      boundPct={100}
+      color="ghostwhite"
+      opacity={0.17}
+      resist={80}
+      borderReadius={0}
+      shadowSize={77}
+      shadowOffsetTop={13}
+      zIndex={100}
+    />
     <StyledPhoto src={photo} />
       <Title> {title} </Title>
       <Description> {description} </Description>

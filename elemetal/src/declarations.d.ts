@@ -4,3 +4,5 @@ declare module 'react-burger-menu';
 declare module 'styled-components';
 declare module 'rebass';
 declare module 'graphql-types';
+declare module 'hoverglow';
+declare module 'react-see-through';
