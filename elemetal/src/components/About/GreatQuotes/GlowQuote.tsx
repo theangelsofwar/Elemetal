@@ -1,9 +1,17 @@
 import React from 'react'
 import '../../../carraway/glow/glow.scss';
-const GlowQuote = (props: any): JSX.Element => (
+
+interface Props {
+  data: any
+}
+
+const GlowQuote = ({ data } : Props): JSX.Element => (
   <React.Fragment>
-    <div id='glow'>
-      {props.children}
+    <div className='glow'>
+      {data}
+    <h3> {data["quote"]} </h3>
+    <h4> {data["author"]} </h4>
+    <h4> {data["source"]} </h4>
     </div>
   </React.Fragment>
 

@@ -4,6 +4,7 @@ import Layout from '../components/layout';
 import PageSlidebar from '../components/PageSlidebar';
 import './archetype.css';
 import Image from '../components/image';
+import GlowQuotesContainer from '../components/About/GreatQuotes/GlowQuotesContainer';
 //      <button id="glow" className="glow" onClick={handleClick}> Some of My Favorite Quotes </button>
 const bio = (): JSX.Element => {
   const handleClick = () => {
@@ -58,8 +59,11 @@ const bio = (): JSX.Element => {
             <p> Some Awesome articles about our future landscape</p>
 
             </section>
+            <div className='glow'>
+
+            </div>
             
-            
+            <GlowQuotesContainer />
             <p> Playlist Recommendations: </p>
 
             

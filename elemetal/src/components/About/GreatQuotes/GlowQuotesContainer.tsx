@@ -27,12 +27,10 @@ const someQuotes=[{
 const GlowQuotesContainer = (): JSX.Element => {
   return (
     <React.Fragment>
-    <div id='glowquotescontainer' className='glow-quotes-container'>
+    <div id='glowquotescontainer' className='glow'>
       {someQuotes.map((element) => {
         return (
-          <GlowQuote>
-            {element}
-          </GlowQuote>
+          <GlowQuote data={JSON.stringify(element)} />
         )
       })
       }
