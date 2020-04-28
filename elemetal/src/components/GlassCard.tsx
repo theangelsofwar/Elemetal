@@ -73,30 +73,18 @@ state={{ prevPath: location.pathname }}
 const GlassCard = ({ title, description, photo, link }: Props): JSX.Element => (
  
   <StyledGlass>
-     <Glow 
-      full
-      inverse
-      scale={0.9}
-      boundPct={100}
-      color="ghostwhite"
-      opacity={0.17}
-      resist={80}
-      borderReadius={0}
-      shadowSize={77}
-      shadowOffsetTop={13}
-      zIndex={100}
-    />
-    <StyledPhoto src={photo} />
-      <Title> {title} </Title>
-      <Description> {description} </Description>
-      {link && (
+  <Title> {title} </Title>
+  {link && (
         <p
           className='glasscard'
           onClick={() => window.open(`${link.url}`, "_blank")} 
           >
+          <StyledPhoto src={photo} />
           {link.title}
+
         </p>
       )}
+      <Description> {description} </Description>
     </StyledGlass>
   );
 

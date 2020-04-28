@@ -25,6 +25,7 @@ import Publications from '../components/Publications';
 import Contact from '../components/Info/Contact';
 import PageSlidebar from '../components/PageSlidebar';
 import '../fonts/Vogue.ttf';
+import '../carraway/glow/glow.scss';
 // augmented ui
 
 export const indexPageQuery = graphql`

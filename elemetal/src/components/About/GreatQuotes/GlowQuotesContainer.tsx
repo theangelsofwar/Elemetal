@@ -10,7 +10,7 @@ const someQuotes=[{
 }, {
   author: "Donnie Darko",
   source: "",
-  quote: "<h4>Destruction<h4> is a <i>form</i> of <b> Creation <b> <br></br>"
+  quote: "Destruction is a form of Creation"
 }, {
   author: "Travis Scott",
   source: "The Butterfy Effect",

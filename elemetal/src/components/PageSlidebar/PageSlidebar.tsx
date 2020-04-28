@@ -6,6 +6,7 @@ import './styless.scss';
 // import '../../../node_modules/augmented-ui/augmented.css';
 import Layout from '../layout';
 import SEO from '../seo';
+import '../../carraway/glow/glow.scss';
 
 //Link to="/"
 //move this to be nested in the layout

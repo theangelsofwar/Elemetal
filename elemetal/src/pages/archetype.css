@@ -3,7 +3,7 @@
   src: local('Vogue'), url(../fonts/Vogue.ttf) format('truetype');
 }
 
-.bio, .opensourcegrid, .contactinqueries, .publicationsgrid, .resume {
+.bio, .opensourcegrid, .contactinqueries, .publicationsgrid, .resume{
   min-height: 90vh;
   margin: 25px;
   max-width: 90vw;
@@ -13,8 +13,44 @@
   border-radius: 24px;
 }
 
+form{
+    position: flex;
+    flex-direction: row;
+    margin: auto;
+    align-content: center;  
+}
 
-h1 {
+.form-group{
+  margin: 2vw;
+  justify-content: center;
+}
+
+label{
+  margin: 3vw;
+  padding: 2vw;
+}
+
+input, .content{
+  padding: 6vw;
+  margin: 2vw;
+  background-image: linear-gradient(to bottom right,rgba(35, 36, 38, 0.755), rgba(81, 79, 82, 0.625));
+  border-radius: 17px;
+}
+
+button{
+  box-sizing: border-box;
+  align-content: center;
+  background-color: rgba(82, 78, 78, 0.776);
+  border-radius: 17px;
+}
+
+button:hover{
+  background-color: rgba(184, 68, 222, 0.42);
+  border-radius: 17px;
+}
+
+
+h1{
   font-size: 3.7em;
   font-weight: 3px;
   text-align: center;

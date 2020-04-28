@@ -14,6 +14,7 @@ import PageSlidebar from './PageSlidebar';
 // import PropTypes from "prop-types";
 import Header from './header';
 //<Header />
+import '../carraway/glow/glow.scss';
 
 interface Props {
   children: React.ReactNode

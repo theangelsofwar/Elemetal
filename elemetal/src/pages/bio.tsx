@@ -4,8 +4,12 @@ import Layout from '../components/layout';
 import PageSlidebar from '../components/PageSlidebar';
 import './archetype.css';
 import Image from '../components/image';
+import '../carraway/glow/glow.scss';
+
 import GlowQuotesContainer from '../components/About/GreatQuotes/GlowQuotesContainer';
 //      <button id="glow" className="glow" onClick={handleClick}> Some of My Favorite Quotes </button>
+//   <h5> A Great Reading List For Real Life Inspiration </h5>
+//{/* <p> Some Awesome articles about our future landscape</p> */}
 const bio = (): JSX.Element => {
   const handleClick = () => {
     return;
@@ -18,8 +22,8 @@ const bio = (): JSX.Element => {
       <PageSlidebar />
         <div id='page-wrap'>
           <div id='bio' className='bio'>
-            <h1> Welcome to My Digital Ether </h1>
-            
+           <div className='glow'> <h1> Welcome to My Digital  Ether </h1></div>
+          
             <h1> {'< Angie />'}</h1> 
             <br />
             <hr />
@@ -28,8 +32,10 @@ const bio = (): JSX.Element => {
             <span id='tao' className='tao'> 
             <p> My name is Angela, but you can call me Angie. I am a Frontend and Fullstack Web Developer based in Los Angeles, CA.  
                 I work predominantly with React, Typescript, GraphQL, Webpack and Progressive Web Apps as well as Node Express, MongoDB, PostgresQL, Travis and Docker. </p>
+                
             <img src={require('../images/toptal.jpg')} alt="Angie.Stack" />            
             </span>
+            <center><p>       _____________________________________________</p></center>
             <br />
             <p> Besides Technology, I am fascinated by philosophy, architecture, design, and I try to live by the idea of applying concepts and patterns from different walks of life and embed those ideas into technology. Growing up, I would often contemplate our existence, the very idea of </p>  <b><h1> a void. </h1></b>
             <p> I've later reached the conclusion that when you try to understand life, you figure that coding is a much simpler thing to understand... I then realized that my aim in life is to push past the edges of reality. </p>
@@ -49,19 +55,11 @@ const bio = (): JSX.Element => {
                 Node, Express, MongoDB, AWS, Docker, Jest, Enzyme, BCrypt, JWT, OAuth, Git, Babel, Web Sockets
               </li>
             </ul>
+            <center><p>       _____________________________________________</p></center>
             <br />
             <section>
 
-
-
-
-            <h5> A Great Reading List For Real Life Inspiration </h5>
-            <p> Some Awesome articles about our future landscape</p>
-
             </section>
-            <div className='glow'>
-
-            </div>
             
             <GlowQuotesContainer />
             <p> Playlist Recommendations: </p>
