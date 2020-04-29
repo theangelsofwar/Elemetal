@@ -120,6 +120,7 @@ export const opensourceGrid = (): JSX.Element => {
           <p>  The Future is Distributed among the humans  </p>
 
         </div>
+        <footer> Developer | Futurist | Designer </footer>
 
       </div>
     

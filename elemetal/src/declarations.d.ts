@@ -6,3 +6,4 @@ declare module 'rebass';
 declare module 'graphql-types';
 declare module 'hoverglow';
 declare module 'react-see-through';
+declare module 'react-pdf';

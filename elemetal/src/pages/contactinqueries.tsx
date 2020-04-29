@@ -67,6 +67,8 @@ const contactInqueries = (): JSX.Element => {
             </form>
             </section>
           </div>
+          <footer> Developer | Futurist | Designer </footer>
+
         </div>
       </div>
     </Layout>

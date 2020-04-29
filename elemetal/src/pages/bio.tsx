@@ -37,13 +37,13 @@ const bio = (): JSX.Element => {
             </span>
             <center><p>       _____________________________________________</p></center>
             <br />
-            <p> Besides Technology, I am fascinated by philosophy, architecture, design, and I try to live by the idea of applying concepts and patterns from different walks of life and embed those ideas into technology. Growing up, I would often contemplate our existence, the very idea of </p>  <b><h1> a void. </h1></b>
+            <p> Besides Technology, I am fascinated by philosophy, architecture, design, and I try to live by the idea of applying concepts and patterns from different walks of life and embed those ideas into technology. Growing up, I would often contemplate our existence, the very idea of a  <b> void. </b></p> 
             <p> I've later reached the conclusion that when you try to understand life, you figure that coding is a much simpler thing to understand... I then realized that my aim in life is to push past the edges of reality. </p>
          
             <p> Born and raised in a small bubble of a suburb right outside of Manhattan, I quickly moved to Los Angeles after College because deep down I knew that I am a Californian at heart. I wasn't wrong! </p>
             <p> Hollywood and the growth in Tech in this amazing city is what excites and inspires me. My original background is in FinTech and Java, though these days I have become encapsulated by Javascript in the Web, especially with flux architecturural patterns like React and Redux. </p>
             <p> I believe that Programming is like an Art form, and Art is what life is all about. </p>
-            <p> I would also say that I am a futurist, and I like to constantly evolve and change. I've been quite intrigued by blockchain technology, designing decentralized systems and applications with React, Typescript, GraphQL: merging major Web2 patterns into Solidity Smart Contracts, AssemblyScript and Rust Programming Language. I am excited to see what the future of the decentralized Internet 
+            <p> I would also say that I am a futurist, and I like to constantly evolve and change. I believe that we can never be good enough, and we can always do better. I've been quite intrigued by blockchain technology, designing decentralized systems and applications with React, Typescript, GraphQL: merging major Web2 patterns into Solidity Smart Contracts, AssemblyScript and Rust Programming Language. I am excited to see what the future of the decentralized Internet 
               holds and am eager to take that step in joining the movement. </p> 
             
             <p> Here are some of the technologies I enjoy using(in no particular order): </p>

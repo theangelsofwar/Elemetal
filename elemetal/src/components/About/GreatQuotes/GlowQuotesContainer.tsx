@@ -17,7 +17,7 @@ const someQuotes=[{
   quote: "For this life we cannot change"
 }, {
   author: "Ralph Waldo Emerson",
-  source: "Self Reliance, Enlightenment",
+  source: "Self Reliance, The Enlightenment Period",
   quote: "Let us advance on Chaos and the Dark"
 }]
 //make random ever 4 words in bold

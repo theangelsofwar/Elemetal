@@ -38,6 +38,15 @@ const Publications = (): JSX.Element => (
           description="RESTful architecture, though still relevant, is intensely antiquated in our systems today, in government and in private organizations. "
         />
         <GlassCard 
+          photo={require("../../images/vogueReact.jpg")}
+          title="Vogue's 73 Questions with React.JS"
+          link={{
+            url: "https://medium.com/celestial-development/vogues-73-questions-with-react-js-c6c172ccf050?source=friends_link&sk=ba91b29f5c8ba47b10ec1694126061c1",
+            title: "Vogue 73 Questions with React"
+          }}
+          description="Vogue: So you’re a framework, but how did you get started?"
+        />
+        <GlassCard 
           photo={require("../../images/redethermanifesto.jpg")}
           title="What is the Red Ether Project?"
           link={{
