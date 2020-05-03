@@ -18,7 +18,6 @@ const bio = (): JSX.Element => {
 
   return (
     <Layout>
-
     <div id="carraway">
       <PageSlidebar />
         <div id='page-wrap'>
@@ -70,7 +69,7 @@ const bio = (): JSX.Element => {
                 Solidity, Ethereum, Blockchain, Rust, decentralized React Applications
               </li>
             </ul>
-            <center><div id='glow' className='glow'> <p>     _____________________________________________ </p></div> </center>
+            <center> <div id='glow' className='glow'> <p>     _____________________________________________ </p></div> </center>
             <br />
             <section>
 
@@ -80,7 +79,7 @@ const bio = (): JSX.Element => {
             <p> Playlist Recommendations: </p>
             <br />
 
-            <p> <footer> Developer | Futurist | Designer </footer></p>
+            <p> <footer> Developer | Futurist | Designer </footer> </p>
           </div>
        </div>
 

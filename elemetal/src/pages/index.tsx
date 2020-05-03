@@ -7,7 +7,7 @@ import React, {useEffect, useState} from 'react';
 import './styles.scss';
 // import bio from '../components/bio';
 // import {Box, Flex} from 'rebass'
-import Resume from './Resume';
+// import Resume from './Resume';
 import Technologies from '../components/Technologies';
 //<Link to="/page-2/" />
 import Showcase from '../components/Showcase';
@@ -80,6 +80,8 @@ const IndexPage = (props: any): JSX.Element => {
           `open-source`,
           `los-angeles`,
           `decentralized`,
+          `ethereum`,
+          `blockchain-developer`,
           `dApp`,
           `builtinla`,
         ]}
@@ -92,16 +94,16 @@ const IndexPage = (props: any): JSX.Element => {
           <div className='nav-scroll'>   
           <NavBar
             items={navbarItems}
-            offset={-17}
-            duration={500}
+            offset={-60}
+            duration={200}
             delay={0}
-            height={85}
-            backgroundColor='rgba(29, 24, 31, 0.872)'
-            color='ghostwhite'
-            coverWidth={`96%`}
-            navWidth={`65%`}
-            linkClass='link'
-            activeLinkClass='activeLink'
+            height={105}
+            backgroundColor={`#061716e2`}
+            color={'ghostwhite'}
+            coverWidth={`117`}
+            navWidth={`96`}
+            linkClass={'link'}
+            activeLinkClass={'activeLink'}
           />
           </div>
           

@@ -13,6 +13,8 @@ const Archives = (): JSX.Element => (
             </div>
           </div>
     </div>
+    <footer> Developer | Futurist | Designer </footer>
+
   </Layout>
 )
 
