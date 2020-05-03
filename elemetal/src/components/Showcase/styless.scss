@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap');
 
-
 .showcase {
   display: flex;
   flex-direction: row;
   flex-flow: column wrap;
   flex-grow: 1;
-  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.83), rgba(112, 98, 119, 0.303));
+  font-size: 1.0rem;
+  background-image: linear-gradient(to bottom right, rgba(112, 98, 119, 0.303), rgba(255, 255, 255, 0.83), rgba(255, 255, 255, 0.83), rgba(255, 255, 255, 0.83), rgba(112, 98, 119, 0.303));
   border-radius: 17px;
   // background-color: rgba(142, 166, 187, 0.296);
   color: darkslategrey;
@@ -30,9 +30,9 @@
 
 h1 {
   position: relative;
-  color: ghostwhite;
+  color: darkslategray;
   font-size: 3.2em;
-  letter-spacing: .3em;
+  letter-spacing: .2em;
   // animation: glitch-skew 1s infinite linear alternate-reverse;
 
   // &::before{
@@ -82,8 +82,8 @@ h1 {
 // }
 
 h3 {
-  font-size: 2.1em;
-  color: aliceblue;
+  font-size: 2.6em;
+  color: darkslategray;
   text-align: center;
   /* text-shadow: rgba(66, 49, 67, 0.789) 1.7px 1.7px .6px; */
 
@@ -91,5 +91,5 @@ h3 {
 
 .lalocals {
   font-size: larger;
-  text-shadow: lightgoldenrodyellow 2px 2px 2px;
+  text-shadow: rgb(210, 223, 250) 2px 2px 2px;
 }

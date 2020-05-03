@@ -8,7 +8,7 @@ const path = require('path');
 const siteMetadata= {
   name: `Elemetal`,
   author: `Yve Vestal Titan (angiechangpagne)`,
-  description: `Software Developer based in Los Angeles, Working to Code Through the Edges of Reality`,
+  description: `Software Developer based in Los Angeles, my mission is to Code Through the Edges of Reality`,
   social: {
     linkedin: `angiechangpagne`,
   },
@@ -92,7 +92,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         ...siteMetadata,
-        name: `angie-chang`,
+        name: `angie-yve-chang`,
         lang: `en-US`,
         short_name: `YVT`,
         start_url: `/`,

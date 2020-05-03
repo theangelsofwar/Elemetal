@@ -5,28 +5,29 @@ import Image from './image';
 //nested styled component
 // box-shadow: 0 1px 4px rgba(0, 0, 0, .19), 0 1px 1px rgba(0, 0, 1, .24);
 const StyledContainer = styled.div`
-  border: 17px ridge rgba(238, 239, 249, 0.926);
+  border: 3px ridge rgba(238, 239, 249, 0.326);
   display: inline-block;
   justify-content: center;
   align-items: center;
   border-radius: 42px;
-  magin: auto;
-  padding: 17px;
+  margin: auto;
+  padding: 1.3em;
   box-sizing: border-box;
-  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.83), rgba(112, 98, 119, 0.303));
+  background-image: linear-gradient(to bottom right, rgba(112, 98, 119, 0.303), rgba(255, 255, 255, 0.83),  rgba(255, 255, 255, 0.83));
   .projectLink {
-    color: lightsteelblue;
+    color: rgba(54, 32, 65, 0.782);
     &:hover {
-      color: deeppink;
+      color: rgba(78, 196, 194, 0.913);
       cursor: pointer;
     }
   }
 `
 const Title = styled.h2`
-  color: aliceblue;
+  color: darkslategray;
+  font-size: 1.3em;
   font-weight: 300;
   position: center;
-  padding: 6px;
+  padding: 1em;
   margin: auto;
   @media (max-width: 500px) {
     font-size: 1rem;
@@ -34,7 +35,7 @@ const Title = styled.h2`
 `
 
 const Description = styled.p`
-  color: ghostwhite;
+  color: darkslategray;
   font-weight: 2px;
   margin: auto;
   padding: 2px;
@@ -46,11 +47,11 @@ const Description = styled.p`
 const StyledPhoto = styled.img`{
   width: 96%;
   height: 40vh;
-  max-height: 40vh;
+  max-height: 30vh;
   margin: auto;
   object-fit: cover;
   border-radius: 66px;
-  border: 6px ridge rgba(222, 200, 255, .23);
+  border: 3px ridge rgba(222, 200, 255, .23);
 }  
 `
 

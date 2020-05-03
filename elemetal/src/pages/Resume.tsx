@@ -3,7 +3,7 @@ import PortfolioItem from '../components/PortfolioItem';
 import React from 'react';
 import Layout from '../components/layout';
 import PageSlidebar from '../components/PageSlidebar';
-import './archetype.css';
+import './archetype.scss';
 import { Document, Page } from 'react-pdf';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 

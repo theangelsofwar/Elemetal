@@ -1,3 +1,18 @@
 header {
   background-color: gray;
 }
+
+h3 {
+  font-size: 1.3em;
+  color: darkslategray;
+}
+
+
+.techno {
+  box-sizing: border-box;
+  border-radius: 17px;
+  margin: auto;
+  padding: 1.3em;
+  color: darkslategray;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.83), rgba(255, 255, 255, 0.83));
+}

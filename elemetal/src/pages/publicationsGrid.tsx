@@ -1,7 +1,8 @@
 import React from 'react';
 import Layout from '../components/layout';
 import PageSlidebar from '../components/PageSlidebar';
-import './archetype.css';
+import '../carraway/glow/glow.scss';
+import './archetype.scss';
 
 import Publications from '../components/Publications';
 
@@ -13,13 +14,15 @@ const publicationsGrid = (): JSX.Element => {
       <PageSlidebar />
         <div id='page-wrap'>
           <div id='publicationsgrid' className='publicationsgrid'>
-            <h1> Publications </h1> <br />
+            <div id='glow' className='glow'><p><h1> Publications </h1> </p></div> 
+            <br />
             <Publications />
             <a href="">    </a>
           </div>
-
         </div>
       </div>
+      <footer> Developer | Futurist | Designer </footer>
+
     </Layout>
   );
 };

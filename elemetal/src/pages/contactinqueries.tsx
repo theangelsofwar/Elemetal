@@ -3,9 +3,8 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import PageSlidebar from '../components/PageSlidebar';
-import './archetype.css';
+import './archetype.scss';
 import { SeeThrough } from 'react-see-through';
-
 import '../carraway/glow/glow.scss';
 const contactInqueries = (): JSX.Element => {
 
@@ -29,9 +28,10 @@ const contactInqueries = (): JSX.Element => {
       <PageSlidebar />
         <div id='page-wrap'>
           <div id='contactinqueries' className='contactinqueries'>
-          <center><text> Let's Talk Business...</text></center>
+          <center> <text> Let's Talk Business... </text> </center>
             <section>
-            <h1> Contact for Queries </h1>
+            <br/>
+            <div id='glow' className='glow'> <p> <h1> Contact for Queries </h1> </p> </div>
             <form method='post' action='#'>
               <center>
               <div className='form-group'>
@@ -58,17 +58,16 @@ const contactInqueries = (): JSX.Element => {
 
               <div className='form-group'>
               <label>
-               {"Content          "}
+               {"Content      "}
                 <textarea className='content' id='content' rows={5} />
               </label>
               </div>
-             <div className='glow' id='glow'> <a className='email' href="mailto:yvevestal@gmail.com"><button type='submit' onClick={handleClick}>  Send It </button> </a> </div>
-              </center>
+            <a className='email' href="mailto:yvevestal@gmail.com"> <button type='submit' onClick={handleClick}> <div className='glow' id='glow'> <p>  Send It </p> </div> </button> </a>
+            </center>
             </form>
             </section>
           </div>
           <footer> Developer | Futurist | Designer </footer>
-
         </div>
       </div>
     </Layout>

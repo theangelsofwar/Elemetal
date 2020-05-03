@@ -8,9 +8,7 @@
 }
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(https://images.pexels.com/photos/2166927/pexels-photo-2166927.jpeg?cs=srgb&dl=animal-aquarium-aquatic-2166927.jpg&fm=jpg)
-      no-repeat center center/cover;
+  background-image: linear-gradient(to bottom right, rgba(91, 98, 101, 0.386), rgba(220, 245, 249, 0.77));
   font-family: 'Vogue', 'Oxanium', Helvetica, sans-serif;
 }
 
@@ -24,7 +22,7 @@ body {
 a {
   font-size: 1.5rem;
   padding: 1rem 3rem;
-  color: #f4f4f4;
+  color: ghostwhite;
   text-transform: uppercase;
 }
 
@@ -36,7 +34,7 @@ a {
 }
 
 .btn:hover {
-  box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+  box-shadow: 1px rgba(146, 148, 248, 0.4);
 }
 
 .btn:before {

@@ -8,11 +8,10 @@ import { Grid } from '@chakra-ui/core';
 import SEO from '../components/seo';
 import Layout from '../components/layout';
 import PageSlidebar from '../components/PageSlidebar';
-import './archetype.css';
+import '../carraway/glow/glow.scss';
+import './archetype.scss';
 //add ufo logo for home icon
 //retro futuristic wave.net
-
-
 // interface Props {
 //   data: any
 // }
@@ -25,8 +24,10 @@ export const opensourceGrid = (): JSX.Element => {
       <PageSlidebar />
         <div id='page-wrap'>
             <br />
-          <h1> Open Source Projects </h1>
+         
+         <div id='glow' className='glow'> <p> <h1> Open Source Projects </h1> </p> </div>
           <SEO title="Open Source Projects" />
+  
           <br />
           <div id='opensourcegrid' className='opensourcegrid'>
         
@@ -115,9 +116,10 @@ export const opensourceGrid = (): JSX.Element => {
             description="Coming Soon..."
             />
           </Grid>
-          
+          <br />
+
           </section>
-          <p>  The Future is Distributed among the humans  </p>
+          <center><div id='glow' className='glow'> <p>  The Future is Distributed among the humans  </p></div></center>
 
         </div>
         <footer> Developer | Futurist | Designer </footer>

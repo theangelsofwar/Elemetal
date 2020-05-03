@@ -60,11 +60,11 @@ template {
 }
 
 footer {
-  color: ghostwhite;
+  color: lightgray;
   text-align: center;
   // text-shadow: hotpink 1.7px 1.7px .6px;
-  background-color: rgba(54, 32, 65, 0.782);
-  color: rgba(149, 210, 232, 0.502);
+  background-color: rgba(110, 207, 237, 0.098);
+  background-image: linear-gradient(to bottom, #0abab5, rgba(255, 255, 255, 0));
   margin: auto;
   padding: .66rem;
   position: relative;
@@ -411,6 +411,7 @@ p {
   margin-right: 0;
   margin-top: 0;
   padding-bottom: 0;
+  color: inherit;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
@@ -621,6 +622,7 @@ td:last-child {
 tt,
 code {
   background-color: hsla(0, 0%, 0%, 0.04);
+  color: rgba(78, 196, 194, 0.913);
   border-radius: 3px;
   font-family: 'Vogue', "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
     "Liberation Mono", Menlo, Courier, monospace;

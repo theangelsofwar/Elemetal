@@ -3,9 +3,10 @@
   src: local('Vogue'), url(../fonts/Vogue.ttf) format('truetype');
 }
 
-.bio, .opensourcegrid, .contactinqueries, .publicationsgrid, .resume{
+.bio, .opensourcegrid, .contactinqueries, .publicationsgrid, .resume {
   min-height: 90vh;
   margin: 25px;
+  color: ghostwhite;
   max-width: 90vw;
   justify-content: center;
   background-image: linear-gradient(to bottom right,rgba(35, 36, 38, 0.755), rgba(81, 79, 82, 0.625));
@@ -13,51 +14,60 @@
   border-radius: 24px;
 }
 
-form{
+form {
     position: flex;
     flex-direction: row;
     margin: auto;
     align-content: center;  
+
+    button {
+      box-sizing: border-box;
+      align-content: center;
+      border: 1px ridge rgba(248, 248, 255, 0);
+      background-color: darkslategray;
+      background-image: linear-gradient(to bottom, rgba(80, 87, 87, 0.626), rgba(81, 79, 82, 0.625), rgba(194, 194, 194, 0.625));
+      padding: 5px 9px 5px 9px;
+      border-radius: 17px;
+    }
+
+    button:hover {
+      background-color: #0abab5;
+      background-image: linear-gradient(to bottom, rgba(80, 87, 87, 0.626), rgba(81, 79, 82, 0.625), rgba(218, 218, 218, 0.625));
+      border-radius: 17px;
+    
+    }
 }
 
-.form-group{
+.form-group {
   margin: 2vw;
   justify-content: center;
 }
 
-label{
+label {
   margin: 3vw;
-  padding: 2vw;
+  padding: 3vw;
 }
 
-input, .content{
-  padding: 6vw;
-  margin: 2vw;
+input, .content {
+  padding: 4.2vw;
+  margin: 3vw;
   background-image: linear-gradient(to bottom right,rgba(35, 36, 38, 0.755), rgba(81, 79, 82, 0.625));
   border-radius: 17px;
 }
 
-button{
-  box-sizing: border-box;
-  align-content: center;
-  background-color: rgba(82, 78, 78, 0.776);
-  border-radius: 17px;
-}
-
-button:hover{
-  background-color: rgba(184, 68, 222, 0.42);
-  border-radius: 17px;
-}
 
 
-h1{
+
+h1 {
   font-size: 3.7em;
   font-weight: 3px;
+  color: ghostwhite;
   text-align: center;
 }
 
 h2, h3 {
   font-size: 3.4em;
+  color: ghostwhite;
   text-align: center;
 }
 
@@ -83,5 +93,5 @@ img {
   max-block-size: 24vw;
   flex-wrap: nowrap;
   border-radius: 33px;
-  border: 2px rgba(35, 36, 38, 0.666);
+  border: 2px rgba(234, 234, 234, 0.666);
 }

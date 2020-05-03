@@ -6,15 +6,17 @@ import Image from './image';
 import Glow  from 'hoverglow';
 
 const StyledGlass = styled.div`
-  border: 17px ridge rgba(238, 239, 249, 0.926);
+  border: 3px ridge rgba(238, 239, 249, 0.926);
   display: inline-block;
   justify-content: center;
+  color: darkslategray;
   align-items: center;
+  align-content: center;
   border-radius: 42px;
-  magin: auto;
-  padding: 17px;
+  margin: auto;
+  padding: 1em;
   box-sizing: border-box;
-  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.83), rgba(112, 98, 119, 0.303));
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.83), rgba(255, 255, 255, 0.83), rgba(255, 255, 255, 0.83), rgba(112, 98, 119, 0.603));
   .projectLink {
     color: lightsteelblue;
     &:hover {
@@ -25,10 +27,11 @@ const StyledGlass = styled.div`
 `
 
 const Title = styled.h2`
-  color: ghostwhite;
+  color: darkslategray;
+  font-size: 1.3em;
   font-weight: 2px;
-  margin: auto;
-  padding: 2px;
+  margin: 1.1em;
+  padding: .5em;
   @media (max-width: 500px) {
     font-size: .75rem;
   }
@@ -38,19 +41,19 @@ const Title = styled.h2`
 const StyledPhoto = styled.img`
 {
   width: 76vw;
-  min-height: 40vh;
+  height: 30vh;
   margin: auto;
   object-fit: cover;
   border-radius: 66px;
-  border: 6px ridge rgba(222, 200, 255, .23);
+  border: 3px ridge rgba(222, 200, 255, .23);
 }  
 `
 
 const Description = styled.p`
-  color: ghostwhite;
+  color: darkslategray;
   font-weight: 2px;
   margin: auto;
-  padding: 2px;
+  padding: 1.1em;
   @media (max-width: 500px) {
     font-size: .75rem;
   }
@@ -79,8 +82,8 @@ const GlassCard = ({ title, description, photo, link }: Props): JSX.Element => (
           className='glasscard'
           onClick={() => window.open(`${link.url}`, "_blank")} 
           >
-          <StyledPhoto src={photo} />
-          {link.title}
+          <StyledPhoto src={photo} /><br />
+          <center> {link.title} </center>
 
         </p>
       )}

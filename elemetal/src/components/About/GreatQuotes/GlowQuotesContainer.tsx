@@ -12,9 +12,17 @@ const someQuotes=[{
   source: "",
   quote: "Destruction is a form of Creation"
 }, {
+  author: "Oscar Wilde, Lana Del Rey",
+  source: "",
+  quote: "Life Imitates Art"
+}, {
   author: "Travis Scott",
   source: "The Butterfy Effect",
   quote: "For this life we cannot change"
+}, {
+  author: "Claire Boucher",
+  source: "Grimes Album: Flesh Without Blood",
+  quote: "There is Harmony in Everything"
 }, {
   author: "Ralph Waldo Emerson",
   source: "Self Reliance, The Enlightenment Period",
