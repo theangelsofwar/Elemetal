@@ -8,22 +8,22 @@
  /** sidepanel styles*/
 .bm-menu {
   box-sizing: border-box;
-  box-shadow: rgba(171, 178, 191, 0.817) 3px -3px 3px;
+  box-shadow: rgba(237, 240, 240, 0.564) 3px -3px 3px;
   background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.83), rgba(112, 98, 119, 0.303));
   // background: rgba(143, 121, 210, 0.433);
   margin: auto;
   font-size: 1.1em;
   font-weight: 4.2px;
-  color: #0abab5;
+  color: darkslategray;
   text-shadow: rgba(0, 255, 229, 0.919) 1.7px 1.7px 0px;
   padding-top: 2.1vw;
 }
 
 .pageslidebar {
   box-sizing: border-box;
-  box-shadow: 3px floralwhite;
+  box-shadow: 3px solid ghostwhite;
   display: inline-flex;
-  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.83), rgba(112, 98, 119, 0.303));
+  background-image: linear-gradient(to bottom right, ghostwhite, rgba(94, 111, 108, 0));
   /* flex-direction: row; */
   /* flex: 0 0 190px; */
 }
@@ -65,7 +65,7 @@
   border-radius: 17px;
   width: 6vw;
   height: 9vh;
-  background-color: rgba(188, 158, 249, 0.762);
+  background-color: rgba(188, 158, 249, 0.034);
   background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.83), rgba(112, 98, 119, 0.303));
 }
 
@@ -104,11 +104,12 @@
 }
 
 .menu-item:hover {
-  background-color: rgba(145, 205, 218, 0.591);
   box-sizing: border-box;
+  border-radius: 17px;
+  // border: 3px solid rgba(209, 214, 215, 0.043);
+  background-color: rgba(145, 205, 218, 0.164);
+  background-image: linear-gradient(to right, #0abab5, rgba(145, 205, 218, 0), ghostwhite);
   color: ghostwhite;
   text-shadow: none;
-  border-radius: 17px;
-  border: 3px solid rgba(209, 214, 215, 0.043);
   font-weight: 6px;
 }
