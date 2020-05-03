@@ -2,6 +2,7 @@ import { withPrefix } from 'gatsby';
 import React from 'react'
 import Helmet from 'react-helmet'
 // import { scroller } from 'react-scroll';
+import { Link } from 'gatsby';
 //import quote 
 // import Logo from '../../components/Icons/logo.svg';
  import './styless.scss';
@@ -28,17 +29,19 @@ const About = (): JSX.Element => {
   return (
     <React.Fragment>
     <div id='about' className='about'>
-      <Helmet title={'< angie.stack />'} />
-      <h1> Code Through the Edges of Reality </h1>
-      <br />
+      <Helmet title={'<angie.stack/>'} />
+      <div id='glow' className='glow'>
+        <p> <header> Code Through the Edges of Reality </header> </p>
+        <center> <p> ___________________________________________ </p>  </center> 
+      </div>
       <div id='tao' className='tao'>
         <div id="tao-1" className='tao-1'>
           <p> Hello, My Name is Angie, welcome to my Digital Ether! I am a Frontend and Fullstack Software Developer based in Los Angeles, California.
-              I was born and raised in New York, but I am a Californian at heart. I am a huge proponent for React, Typescript, Webpack, GraphQL, and Progressive Web Apps as well as Node Express, MongoDB, PostgresQL and Docker. </p>
+              I was born and raised in New York, but I am a Californian at heart. I am a huge proponent of React, Typescript, Flux Architectural Patterns, Webpack, GraphQL, and Progressive Web Apps as well as Node Express, MongoDB, PostgresQL and Docker. </p>
           <p> My background is in Java, MVC Architecture, JDBC, Spring Framework and Maven Web Services </p>
           <p> I love contributing to the Open Source community and working with distributed systems and architectures. </p>
           <p> For me, Software Engineering is my way of pushing civilization in a pivotal direction. </p>
-          <p> Check out some of my public projects! </p>
+          <p> <Link to='/opensourceGrid/'> <u> Check out some of my public projects! </u> </Link> </p>
         </div>
         <img src={require('../../images/toptal.jpg')} alt="Angie.Stack" />            
       </div>

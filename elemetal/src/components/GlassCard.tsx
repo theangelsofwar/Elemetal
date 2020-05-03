@@ -12,15 +12,16 @@ const StyledGlass = styled.div`
   color: darkslategray;
   align-items: center;
   align-content: center;
+  text-align: center;
   border-radius: 42px;
   margin: auto;
   padding: 1em;
   box-sizing: border-box;
   background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.83), rgba(255, 255, 255, 0.83), rgba(255, 255, 255, 0.83), rgba(112, 98, 119, 0.603));
-  .projectLink {
-    color: lightsteelblue;
+  .glasscard {
+    color: #0abab5;
     &:hover {
-      color: deeppink;
+      color: yellow;
       cursor: pointer;
     }
   }
@@ -76,14 +77,14 @@ state={{ prevPath: location.pathname }}
 const GlassCard = ({ title, description, photo, link }: Props): JSX.Element => (
  
   <StyledGlass>
-  <Title> {title} </Title>
+  <Title> <b> {title} </b> </Title>
   {link && (
         <p
           className='glasscard'
           onClick={() => window.open(`${link.url}`, "_blank")} 
           >
           <StyledPhoto src={photo} /><br />
-          <center> {link.title} </center>
+         <u> {link.title} </u> 
 
         </p>
       )}

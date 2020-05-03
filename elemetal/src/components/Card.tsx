@@ -74,7 +74,7 @@ const Card = ({ title, description, photo, link }: Props): JSX.Element => (
         className='projectLink'
         onClick={() => window.open(`${link.url}`, "_blank")}
       >
-        {link.title}
+        <u> {link.title} </u>
       </p>
     )}
   </StyledContainer>

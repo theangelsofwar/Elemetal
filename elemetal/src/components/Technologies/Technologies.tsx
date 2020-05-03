@@ -5,7 +5,12 @@ import './styles.css';
 const Technologies = (): JSX.Element => (
   <React.Fragment>
   <div id="technologies" className="techno">
-    <h3> Technologies: </h3>
+    <div id='glow' className='glow'> 
+    <p> 
+      <header> Technologies: </header>
+    </p> 
+    </div>
+
             <br />
              <ul>
               <li>
