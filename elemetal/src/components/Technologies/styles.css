@@ -1,5 +1,6 @@
 header {
-  background-color: gray;
+  position: inherit;
+  text-align: center;
 }
 
 h3 {

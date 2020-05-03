@@ -97,8 +97,8 @@ const IndexPage = (props: any): JSX.Element => {
             offset={-60}
             duration={200}
             delay={0}
-            height={105}
-            backgroundColor={`#061716e2`}
+            height={115}
+            backgroundColor={`#061716`}
             color={'ghostwhite'}
             coverWidth={`117`}
             navWidth={`96`}

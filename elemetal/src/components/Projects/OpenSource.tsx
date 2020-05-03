@@ -12,12 +12,13 @@ const OpenSource = (): JSX.Element => (
       <Grid templateColumns="repeat(2, 1fr)" gap={6}>
       <Card 
         photo={require("../../images/ProjectArtemis.jpg")} 
-        title="Artemis Developer Tools: For REST To GraphQL Migration Testing"
+        title="Artemis Developer Tools: For REST To GraphQL Migration and Testing"
         link={{
           url: "https://chrome.google.com/webstore/detail/project-artemis/gpncgocimlpojfgbphndpjgkkhdjhnpb?hl=en",
-          title: "Accelerated By OS Labs"
+          title: "Project Artemis: Apollo GraphQL Client Testing"
         }}
-        description="An Apollo GraphQL Tool to expedite Developer experience when migrating from REST To GraphQL"
+        description="An Apollo GraphQL Tool to expedite Developer experience when migrating from REST To GraphQL built with React, Typescript, React Hooks, Node, Express, Jest, Enzyme, Docker and AWS. 
+        Accelerated at OSLabs."
         />
       <Card 
         photo={require("../../images/KarlGallery.jpg")}

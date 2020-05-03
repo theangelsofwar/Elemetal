@@ -11,11 +11,12 @@ const StyledContainer = styled.div`
   align-items: center;
   border-radius: 42px;
   margin: auto;
+  color: darkslategray;
   padding: 1.3em;
   box-sizing: border-box;
   background-image: linear-gradient(to bottom right, rgba(112, 98, 119, 0.303), rgba(255, 255, 255, 0.83),  rgba(255, 255, 255, 0.83));
   .projectLink {
-    color: rgba(54, 32, 65, 0.782);
+    color: darkslategray;
     &:hover {
       color: rgba(78, 196, 194, 0.913);
       cursor: pointer;

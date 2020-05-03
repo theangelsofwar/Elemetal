@@ -33,7 +33,7 @@ const About = (): JSX.Element => {
       <br />
       <div id='tao' className='tao'>
         <div id="tao-1" className='tao-1'>
-          <p> Hello, My Name is Angie, welcome to my Ether! I am a Frontend and Fullstack Software Developer based in Los Angeles, CA.
+          <p> Hello, My Name is Angie, welcome to my Digital Ether! I am a Frontend and Fullstack Software Developer based in Los Angeles, California.
               I was born and raised in New York, but I am a Californian at heart. I am a huge proponent for React, Typescript, Webpack, GraphQL, and Progressive Web Apps as well as Node Express, MongoDB, PostgresQL and Docker. </p>
           <p> My background is in Java, MVC Architecture, JDBC, Spring Framework and Maven Web Services </p>
           <p> I love contributing to the Open Source community and working with distributed systems and architectures. </p>

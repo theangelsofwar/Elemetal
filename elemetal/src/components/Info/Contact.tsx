@@ -14,14 +14,16 @@ import { Link } from 'gatsby';
 const Contact = (): JSX.Element => (
   <React.Fragment>
   <div id='contact'>
-  <h5> Contact for Queries </h5>
-    <a href="https://www.linkedin.com/in/angiechangpagne/"> LinkedIn </a>
+  <div id='glow' className='glow'> <p> <header> Contact for Queries </header> </p> </div>
+  <center>
+    <a href="https://www.linkedin.com/in/angiechangpagne/"> <u> LinkedIn </u> </a>
     <br />
-    <a href="https://angel.co/u/angiechangpagne" > Angelist </a>
+    <a href="https://angel.co/u/angiechangpagne" > <u> Angelist </u> </a>
     <br />
-    <a href="https://github.com/angiechangpagne"> Github </a>
+    <a href="https://github.com/angiechangpagne"> <u> Github </u> </a>
     <br />
-    <Link to='/contactInqueries/'> Email </Link>
+    <Link to='/contactInqueries/'> <u> Send a FAX Message </u> </Link>
+    </center>
   </div>
   </React.Fragment>
 );

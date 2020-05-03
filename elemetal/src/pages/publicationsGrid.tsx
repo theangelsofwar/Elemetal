@@ -14,7 +14,7 @@ const publicationsGrid = (): JSX.Element => {
       <PageSlidebar />
         <div id='page-wrap'>
           <div id='publicationsgrid' className='publicationsgrid'>
-            <div id='glow' className='glow'><p><h1> Publications </h1> </p></div> 
+            <div id='glow' className='glow'><p> <header> Publications </header> </p> </div> 
             <br />
             <Publications />
             <a href="">    </a>

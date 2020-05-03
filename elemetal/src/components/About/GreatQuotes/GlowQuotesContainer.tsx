@@ -4,7 +4,7 @@ import GlowQuote from './GlowQuote'
 import '../../../carraway/glow/glow.scss';
 
 const someQuotes=[{
-  author: "",
+  author: "The Underwoods",
   source: "House of Cards",
   quote: "If you don\'t like how the table is set, flip that table over"
 }, {
@@ -12,7 +12,7 @@ const someQuotes=[{
   source: "",
   quote: "Destruction is a form of Creation"
 }, {
-  author: "Oscar Wilde, Lana Del Rey",
+  author: "Oscar Wilde and Lana Del Rey",
   source: "",
   quote: "Life Imitates Art"
 }, {
@@ -20,6 +20,10 @@ const someQuotes=[{
   source: "The Butterfy Effect",
   quote: "For this life we cannot change"
 }, {
+  author: "Karl Lagerfeld",
+  source: "The Icon",
+  quote: "“I am a fashion person, and fashion is not only about clothes – it’s about all kinds of change"
+},{
   author: "Claire Boucher",
   source: "Grimes Album: Flesh Without Blood",
   quote: "There is Harmony in Everything"

@@ -25,10 +25,8 @@ export const opensourceGrid = (): JSX.Element => {
         <div id='page-wrap'>
             <br />
          
-         <div id='glow' className='glow'> <p> <h1> Open Source Projects </h1> </p> </div>
+         <div id='glow' className='glow'> <p> <header> Open Source Projects </header> </p> </div>
           <SEO title="Open Source Projects" />
-  
-          <br />
           <div id='opensourcegrid' className='opensourcegrid'>
         
           <section>

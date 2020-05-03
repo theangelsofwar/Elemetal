@@ -57,7 +57,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-anchor-links`,
       options: {
-        offset: -92,
+        offset: -17,
       },
     },
     `gatsby-plugin-emotion`,
@@ -85,7 +85,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
-        color: `aliceblue`,
+        color: `ghostwhite`,
       },
     },
     {
@@ -94,13 +94,13 @@ module.exports = {
         ...siteMetadata,
         name: `angie-yve-chang`,
         lang: `en-US`,
-        short_name: `YVT`,
+        short_name: `Angie Yve Titan`,
         start_url: `/`,
-        color: `aliceblue`,
+        color: `ghostwhite`,
         background_color: `darkslategray`,
         theme_color: `ghostwhite`,
         display: `minimal-ui`,
-        icon: `src/images/yvtfavicon.png`, // This path is relative to the root of the site.
+        icon: `src/images/angel-lines.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-typescript`,

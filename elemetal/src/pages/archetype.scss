@@ -5,8 +5,9 @@
 
 .bio, .opensourcegrid, .contactinqueries, .publicationsgrid, .resume, .systemsettings {
   min-height: 90vh;
-  margin: 25px;
+  margin: 1.3em;
   color: ghostwhite;
+  font-size: 1.1em;
   max-width: 90vw;
   justify-content: center;
   background-image: linear-gradient(to bottom right,rgba(35, 36, 38, 0.755), rgba(81, 79, 82, 0.625));
@@ -23,7 +24,7 @@ form {
     button {
       box-sizing: border-box;
       align-content: center;
-      background-color: rgba(47, 79, 79, 0.016);
+      background-color: rgba(47, 79, 79, 0.017);
       background-image: linear-gradient(to bottom, ghostwhite, rgba(80, 87, 87, 0.103), rgba(81, 79, 82, 0.625), rgba(109, 127, 154, 0.091));
       padding: 5px 9px 5px 9px;
       border-radius: 7px;
@@ -55,7 +56,9 @@ input, .content {
 }
 
 
-
+header {
+  font-size: 1.5em;
+}
 
 h1 {
   font-size: 3.7em;
@@ -78,6 +81,7 @@ h2, h3 {
   padding: 25px;
 
 }
+
 .tao:child {
   position: relative;
   padding: 55px;
@@ -85,12 +89,19 @@ h2, h3 {
   flex-wrap: nowrap;
 }
 
+.bio {
+  img {
+    max-block-size: 24vw;
+    margin-left: 1.7em;
+  }
+}
+
 img {
   position: relative;
   display: inline-flexbox;
   /* flex-direction: row; */
-  max-block-size: 24vw;
+  // max-block-size: 24vw;
   flex-wrap: nowrap;
-  border-radius: 33px;
-  border: 2px rgba(234, 234, 234, 0.666);
+  border-radius: 16px;
+  border: 2px rgba(145, 163, 164, 0.42);
 }

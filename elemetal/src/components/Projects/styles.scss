@@ -6,7 +6,11 @@
   flex-wrap: row wrap;
   flex-grow: 3;
   // overflow-y: auto;
+  color: darkslategray;
   min-height: 92vh;
+  a, p {
+    color: darkslategray;
+  }
   // grid-template-columns: 30vw 30vw 30vw;
   // grid-template-rows: 30vh 30vh 30vh;
 }
