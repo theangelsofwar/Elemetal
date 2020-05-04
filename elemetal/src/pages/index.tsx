@@ -3,8 +3,8 @@
 // import '../../node_modules/augmented-ui/augmented.css';
 import {graphql, Link} from 'gatsby';
 import Img from 'gatsby-image';
+import '../fonts/Vogue.ttf';
 import React, {useEffect, useState} from 'react';
-import './styles.scss';
 // import bio from '../components/bio';
 // import {Box, Flex} from 'rebass'
 // import Resume from './Resume';
@@ -24,8 +24,9 @@ import OpenSource from '../components/Projects/OpenSource';
 import Publications from '../components/Publications';
 import Contact from '../components/Info/Contact';
 import PageSlidebar from '../components/PageSlidebar';
-import '../fonts/Vogue.ttf';
 import '../carraway/glow/glow.scss';
+import './styles.scss';
+
 // augmented ui
 
 export const indexPageQuery = graphql`

@@ -47,7 +47,6 @@ const Description = styled.p`
 
 const StyledPhoto = styled.img`{
   width: 96%;
-  height: 40vh;
   max-height: 30vh;
   margin: auto;
   object-fit: cover;

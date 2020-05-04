@@ -51,7 +51,7 @@ const Resume = (): JSX.Element => {
     <PageSlidebar />
         <div id='page-wrap'>
           <div id='resume' className='resume'>
-            <div id='glow' className='glow'> <p> <h1> Resume </h1> </p> </div>
+            <div id='glow' className='glow'> <p> <header> Resume </header> </p> </div>
             <br />
             <center>
             <img src={require('../../static/Img/yveResume.jpg')} alt='resume'/>

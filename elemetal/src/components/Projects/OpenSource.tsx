@@ -9,7 +9,7 @@ const OpenSource = (): JSX.Element => (
   <React.Fragment>
   <div id='opensource' className='opensource'>
 
-      <Grid templateColumns="repeat(2, 45%)" gap={6}>
+      <Grid templateColumns="repeat(2, 1fr)" gap={6}>
       <Card 
         photo={require("../../images/ProjectArtemis.jpg")} 
         title="Artemis Developer Tools: For REST To GraphQL Migration and Testing"

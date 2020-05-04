@@ -3,12 +3,18 @@
   font-family: 'Vogue';
   src: local('Vogue'), url(../fonts/Vogue.ttf) format('truetype');
 }
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 
 html {
   font-family: 'Vogue','Oxanium', sans-serif;
   box-sizing: border-box;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   overflow-x: visible;
@@ -16,8 +22,8 @@ html {
 }
 body {
   margin: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -62,9 +68,8 @@ template {
 }
 
 footer {
-  color: lightgray;
   text-align: center;
-  // text-shadow: hotpink 1.7px 1.7px .6px;
+  color: ghostwhite;
   background-color: rgba(110, 207, 237, 0.098);
   background-image: linear-gradient(to bottom, #0abab5, rgba(255, 255, 255, 0));
   margin: auto;
@@ -94,6 +99,7 @@ dfn {
 }
 h1 {
   font-size: 2em;
+  color: inherit;
   margin: 0.67em 0;
 }
 mark {
@@ -649,10 +655,27 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
-}
+// @media only screen and (max-width: 480px) {
+//   html {
+//     max-width: 100%;
+//     overflow-y: scroll;
+//     font-size: 100%;
+//   }
+// }
 
+// @media only screen and (min-width: 641px){
+//   .column {
+//     width: 50%;
+//     float: left;
+//   }
+// }
+
+// @media only screen and (min-width: 1025px){
+//   body {
+//      width: 66.66%;
+//   }
+//   .navbar {
+//      width: 33.33%;
+//   }
+// }
 

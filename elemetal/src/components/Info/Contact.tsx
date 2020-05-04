@@ -3,6 +3,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import StyledLink from '../StyledLink';
 import { Link } from 'gatsby';
+import './styles.scss';
 //<StyledLink className="b" href="mailto:yvevestal@gmail.com" >
 // Email
 // </StyledLink>
@@ -13,7 +14,7 @@ import { Link } from 'gatsby';
 
 const Contact = (): JSX.Element => (
   <React.Fragment>
-  <div id='contact'>
+  <div id='contact' className='contact'>
   <div id='glow' className='glow'> <p> <header> Contact for Queries </header> </p> </div>
   <center>
     <a href="https://www.linkedin.com/in/angiechangpagne/"> <u> LinkedIn </u> </a>

@@ -26,7 +26,7 @@ const bio = (): JSX.Element => {
              <p>
                <header> Welcome to My Digital  Ether </header>
   
-             <h1> {'<Angie/>'}</h1> 
+             <header> {'<Angie/>'}</header> 
               <center>  <p>       ______________</p>  </center>
               <header> Hi There, </header> 
               </p> 
@@ -34,7 +34,7 @@ const bio = (): JSX.Element => {
             <span id='tao' className='tao'> 
             <p> My name is Angela, but you can call me Angie. I am a Frontend and Fullstack Software Engineer based in Los Angeles, California.  
                 I work predominantly with React, Typescript, GraphQL, Webpack and Progressive Web Apps  
-                as well as Node Express, MongoDB, PostgresQL, Travis and Docker. </p>
+                as well as Node Express, MongoDB, PostgresQL, Travis CI and Docker. </p>
                 
             <img src={require('../images/toptal.jpg')} alt="Angie.Stack"/>            
             </span>

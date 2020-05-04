@@ -18,17 +18,12 @@
 .button {
   display: inline-block;
   font-family: inherit;
-  background-color: rgba(238, 239, 249, 0.926);
+  background-color: rgba(238, 247, 249, 0.379);
   line-height: 24px;
   text-transform: uppercase;
   font-weight: bold;
   height: 30px;
 }
-
-// &:hover {
-  
-// }
-
 
 .button-icon {
   @extend .button;
@@ -39,12 +34,12 @@
 
 .button-github {
   @extend .button-icon;
-  background-image:l url('../images/yvtfavicon.png');
+  background-image:l url('../images/angel0lines.jpg');
 }
 
 .button-linkedin {
   @extend .button-icon;
-  background-image: url('../images/yvtfavicon.png');
+  background-image: url('../images/angel-lines.jpg');
 }
 
 .link {
