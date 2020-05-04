@@ -8,6 +8,7 @@
   margin: 1.3em;
   color: ghostwhite;
   font-size: 1.1em;
+  min-width: 80%;
   max-width: 90vw;
   justify-content: center;
   background-image: linear-gradient(to bottom right,rgba(35, 36, 38, 0.755), rgba(81, 79, 82, 0.625));
@@ -34,7 +35,6 @@ form {
       background-color: #0abab40a;
       background-image: linear-gradient(to right,rgba(80, 87, 87, 0), rgba(79, 82, 82, 0.318), #0abab5, rgba(86, 104, 104, 0.53));
       border-radius: 7px;
-    
     }
 }
 

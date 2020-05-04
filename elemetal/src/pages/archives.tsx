@@ -10,6 +10,11 @@ const Archives = (): JSX.Element => (
           <div id='page-wrap'>
             <div id='archives'>
               <p> Yve Vestal Titan Archives </p>
+              <h1>
+                My Other Projects
+              </h1>
+
+              <p> Aesthetic Tumblr/Pinterest Clone </p>
             </div>
           </div>
     </div>
