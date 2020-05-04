@@ -5,15 +5,18 @@ import Image from './image';
 //nested styled component
 // box-shadow: 0 1px 4px rgba(0, 0, 0, .19), 0 1px 1px rgba(0, 0, 1, .24);
 const StyledContainer = styled.div`
+  position: relative;
+  box-sizing: border-box;
   border: 3px ridge rgba(238, 239, 249, 0.326);
   display: inline-block;
   justify-content: center;
   align-items: center;
   border-radius: 42px;
+  grid-auto-flow: column dense;
+  max-width: 36vw;
   margin: auto;
   color: darkslategray;
   padding: 1.3em;
-  box-sizing: border-box;
   background-image: linear-gradient(to bottom right, rgba(112, 98, 119, 0.303), rgba(255, 255, 255, 0.83),  rgba(255, 255, 255, 0.83));
   .projectLink {
     color: darkslategray;
@@ -77,6 +80,7 @@ const Card = ({ title, description, photo, link }: Props): JSX.Element => (
       </p>
     )}
   </StyledContainer>
+  
 ); 
 
 export default Card;

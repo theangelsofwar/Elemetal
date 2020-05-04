@@ -9,8 +9,13 @@
   box-sizing: border-box;
 }
 
+@viewport {
+  width: device-width;
+  height: device-height;
+}
 
 html {
+  position: relative;
   font-family: 'Vogue','Oxanium', sans-serif;
   box-sizing: border-box;
   height: 100%;
@@ -21,6 +26,7 @@ html {
   overflow-y: auto;
 }
 body {
+  position: relative;
   margin: 0;
   height: 100%;
   width: 100%;
@@ -655,16 +661,16 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-// @media only screen and (max-width: 480px) {
-//   html {
-//     max-width: 100%;
-//     overflow-y: scroll;
-//     font-size: 100%;
-//   }
-// }
+@media only screen and (max-width: 480px) {
+  html {
+    max-width: 100%;
+    overflow-y: scroll;
+    font-size: 100%;
+  }
+}
 
 // @media only screen and (min-width: 641px){
-//   .column {
+//   .body {
 //     width: 50%;
 //     float: left;
 //   }

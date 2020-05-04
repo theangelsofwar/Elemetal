@@ -1,3 +1,15 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@viewport {
+  width: device-width;
+  height: device-height;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap');
 @font-face {
   font-family: 'Vogue';
@@ -5,7 +17,10 @@
 }
 
 .about {
+  position: relative;
+  box-sizing: border-box;
   justify-content: center;
+  max-width: 90vw;
   color: darkslategray;
   /* text-shadow: rgba(92, 119, 121, 0.769) 1.7px 1.7px .6px; */
   background-color: transparent;

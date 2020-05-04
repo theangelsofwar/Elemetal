@@ -1,29 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap');
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@viewport {
+  width: device-width;
+  height: device-height;
+}
 
 .opensource {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: row wrap;
+  position: relative;
+  box-sizing: border-box;
+  display: grid;
+  // flex-direction: row;
+  // flex-wrap: row wrap;
   // flex-grow: 3;
+  // grid-auto-rows: auto;
   color: darkslategray;
-  min-width: 80%;
-   
+  max-width: 80vw;
   a, p {
     color: darkslategray;
   }
 
-  // @media only screen and (min-width: 641px){
+  .cell {
+    display: grid;
+    grid-auto-flow: row dense;
+  }
+
+  @media screen and (min-width: 40em) {
+    .opensource {
+      width: 25%;
+      float: right;
+    }
+  }
+  
+  @media screen and (min-width: 52em) {
+    .opensource {
+      width: 25%;
+      float: right;
+    }
+  }
+
+  // @media screen and (max-width: 768px) {
   //   .opensource {
-  //     width: 50%;
-  //     float: left;
+  //       grid-template-columns: 1fr;
+  //       grid-template-rows: 1fr;
+  //    }
+
+  //   .cell {
+  //       grid-column: auto;
+  //       grid-row: auto;
   //   }
   // }
-
-  
   
   // grid-template-columns: 30vw 30vw 30vw;
   // grid-template-rows: 30vh 30vh 30vh;
 }
 
-
-
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap');

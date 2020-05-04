@@ -3,12 +3,26 @@
   src: local('Vogue'), url(../fonts/Vogue.ttf) format('truetype');
 }
 
+@viewport {
+  width: device-width;
+  height: device-height;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
 .bio, .opensourcegrid, .contactinqueries, .publicationsgrid, .resume, .systemsettings {
+  position: relative;
+  box-sizing: border-box;
   min-height: 90vh;
   margin: 1.3em;
   color: ghostwhite;
   font-size: 1.1em;
-  min-width: 80%;
+  min-width: 80vw;
   max-width: 90vw;
   justify-content: center;
   background-image: linear-gradient(to bottom right,rgba(35, 36, 38, 0.755), rgba(81, 79, 82, 0.625));

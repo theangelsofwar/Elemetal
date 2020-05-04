@@ -8,8 +8,9 @@ import './styles.scss';
 const OpenSource = (): JSX.Element => (
   <React.Fragment>
   <div id='opensource' className='opensource'>
-
-      <Grid templateColumns="repeat(2, 1fr)" gap={6}>
+      <Grid templateColumns="repeat(2, 1fr)" autoFlow="row dense" gap={6}>
+      
+      <div id='cell' className='cell'>
       <Card 
         photo={require("../../images/ProjectArtemis.jpg")} 
         title="Artemis Developer Tools: For REST To GraphQL Migration and Testing"
@@ -20,6 +21,8 @@ const OpenSource = (): JSX.Element => (
         description="An Apollo GraphQL Tool to expedite Developer experience when migrating from REST To GraphQL built with React, Typescript, React Hooks, Node, Express, Jest, Enzyme, Docker and AWS. 
         Accelerated at OSLabs."
         />
+      </div>
+      <div id='cell' className='cell'>
       <Card 
         photo={require("../../images/KarlGallery.jpg")}
         title="Auction Client - Karl Lagerfeld" 
@@ -29,6 +32,9 @@ const OpenSource = (): JSX.Element => (
         }}
         description="Silent Auction-to honor the works of the Icon Karl Lagerfeld's work in the fashion industry and in society"
       />
+     </div>
+
+      <div id='cell' className='cell'>
       <Card 
         photo={require("../../images/codechella.jpg")}
         title="Codechella"
@@ -38,6 +44,8 @@ const OpenSource = (): JSX.Element => (
         }}
         description="Codechella: Music Festival Updates for Mobile"
         />
+      </div>
+      <div id='cell' className='cell'>
       <Card 
         photo={require("../../images/codepress.jpg")} 
         title="Code Press: A Virtualized News Stand" 
@@ -47,6 +55,8 @@ const OpenSource = (): JSX.Element => (
         }}
         description="Filter Out The Fake News and visualize your information in a Virtual News Stand Aggregator from multiple subscribed streams and topics"
       /> 
+      </div>
+      <div id='cell' className='cell'>
       <Card 
         photo={require("../../images/verifire.jpg")}
         title="Verifire-Track California Wild Fires on the Map in Real Time"
@@ -56,6 +66,8 @@ const OpenSource = (): JSX.Element => (
         }}
         description="Verifire-Track California Wild Fires on the Map in Real Time, using React, Socket IO, Maps API"
         />
+        </div>
+        <div id='cell' className='cell'>
         <Card 
         photo={require("../../images/voltaire.jpg")}
         title="Vote-aire A Decentralized Voting App for Equality"
@@ -65,6 +77,8 @@ const OpenSource = (): JSX.Element => (
         }}
         description="Vote-aire is an Enlightened way of Voting, demonstrated on the the Ethereum Blockchain, with use of IPFS as a way to open the portal to equality through decentralized systems"
         />
+        </div>
+        <div id='cell' className='cell'>
         <Card 
         photo={require("../../images/Ethermint.jpg")}
         title="Oil Rig: An Ethereum Mine"
@@ -74,15 +88,18 @@ const OpenSource = (): JSX.Element => (
         }}
         description="Coming Soon..."
         />
-      <Card 
-        photo={require("../../images/ProjectRedEther.jpg")}
-        title="Project Red Ether: A Decentralized Development"
-        link={{
-          url: "",
-          title: "Project Red Ether: What is Project Red Ether?"
-        }}
-        description="Coming Soon..."
-        />
+        </div>
+        <div id='cell' className='cell'>
+        <Card 
+          photo={require("../../images/ProjectRedEther.jpg")}
+          title="Project Red Ether: A Decentralized Development"
+          link={{
+            url: "",
+            title: "Project Red Ether: What is Project Red Ether?"
+          }}
+          description="Coming Soon..."
+          />
+        </div>
       </Grid>
       
   </div>

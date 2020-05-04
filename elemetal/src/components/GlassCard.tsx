@@ -6,17 +6,20 @@ import Image from './image';
 import Glow  from 'hoverglow';
 
 const StyledGlass = styled.div`
+  position: relative;
+  box-sizing: border-box;
   border: 3px ridge rgba(238, 239, 249, 0.926);
   display: inline-block;
+  max-width: 42vw;
   justify-content: center;
   color: darkslategray;
+  grid-auto-flow: column dense;
   align-items: center;
   align-content: center;
   text-align: center;
   border-radius: 42px;
   margin: auto;
   padding: 1em;
-  box-sizing: border-box;
   background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.83), rgba(255, 255, 255, 0.83), rgba(255, 255, 255, 0.83), rgba(112, 98, 119, 0.603));
   .glasscard {
     color: #0abab5;

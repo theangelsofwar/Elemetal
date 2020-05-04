@@ -1,5 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap');
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
+@viewport {
+  width: device-width;
+  height: device-height;
+}
 
 .nav-header {
   background: #082625eb;

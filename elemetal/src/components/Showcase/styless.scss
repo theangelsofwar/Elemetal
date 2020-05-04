@@ -1,6 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap');
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@viewport {
+  width: device-width;
+  height: device-height;
+}
 
 .showcase {
+  position: relative;
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   flex-flow: column wrap;
@@ -9,6 +21,7 @@
   background-color: transparent;
   background-image: linear-gradient(to bottom right, rgba(112, 98, 119, 0.303), rgba(255, 255, 255, 0.83), rgba(255, 255, 255, 0.83), rgba(255, 255, 255, 0.83), rgba(112, 98, 119, 0.303));
   border-radius: 17px;
+  max-width: 85vw;
   color: darkslategrey;
   font-weight: bold;
   max-height: 42vh;
