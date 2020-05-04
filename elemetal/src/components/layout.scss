@@ -1,8 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap');
-@font-face {
-  font-family: 'Vogue';
-  src: local('Vogue'), url(../fonts/Vogue.ttf) format('truetype');
-}
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -13,6 +8,13 @@
   width: device-width;
   height: device-height;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap');
+@font-face {
+  font-family: 'Vogue';
+  src: local('Vogue'), url(../fonts/Vogue.ttf) format('truetype');
+}
+
 
 html {
   position: relative;
@@ -43,6 +45,7 @@ main,
 menu,
 section,
 summary {
+  position: relative;
   display: inherit;
   height: 100%;
   width: 100%;
@@ -243,7 +246,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(122, 13%, 54%, 0.8);
+  color: darkslategray;
   font-family: 'Vogue','Oxanium', georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -661,27 +664,17 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
+
+@media only screen and (max-width: 6410px) {
   html {
     max-width: 100%;
     overflow-y: scroll;
     font-size: 100%;
   }
+  body {
+    min-width: 66.66%;
+  }
+  .navbar {
+    min-width: 33.33%;
+  }
 }
-
-// @media only screen and (min-width: 641px){
-//   .body {
-//     width: 50%;
-//     float: left;
-//   }
-// }
-
-// @media only screen and (min-width: 1025px){
-//   body {
-//      width: 66.66%;
-//   }
-//   .navbar {
-//      width: 33.33%;
-//   }
-// }
-

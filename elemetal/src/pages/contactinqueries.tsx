@@ -65,10 +65,13 @@ const contactInqueries = (): JSX.Element => {
             <a className='email' href="mailto:yvevestal@gmail.com"> <button type='submit' onClick={handleClick}> <div className='glow' id='glow'> <p>  Send It </p> </div> </button> </a>
             </center>
             </form>
+            
             </section>
           </div>
           <footer> Developer | Futurist | Designer </footer>
+
         </div>
+
       </div>
     </Layout>
   )
