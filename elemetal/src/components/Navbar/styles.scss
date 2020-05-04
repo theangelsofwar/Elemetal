@@ -1,5 +1,8 @@
-// @import './node_modules/elemental/less/elemental.less';
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap');
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 @viewport {
   width: device-width;
@@ -10,6 +13,9 @@
   padding: 0;
   margin: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap');
+
+// @import './node_modules/elemental/less/elemental.less';
 
 body {
   background-image: linear-gradient(to bottom right, rgba(91, 98, 101, 0.386), rgba(220, 245, 249, 0.77));

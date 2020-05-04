@@ -6,6 +6,7 @@
 
 @viewport {
   width: device-width;
+  height: device-height;
 }
 
 @media screen and (max-width:320px) {
@@ -43,7 +44,9 @@ body {
 
 
 .nav-scroll {
+  box-sizing: border-box;
   // border-radius: 20px;
+  min-height: 13vh;
   position: fixed;
   background-color: #061716;
   font-size: larger;

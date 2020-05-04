@@ -24,7 +24,7 @@ const Contact = (): JSX.Element => (
     <a href="https://github.com/angiechangpagne"> <u> Github </u> </a>
     <br />
     <Link to='/contactInqueries/'> <u> Send a FAX Message </u> </Link>
-    </center>
+  </center>
   </div>
   </React.Fragment>
 );

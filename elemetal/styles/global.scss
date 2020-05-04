@@ -1,4 +1,14 @@
-$color-palette-1: rgba(255, 255, 255, 0.666);
+$color-palette-1: ghostwhite);
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@viewport {
+  width: device-width;
+}
+
 @font-face {
   font-family: 'Vogue';
   src: local('Vogue'), url(../fonts/Vogue.ttf) format('truetype');
