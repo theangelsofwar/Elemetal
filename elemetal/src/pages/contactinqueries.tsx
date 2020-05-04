@@ -4,19 +4,19 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import PageSlidebar from '../components/PageSlidebar';
 import './archetype.scss';
-import { SeeThrough } from 'react-see-through';
+// import { SeeThrough } from 'react-see-through';
 import '../carraway/glow/glow.scss';
 const contactInqueries = (): JSX.Element => {
 
 
-  const queryData = "";
-  //     firstName,
-  //     lastName,
-  //     email,
-  //     email,
-  //     subjectLine,
-  //     message
-  // };
+  // const queryData = ""
+  // //     firstName,
+  // //     lastName,
+  // //     email,
+  // //     email,
+  // //     subjectLine,
+  // //     message
+  // // };
   const handleClick = () => {
     //mail to my email, insert message from their text body and sent it behind the scenes, inquiry Q/A
 
