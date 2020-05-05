@@ -6,6 +6,8 @@ import PageSlidebar from '../components/PageSlidebar';
 import './archetype.scss';
 // import { SeeThrough } from 'react-see-through';
 import '../carraway/glow/glow.scss';
+
+
 const contactInqueries = (): JSX.Element => {
 
 
@@ -47,7 +49,6 @@ const contactInqueries = (): JSX.Element => {
               <input type='email' className='email' id='email' />
               </label>
               </div>
-
 
               <div className='form-group'>
               <label>

@@ -23,7 +23,11 @@ const someQuotes=[{
   author: "Karl Lagerfeld",
   source: "The Icon",
   quote: "“I am a fashion person, and fashion is not only about clothes – it’s about all kinds of change"
-},{
+}, {
+  author: "Kamaji",
+  source: "Spirited Away",
+  quote: "Finish what you started, human."
+}, {
   author: "Claire Boucher",
   source: "Grimes Album: Flesh Without Blood",
   quote: "There is Harmony in Everything"

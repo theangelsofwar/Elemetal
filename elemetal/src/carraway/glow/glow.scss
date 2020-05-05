@@ -19,6 +19,8 @@
   .clearfix:after {
     visibility: hidden;
     display: block;
+    text-align: center;
+    align-content: center;
     font-size: 0;
     content: "";
     clear: both;
@@ -72,7 +74,7 @@
   
   div, p {
     color: inherit;
-    text-shadow: -1px 1px 5px #ffc, 1px -1px 5px #fff;
+    text-shadow: -1px 1px 5px ghostwhite, 1px -1px 5px ghostwhite;
     text-decoration: none;
     font-size: 1.5em;
     outline: 0 none;
@@ -141,7 +143,7 @@
       cursor: pointer;
       transition: all 0.1s ease-in-out;
       &:hover {
-        text-shadow: 0 0 6px #fff;
+        text-shadow: 0 0 6px ghostwhite;
         cursor: hand;
       }
     }
@@ -150,11 +152,11 @@
       border-radius: 3px;
       outline: 0;
       padding: 5px 10px;
-      box-shadow: 0 0 25px #fff;
+      box-shadow: 0 0 25px ghostwhite;
       transition: all 0.5s;
   
       &:hover {
-        box-shadow: 0 0 30px #fff;
+        box-shadow: 0 0 30px ghostwhite;
       }
     }
   

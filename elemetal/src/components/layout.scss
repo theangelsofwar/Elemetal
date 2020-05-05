@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap');
+@font-face {
+  font-family: 'Vogue';
+  src: local('Vogue'), url(../fonts/Vogue.ttf) format('truetype');
+}
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -8,13 +14,6 @@
   width: device-width;
   height: device-height;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap');
-@font-face {
-  font-family: 'Vogue';
-  src: local('Vogue'), url(../fonts/Vogue.ttf) format('truetype');
-}
-
 
 html {
   position: relative;
@@ -29,7 +28,7 @@ html {
 }
 body {
   position: relative;
-  margin: 0;
+  margin: auto;
   height: 100%;
   width: 100%;
   -webkit-font-smoothing: antialiased;
@@ -158,6 +157,7 @@ optgroup,
 select,
 textarea {
   font: inherit;
+  position: relative;
   margin: 0;
 }
 optgroup {
@@ -492,6 +492,9 @@ blockquote {
   margin-bottom: 1.45rem;
 }
 form {
+  position: relative;
+  min-width: 80vw;
+  min-height: 75vh;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -665,7 +668,7 @@ pre tt:after {
   content: "";
 }
 
-@media only screen and (max-width: 6410px) {
+@media only screen and (max-width: 640px) {
   html {
     max-width: 100%;
     overflow-y: scroll;

@@ -20,13 +20,13 @@ const PageSlidebar = (): JSX.Element => {
   return (
     <div id='scaleRotate' className='pageslidebar'>
     <Slider pageWrapId={'page-wrap'} outerContainerId={'carraway'} customBurgerIcon={ <img src="../../images/yvtfavicon.png" alt=""/> }>
-      <a id='home' className='menu-item' href='/'> <Link to='/'> Home </Link></a>
-      <a id='bio' className='menu-item' href= '/bio/'> <Link to='/bio/'> Bio </Link></a>
-      <a id='resume' className='menu-item' href='/Resume/'> Resume </a>
-      <a id='opensourcegrid' className='menu-item' href='/opensourceGrid/'><Link to='/opensourceGrid/'> Open Source </Link></a>
-      <a id='publicationsgrid' className='menu-item' href='/publicationsGrid/'> <Link to='/publicationsGrid/'> Publications </Link></a>
-      <a id='contactinqueries' className='menu-item' href='/contactInqueries/'> <Link to='/contactInqueries/'> Query </Link></a>
-      <a onClick={showSettings} className='menu-item--small' href='/systemSettings/' ><Link to='/systemSettings/'> System Settings </Link></a>
+      <a id='home' className='menu-item' href='/'> <Link to='/'> Home </Link> </a>
+      <a id='bio' className='menu-item' href= '/bio/'> <Link to='/bio/'> Bio </Link> </a>
+      <a id='resume' className='menu-item' href='/Resume/'> <Link to='/Resume/'> Resume </Link> </a>
+      <a id='opensourcegrid' className='menu-item' href='/opensourceGrid/'><Link to='/opensourceGrid/'> Open Source </Link> </a>
+      <a id='publicationsgrid' className='menu-item' href='/publicationsGrid/'> <Link to='/publicationsGrid/'> Publications </Link> </a>
+      <a id='contactinqueries' className='menu-item' href='/contactInqueries/'> <Link to='/contactInqueries/'> Query </Link> </a>
+      <a id='systemsettings' className='menu-item' href='/systemSettings/'> <Link to='/systemSettings/'> System Settings </Link> </a>
     </Slider>
     </div>
   )

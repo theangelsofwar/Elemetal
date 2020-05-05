@@ -1,7 +1,7 @@
 // import { Web3Provider } from '@ethersproject/providers';
 // import { Web3ReactProvider } from '@web3-react/core';
-import './global.css';
-import React from 'react';
+// import './global.css';
+// import React from 'react';
 
 
 // function getLibrary(provider) {

@@ -77,7 +77,13 @@ const bio = (): JSX.Element => {
             </section>
             
             <GlowQuotesContainer />
-            <p> Playlist Recommendations: </p>
+            <div id='glow' className='glow'>
+              <p> <u> Playlist Recommendations: </u> </p>
+              <p> <a href='https://open.spotify.com/playlist/27deDGvuTSvA3a7OV0KPM7'> Coding Music </a> </p>
+              <p> <a href='https://open.spotify.com/playlist/2BhVf83Tbg2kbFkTeOZSKr'> Techno Electronic </a> </p>
+              <p> <a href='https://open.spotify.com/playlist/04G7HkQP1WTKPe0QaGnUCM'> Helios </a> </p>
+              <p> <a href='https://open.spotify.com/playlist/37i9dQZF1DX6GJXiuZRisr'> Vaporwave/Synthewave </a> </p>
+            </div>
             <br />
 
           </div>

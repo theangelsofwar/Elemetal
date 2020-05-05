@@ -51,13 +51,12 @@ module.exports = {
     `gatsby-plugin-chakra-ui`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sitemap`,
-
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-anchor-links`,
       options: {
-        offset: -17,
+        offset: 0,
       },
     },
     `gatsby-plugin-emotion`,
@@ -111,6 +110,12 @@ module.exports = {
       options: {
         path: `${__dirname}/src/pages`
       },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-embed-spotify`]
+      }
     },
     `gatsby-transformer-yaml`,
     {

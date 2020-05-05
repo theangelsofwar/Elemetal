@@ -1,11 +1,8 @@
 import styled from 'styled-components';
 
 export const Navbar = styled.div`
-  display: flex;
-  width: 100%;
   align-items: center;
   z-index: 999;
-  box-shadow: whitesmoke;
   padding: 15px 0px;
   justify-content: center;
   color: darkslategray;

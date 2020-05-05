@@ -1,5 +1,4 @@
 /* tslint:disable */
-// Yve Vestal Titan (YVT Create Logo)
 // import '../../node_modules/augmented-ui/augmented.css';
 import {graphql, Link} from 'gatsby';
 import Img from 'gatsby-image';
@@ -11,7 +10,6 @@ import React, {useEffect, useState} from 'react';
 import Technologies from '../components/Technologies';
 //<Link to="/page-2/" />
 import Showcase from '../components/Showcase';
-//    <h1> Angie Chang </h1>
 // import Divider from '../components/Divider'
 import NavBar, {ElementsWrapper} from 'react-scrolling-nav';
 import Image from '../components/image';
