@@ -96,6 +96,9 @@ Fortmatic: For integrating a dApp into the Ethereum Blockchain(currently in test
 For more information, check out:
 https://docs.fortmatic.com/web3-integration 
 
+Adding ReCaptcha
+- npm install react-recaptcha-google
+
 What is 
 
 Interplanetary File Transfer(IPFS)

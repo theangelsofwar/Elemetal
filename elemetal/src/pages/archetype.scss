@@ -18,6 +18,7 @@
   position: relative;
   box-sizing: border-box;
   min-height: 90vh;
+  text-align: center;
   margin: 1.3em;
   color: ghostwhite;
   font-size: 1.1em;
@@ -31,6 +32,8 @@
 
 form {
     position: flex;
+    text-align: center;
+    justify-content: center;
     flex-direction: row;
     margin: auto;
     align-content: center;  
@@ -38,16 +41,16 @@ form {
     button {
       box-sizing: border-box;
       align-content: center;
-      background-color: rgba(47, 79, 79, 0.017);
-      background-image: linear-gradient(to bottom, ghostwhite, rgba(80, 87, 87, 0.103), rgba(81, 79, 82, 0.625), rgba(109, 127, 154, 0.091));
+      background-color: transparent;
+      background-image: linear-gradient(to left, rgba(5, 41, 14, 0.797), rgba(13, 50, 31, 0.68), rgba(19, 51, 52, 0.797), rgba(90, 225, 155, 0.626));
       padding: 5px 9px 5px 9px;
       border-radius: 7px;
     }
 
     button:hover {
       background-color: #0abab40a;
-      background-image: linear-gradient(to right,rgba(80, 87, 87, 0), rgba(79, 82, 82, 0.318), #0abab5, rgba(86, 104, 104, 0.53));
-      border-radius: 7px;
+      // background-image: linear-gradient(to right,rgba(80, 87, 87, 0), rgba(79, 82, 82, 0.318), #0abab5, rgba(86, 104, 104, 0.53));
+      // border-radius: 7px;
     }
 }
 
@@ -61,11 +64,19 @@ label {
   padding: 3vw;
 }
 
-input, .content {
+input, .content, select {
   padding: 4.2vw;
   margin: 3vw;
   background-image: linear-gradient(to bottom right,rgba(35, 36, 38, 0.755), rgba(81, 79, 82, 0.625));
   border-radius: 17px;
+}
+
+
+option {
+  background-image: linear-gradient(to bottom right,rgba(35, 36, 38, 0.755), rgba(81, 79, 82, 0.625));
+  border-radius: 17px;
+  margin-top: 0.7em;
+  padding: 0.3em;
 }
 
 

@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import PageSlidebar from '../components/PageSlidebar';
+import { loadReCaptcha, ReCaptcha } from 'react-recaptcha-google';
 import './archetype.scss';
 // import { SeeThrough } from 'react-see-through';
 import '../carraway/glow/glow.scss';
@@ -30,12 +31,12 @@ const contactInqueries = (): JSX.Element => {
       <PageSlidebar />
         <div id='page-wrap'>
           <div id='contactinqueries' className='contactinqueries'>
-          <center> <text> Let's Talk Business... </text> </center>
+          <text> Let's Talk Business... </text>
             <section>
             <br/>
             <div id='glow' className='glow'> <p> <h1> Contact for Queries </h1> </p> </div>
-            <form method='post' action='#'>
-              <center>
+            <form name='contact' method='post' data-netlify='true' data-netlify-recaptcha='true' action='mailto:yvevestal@gmail.com'>
+            
               <div className='form-group'>
               <label>
                 {"Name or Alias    "}
@@ -44,11 +45,21 @@ const contactInqueries = (): JSX.Element => {
               </div>
 
               <div className='form-group'>
+                <label> Select 
+                  <select name='role[]' multiple>
+                    <option value='leader'> Leader </option>
+                    <option value='follower'> Follower </option>
+                  </select> 
+                </label>
+              </div>
+
+              <div className='form-group'>
               <label>
                {"Email     "}
               <input type='email' className='email' id='email' />
               </label>
               </div>
+
 
               <div className='form-group'>
               <label>
@@ -60,11 +71,12 @@ const contactInqueries = (): JSX.Element => {
               <div className='form-group'>
               <label>
                {"Content      "}
-                <textarea className='content' id='content' rows={5} />
+                <textarea className='content' name='message' id='content' rows={5} />
               </label>
               </div>
-            <a className='email' href="mailto:yvevestal@gmail.com"> <button type='submit' onClick={handleClick}> <div className='glow' id='glow'> <p>  Send It </p> </div> </button> </a>
-            </center>
+
+             <button type='submit'> <div className='glow' id='glow'> <p>  Send It </p> </div> </button>
+
             </form>
             
             </section>

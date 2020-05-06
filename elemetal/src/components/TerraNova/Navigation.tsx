@@ -6,8 +6,7 @@ export const Navbar = styled.div`
   padding: 15px 0px;
   justify-content: center;
   color: darkslategray;
-  height: 5rem;
-`
+  `
 
 export const NavWrapper =  styled.div`
   display: flex;
@@ -28,7 +27,6 @@ export const Nav = styled.nav`
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center;
-  height: auto;
 `
 
 export const NavItem = styled.ul`
