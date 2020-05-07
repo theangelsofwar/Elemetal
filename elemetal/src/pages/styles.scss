@@ -46,8 +46,10 @@ body {
 .nav-scroll {
   box-sizing: border-box;
   // border-radius: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  // position: fixed;
   min-height: 13vh;
-  position: fixed;
   background-color: #061716;
   font-size: larger;
   font-weight: 6px;
@@ -67,7 +69,7 @@ body {
 
 .nav-scroll a:before {
   // content: "";
-  position: fixed;
+  // position: fixed;
   top: 0;
   // left: -1%;
   width: 100%;

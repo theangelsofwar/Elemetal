@@ -1,5 +1,4 @@
 import React from 'react'
-
 import GlowQuote from './GlowQuote'
 import '../../../carraway/glow/glow.scss';
 
@@ -35,6 +34,10 @@ const someQuotes=[{
   author: "Ralph Waldo Emerson",
   source: "Self Reliance, The Enlightenment Period",
   quote: "Let us advance on Chaos and the Dark"
+}, {
+  author: "Oscar Wilde",
+  source: "The Picture of Dorian Gray",
+  quote: "To define is to limit."
 }]
 //make random ever 4 words in bold
 //digital butterfly
