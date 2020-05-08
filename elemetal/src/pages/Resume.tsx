@@ -4,49 +4,42 @@ import React from 'react';
 import Layout from '../components/layout';
 import PageSlidebar from '../components/PageSlidebar';
 import './archetype.scss';
+import SEO from '../components/seo';
 // import { Document, Page } from 'react-pdf';
 // import { PDFDownloadLink } from '@react-pdf/renderer';
 // import 'react-pdf/dist/Page/AnnotationLayer.css';
 import '../carraway/glow/glow.scss';
 import './archetype.scss';
 import styled from 'styled-components';
-// import { File } from 'graphql-types';
-// <Document 
-// file={require('../../static/Resume/AngieYveCV.docx.pdf')}
-// onLoadSuccess={onDocumentLoadSuccess}
-// >
-//   <Page pageNumber={pageNumber} />
-// </Document>
-// <DownloadURL 
-// href={require('../../static/Resume/AngieYveCV.docx.pdf')} 
-// type="application/pdf"
-// > <h2> Resume </h2> </DownloadURL>
-{/* <PDFDownloadLink document={require(`../../static/Resume/YveAngieCV.docx.pdf`)}
-fileName='AngieYveResume.pdf'
-style={{
-  textDecoration: "none",
-  padding: "10px",
-  color: "darkslategray",
-  backgroundColor: "ghostwhite",
-  border: "1px solid #4a4a4a"
-}}
->
-Download Resume PDF
-</PDFDownloadLink> */}
+
 
 const DownloadURL = styled.a`
   display: none;
 `
-//<PortfolioItem 
-// title='Resume'
-// link={withPrefix('../../static/Resume/AngieYveRoaring20sResume.docx')}
-// />
+
 
 const Resume = (): JSX.Element => {
 
-
   return (
   <Layout>
+    <SEO
+        title="Angela Yve Chang"
+        keywords={[
+          `react`,
+          `developer`,
+          `savage`,
+          `javascript`,
+          `gatsby`,
+          `angiechangpagne`,
+          `open-source`,
+          `los-angeles`,
+          `decentralized`,
+          `ethereum`,
+          `blockchain-developer`,
+          `dApp`,
+          `builtinla`,
+        ]}
+      />
   <div id="carraway">
     <PageSlidebar />
         <div id='page-wrap'>
@@ -65,7 +58,6 @@ const Resume = (): JSX.Element => {
            <footer> Developer | Futurist | Designer </footer>
 
     </div>
-
   </div>
   </Layout>
   )

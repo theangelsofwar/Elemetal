@@ -3,6 +3,7 @@ import React from 'react'
 import Layout from '../components/layout';
 import PageSlidebar from '../components/PageSlidebar';
 // import Image from '../components/image';
+import SEO from '../components/seo';
 import '../carraway/glow/glow.scss';
 import './archetype.scss';
 
@@ -18,6 +19,24 @@ const bio = (): JSX.Element => {
 
   return (
     <Layout>
+    <SEO
+        title="Angie Chang"
+        keywords={[
+          `react`,
+          `developer`,
+          `savage`,
+          `javascript`,
+          `gatsby`,
+          `angiechangpagne`,
+          `open-source`,
+          `los-angeles`,
+          `decentralized`,
+          `ethereum`,
+          `blockchain-developer`,
+          `dApp`,
+          `builtinla`,
+        ]}
+    />
     <div id="carraway">
       <PageSlidebar />
         <div id='page-wrap'>

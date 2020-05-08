@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import PageSlidebar from '../components/PageSlidebar';
-import { loadReCaptcha, ReCaptcha } from 'react-recaptcha-google';
+// import { loadReCaptcha, ReCaptcha } from 'react-recaptcha-google';
 import './archetype.scss';
 // import { SeeThrough } from 'react-see-through';
 import '../carraway/glow/glow.scss';
@@ -11,22 +11,26 @@ import '../carraway/glow/glow.scss';
 
 const contactInqueries = (): JSX.Element => {
 
-
-  // const queryData = ""
-  // //     firstName,
-  // //     lastName,
-  // //     email,
-  // //     email,
-  // //     subjectLine,
-  // //     message
-  // // };
-  const handleClick = () => {
-    //mail to my email, insert message from their text body and sent it behind the scenes, inquiry Q/A
-
-  }
-
   return (
     <Layout>
+      <SEO
+        title="Angie Chang"
+        keywords={[
+          `react`,
+          `developer`,
+          `savage`,
+          `javascript`,
+          `gatsby`,
+          `angiechangpagne`,
+          `open-source`,
+          `los-angeles`,
+          `decentralized`,
+          `ethereum`,
+          `blockchain-developer`,
+          `dApp`,
+          `builtinla`,
+        ]}
+      />
       <div id="carraway">
       <PageSlidebar />
         <div id='page-wrap'>
@@ -60,7 +64,6 @@ const contactInqueries = (): JSX.Element => {
               </label>
               </div>
 
-
               <div className='form-group'>
               <label>
                 {"Subject Line      "}
@@ -74,18 +77,15 @@ const contactInqueries = (): JSX.Element => {
                 <textarea className='content' name='message' id='content' rows={5} />
               </label>
               </div>
-
              <button type='submit'> <div className='glow' id='glow'> <p>  Send It </p> </div> </button>
-
             </form>
-            
+  
             </section>
           </div>
           <footer> Developer | Futurist | Designer </footer>
-
         </div>
-
       </div>
+
     </Layout>
   )
 }
