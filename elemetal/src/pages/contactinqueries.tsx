@@ -1,4 +1,3 @@
-/* tslint:disable */
 import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -23,12 +22,12 @@ export const ContactInqueries = (): JSX.Element => {
 
             <br/>
             <div id='glow' className='glow'> <p> <h1> Contact for Queries </h1> </p> </div>
-            <form name='contact' method='post' data-netlify='true' data-netlify-recaptcha='true' action='mailto:yvevestal@gmail.com'>
+            <form name='ContactInqueries' method='POST' data-netlify='true' data-netlify-recaptcha='true'>
             
               <div className='form-group'>
               <label>
                 {"Name or Alias    "}
-              <input type='text' className='firstName' id='firstName' />
+              <input type='text' name='firstname' className='firstName' id='firstName' />
               </label>
               </div>
 
@@ -44,23 +43,24 @@ export const ContactInqueries = (): JSX.Element => {
               <div className='form-group'>
               <label>
                {"Email     "}
-              <input type='email' className='email' id='email' />
+              <input type='email' name='email' className='email' id='email' />
               </label>
               </div>
 
               <div className='form-group'>
               <label>
                 {"Subject Line      "}
-                <input type='text' className='subject' id='subject' />
+                <input type='text' name='subjeft' className='subject' id='subject' />
               </label>
               </div>
 
               <div className='form-group'>
               <label>
                {"Content      "}
-                <textarea className='content' name='message' id='content' rows={5} />
+                <textarea className='content' name='content' id='content' rows={5} />
               </label>
               </div>
+              <input type="hidden" name="contactInqueries" value="contactInqueries" />
              <button type='submit'> <div className='glow' id='glow'> <p>  Send It </p> </div> </button>
             </form>
   

@@ -91,7 +91,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         ...siteMetadata,
-        name: `angie-yve-chang`,
+        name: `Angels Of War`,
         lang: `en-US`,
         short_name: `Angie Yve Chang`,
         start_url: `/`,
@@ -99,7 +99,7 @@ module.exports = {
         background_color: `darkslategray`,
         theme_color: `ghostwhite`,
         display: `minimal-ui`,
-        icon: `src/images/angel-lines.png`, // This path is relative to the root of the site.
+        icon: `src/images/angel-lines.jpg`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-typescript`,
