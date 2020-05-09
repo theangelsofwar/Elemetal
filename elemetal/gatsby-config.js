@@ -7,7 +7,7 @@ const path = require('path');
 
 const siteMetadata= {
   name: `Elemetal`,
-  author: `Yve Vestal Titan (angiechangpagne)`,
+  author: `Angels Of War (angiechangpagne)`,
   description: `Software Developer based in Los Angeles, my mission is to Code Through the Edges of Reality`,
   social: {
     linkedin: `angiechangpagne`,
@@ -17,7 +17,7 @@ const siteMetadata= {
 module.exports = {
   siteMetadata: {
     title: `Elemetal`,
-    name: `YVT`,
+    name: `Angels Of War`,
     tagline: `Coding Through the Edges of Reality`,
     description: `Web Developer based in Los Angeles`,
     author: `@angiechangpagne`,
@@ -59,7 +59,7 @@ module.exports = {
         offset: 0,
       },
     },
-    `gatsby-plugin-emotion`,
+    // `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
@@ -103,7 +103,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-typescript`,
-    `gatsby-plugin-transition-link`,
+    // `gatsby-plugin-transition-link`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-page-creator`,

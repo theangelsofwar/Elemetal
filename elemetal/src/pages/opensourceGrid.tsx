@@ -127,6 +127,6 @@ export const opensourceGrid = (): JSX.Element => {
     </div>
     </Layout>
   )
-}
+};
 
 export default opensourceGrid;
