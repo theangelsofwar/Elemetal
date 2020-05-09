@@ -3,7 +3,7 @@
   "private": true,
   "description": "Coding Through The Edges of Reality",
   "version": "0.1.0",
-  "author": "Yve Vestal Titan(angiechangpagne)",
+  "author": "Angie Yve(angiechangpagne)",
   "dependencies": {
     "@blueprintjs/core": "^3.25.0",
     "@chakra-ui/core": "^0.7.0",
@@ -146,7 +146,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "gatsby build && gh-pages -d public",
     "medium": "node medium.ts",
     "test": "jest",
     "lint": "tslint --project .",

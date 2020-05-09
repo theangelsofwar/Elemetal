@@ -108,7 +108,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-page-creator`,
       options: {
-        path: `${__dirname}/src/pages`
+        path: `${path.resolve(__dirname)}/src/pages`
       },
     },
     {

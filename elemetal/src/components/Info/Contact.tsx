@@ -1,15 +1,6 @@
 import React from 'react';
-import Helmet from 'react-helmet';
-import StyledLink from '../StyledLink';
 import { Link } from 'gatsby';
 import './styles.scss';
-//<StyledLink className="b" href="mailto:yvevestal@gmail.com" >
-// Email
-// </StyledLink>
-//<StyledLink className="b" href="https://github.com/angiechangpagne" >
-// Github Open Source
-// </StyledLink>
-//add new Logo YVT
 
 const Contact = (): JSX.Element => (
   <React.Fragment>
