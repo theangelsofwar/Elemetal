@@ -146,7 +146,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public",
+    "deploy": "gatsby build",
     "medium": "node medium.ts",
     "test": "jest",
     "lint": "tslint --project .",

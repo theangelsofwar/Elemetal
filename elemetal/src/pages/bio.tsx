@@ -43,7 +43,7 @@ const bio = (): JSX.Element => {
           <div id='bio' className='bio'>
            <div className='glow' id='glow'>
              <p>
-               <header> Welcome to My Digital  Ether </header>
+             <header> Welcome to My Digital  Ether </header>
   
              <header> {'<Angie/>'}</header> 
               <center>  <p>       ______________</p>  </center>
@@ -114,5 +114,5 @@ const bio = (): JSX.Element => {
     </Layout>
   )
 
-}
-export default bio
+};
+export default bio;

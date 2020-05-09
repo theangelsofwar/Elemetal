@@ -10,11 +10,11 @@ import {Helmet} from 'react-helmet';
 // add floating icons to technologies used, source their logos with image sources addresses
 import './layout.scss';
 //add binary clock
-import PageSlidebar from './PageSlidebar';
+// import PageSlidebar from './PageSlidebar';
 // import PropTypes from "prop-types";
-import Header from './header';
+// import Header from './header';
 //<Header />
-import '../carraway/glow/glow.scss';
+// import '../carraway/glow/glow.scss';
 
 interface Props {
   children: React.ReactNode
@@ -53,4 +53,4 @@ const Layout = ({children}: Props): JSX.Element => {
   )
 }
 
-export default Layout
+export default Layout;

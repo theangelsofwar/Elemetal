@@ -93,7 +93,7 @@ module.exports = {
         ...siteMetadata,
         name: `angie-yve-chang`,
         lang: `en-US`,
-        short_name: `Angie Yve Titan`,
+        short_name: `Angie Yve Chang`,
         start_url: `/`,
         color: `ghostwhite`,
         background_color: `darkslategray`,

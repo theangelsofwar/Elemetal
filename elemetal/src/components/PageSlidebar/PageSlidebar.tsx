@@ -13,13 +13,12 @@ import '../../carraway/glow/glow.scss';
 
 const PageSlidebar = (): JSX.Element => {
 
-  const showSettings= (event: any) => {
-    event.preventDefault();
-  }
-
+  // const showSettings = (event: any) => {
+  //   event.preventDefault();
+  // }
   return (
     <div id='scaleRotate' className='pageslidebar'>
-    <Slider pageWrapId={'page-wrap'} outerContainerId={'carraway'} customBurgerIcon={ <img src="../../images/yvtfavicon.png" alt=""/> }>
+    <Slider pageWrapId={'page-wrap'} outerContainerId={'carraway'} customBurgerIcon={ <img src="../../images/angel-lines.jpg" alt=""/> }>
       <a id='home' className='menu-item' href='/'> <Link to='/'> Home </Link> </a>
       <a id='bio' className='menu-item' href= '/bio/'> <Link to='/bio/'> Bio </Link> </a>
       <a id='resume' className='menu-item' href='/Resume/'> <Link to='/Resume/'> Resume </Link> </a>
@@ -30,6 +29,6 @@ const PageSlidebar = (): JSX.Element => {
     </Slider>
     </div>
   )
-}
+};
 
 export default PageSlidebar;

@@ -4,6 +4,7 @@ import Layout from '../components/layout';
 import './archetype.scss';
 import SEO from '../components/seo';
 import '../carraway/glow/glow.scss';
+
 const SystemSettings = (): JSX.Element => {
   return (
     <Layout>
@@ -31,14 +32,14 @@ const SystemSettings = (): JSX.Element => {
           <div id='systemsettings' className='systemsettings'>
           <div id='glow' className='glow'> <p> <h1> System Settings </h1> </p> </div>
 
-          <center> <p> {`<Angie . Stack/>`} </p> </center>
+          <center> <p> {`<Angie.Stack/>`} </p> </center>
           </div>
           <footer> Developer | Futurist | Designer </footer>
         </div>
     </div>
     </Layout>
   )
-}
+};
 
 
 export default SystemSettings;

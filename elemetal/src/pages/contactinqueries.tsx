@@ -2,41 +2,25 @@
 import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import { graphql } from 'gatsby';
 import PageSlidebar from '../components/PageSlidebar';
 // import { loadReCaptcha, ReCaptcha } from 'react-recaptcha-google';
-import './archetype.scss';
 // import { SeeThrough } from 'react-see-through';
 import '../carraway/glow/glow.scss';
+import './archetype.scss';
 
 
-const contactInqueries = (): JSX.Element => {
+export const ContactInqueries = (): JSX.Element => {
 
   return (
     <Layout>
-      <SEO
-        title="Angie Chang"
-        keywords={[
-          `react`,
-          `developer`,
-          `savage`,
-          `javascript`,
-          `gatsby`,
-          `angiechangpagne`,
-          `open-source`,
-          `los-angeles`,
-          `decentralized`,
-          `ethereum`,
-          `blockchain-developer`,
-          `dApp`,
-          `builtinla`,
-        ]}
-      />
       <div id="carraway">
       <PageSlidebar />
         <div id='page-wrap'>
           <div id='contactinqueries' className='contactinqueries'>
-          <text> Let's Talk Business... </text>
             <section>
+            <p> Let's Talk Business... </p>
+
             <br/>
             <div id='glow' className='glow'> <p> <h1> Contact for Queries </h1> </p> </div>
             <form name='contact' method='post' data-netlify='true' data-netlify-recaptcha='true' action='mailto:yvevestal@gmail.com'>
@@ -85,9 +69,8 @@ const contactInqueries = (): JSX.Element => {
           <footer> Developer | Futurist | Designer </footer>
         </div>
       </div>
-
     </Layout>
   )
-}
+};
 
-export default contactInqueries;
+export default ContactInqueries;
