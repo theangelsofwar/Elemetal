@@ -2,8 +2,9 @@ import { Link } from 'gatsby';
 import React, {ReactNode} from 'react';
 import styled from 'styled-components';
 import colors from '../utils/colors';
-
-
+//HOC
+//${(props: any) => props.linkColor || colors.defaultLink };
+// ${(props: any) => props.hoverColor || colors.defaultHover };
 interface Props {
   children: ReactNode | string
   className?: string
@@ -29,22 +30,54 @@ const StyledLink = (props: Props): JSX.Element => {
 }
 
 export default styled(StyledLink)`
-  border-bottom: 2px solid ${(props: any) => props.linkColor || colors.defaultLink };
   position: relative;
+  border-bottom: 2px solid #0abab5;
   text-decoration: none;
 
-  &::before {
-    background-color: ${(props: any) => props.hoverColor || colors.defaultHover };
+  &::before,
+  &:after {
+    background-color: ghostwhite;
+    opacity: 0;
     bottom: -2px;
     content: '';
     height: 2px;
     left: 0;
     position: absolute;
     transform: scaleX(0);
-    transition: all .25s ease-in-out 0s;
+    transition: opacity 0.25s ease-out, transform 0.25s ease-out;
     visibility: hidden;
     width: 100%;
   }
+
+  &:before {
+    left: 0;
+    top: -0.75rem;
+    transform-origin: center left;
+  }
+
+  &:after {
+    right: 0;
+    bottom: -0.75rem;
+    transform-origin: center right;
+  }
+
+  &:hover, 
+  &:focus {
+    color: #0abab5;
+    transition: color 0.2s ease-out;
+  }
+
+  &.active {
+    color: #0abab5;
+    transition: color 0.2s ease-out;
+
+    &:before, 
+    &:after {
+      opacity: 1;
+      transoform: scaleX(1);
+    }
+  }
+
   &:hover:before {
     transform: scaleX(1);
     visibility: visible;

@@ -14,7 +14,7 @@
   src: local('Vogue'), url(../fonts/Vogue.ttf) format('truetype');
 }
 
-.bio, .opensourcegrid, .contactinqueries, .publicationsgrid, .resume, .systemsettings {
+.bio, .opensourcegrid, .contactinqueries, .publicationsgrid, .resume, .systemsettings, .archives {
   position: relative;
   box-sizing: border-box;
   min-height: 90vh;
@@ -25,11 +25,18 @@
   min-width: 80vw;
   max-width: 90vw;
   justify-content: center;
+  background-color: transparent;
   background-image: linear-gradient(to bottom right,rgba(35, 36, 38, 0.755), rgba(81, 79, 82, 0.625));
   padding: 42px;
   border-radius: 24px;
 }
 
+.archives, #archives {
+  box-sizing: border-box;
+  background-color: transparent;
+  align-content: center;
+  margin: auto;
+}
 form {
     position: flex;
     text-align: center;

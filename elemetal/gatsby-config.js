@@ -6,7 +6,7 @@ const path = require('path');
 // web3 = new Web3(fm.getProvider());
 
 const siteMetadata= {
-  name: `Elemetal`,
+  name: `Angels Of War`,
   author: `Angels Of War (angiechangpagne)`,
   description: `Software Developer based in Los Angeles, my mission is to Code Through the Edges of Reality`,
   social: {
@@ -16,7 +16,7 @@ const siteMetadata= {
 
 module.exports = {
   siteMetadata: {
-    title: `Elemetal`,
+    title: `Angels Of War`,
     name: `Angels Of War`,
     tagline: `Coding Through the Edges of Reality`,
     description: `Web Developer based in Los Angeles`,
@@ -95,11 +95,11 @@ module.exports = {
         lang: `en-US`,
         short_name: `Angie Yve Chang`,
         start_url: `/`,
-        color: `ghostwhite`,
-        background_color: `darkslategray`,
-        theme_color: `ghostwhite`,
+        color: `darkslategray`,
+        background_color: `ghostwhite`,
+        theme_color: `#0abab5`,
         display: `minimal-ui`,
-        icon: `src/images/angel-lines.jpg`, // This path is relative to the root of the site.
+        icon: `src/images/angelsOfWar.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-typescript`,
@@ -108,7 +108,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-page-creator`,
       options: {
-        path: `${path.resolve(__dirname)}/src/pages`
+        path: `${path.resolve(__dirname)}/src/pages`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-transition-link`,
+      options: {
+        injectPageProps: false,
       },
     },
     {

@@ -146,7 +146,8 @@ figure {
 }
 hr {
   box-sizing: content-box;
-  height: 2px;
+  height: 3px;
+  color: ghostwhite;
   overflow: visible;
 }
 button,
@@ -530,10 +531,10 @@ hr {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
+  color: ghostwhite;
   margin-bottom: calc(1.45rem - 1px);
   background: hsla(154, 62%, 57%, 0.692);
-  border: none;
-  height: 1px;
+  height: 3px;
 }
 address {
   margin-left: 0;

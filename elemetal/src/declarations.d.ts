@@ -8,3 +8,4 @@ declare module 'hoverglow';
 declare module 'react-see-through';
 declare module 'react-pdf';
 declare module 'react-recaptcha-google';
+declare module 'gatsby-plugin-transition-link';

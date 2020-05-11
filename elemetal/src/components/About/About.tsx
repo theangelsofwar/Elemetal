@@ -32,7 +32,7 @@ const About = (): JSX.Element => {
       <Helmet title={'<angie.stack/>'} />
       <div id='glow' className='glow'>
         <p> <header> Code Through the Edges of Reality </header> </p>
-        <center> <p> ___________________________________________ </p>  </center> 
+        <p> <hr /> </p>  
       </div>
       <div id='tao' className='tao'>
         <div id="tao-1" className='tao-1'>

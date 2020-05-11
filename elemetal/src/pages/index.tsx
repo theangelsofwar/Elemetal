@@ -3,7 +3,7 @@
 import {graphql, Link} from 'gatsby';
 import Img from 'gatsby-image';
 import '../fonts/Vogue.ttf';
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 // import bio from '../components/bio';
 // import {Box, Flex} from 'rebass'
 // import Resume from './Resume';

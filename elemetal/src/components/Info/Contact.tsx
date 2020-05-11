@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import TransitionLink from 'gatsby-plugin-transition-link';
 import './styles.scss';
 
 const Contact = (): JSX.Element => (
@@ -12,7 +13,7 @@ const Contact = (): JSX.Element => (
       <br />
       <a href="https://github.com/angiechangpagne"> <u> Github </u> </a>
       <br />
-      <Link to='/contactInqueries/'> <u> Send a FAX Message </u> </Link>
+      <TransitionLink activeClass='active' className='transition-link' to='/contactInqueries'> <u> Send a FAX Message </u> </TransitionLink>
   </div>
   </React.Fragment>
 );

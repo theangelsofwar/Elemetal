@@ -46,7 +46,7 @@ const bio = (): JSX.Element => {
              <header> Welcome to My Digital  Ether </header>
   
              <header> {'<Angie/>'}</header> 
-              <center>  <p>       ______________</p>  </center>
+              <p>  <hr /> </p>  
               <header> Hi There, </header> 
               </p> 
             </div>
@@ -57,7 +57,7 @@ const bio = (): JSX.Element => {
                 
             <img src={require('../images/toptal.jpg')} alt="Angie.Stack"/>            
             </span>
-            <center> <div id='glow' className='glow'> <p>       _____________________________________________</p> </div> </center>
+            <div id='glow' className='glow'> <p> <hr/> </p> </div> 
             <br />
             <p> Besides Technology, I am fascinated by philosophy, architecture, design, and I try to live by the idea of applying concepts and patterns from different walks of life and embed those ideas into technology. Growing up, I would often contemplate our existence, the very idea of a  <b> void. </b></p> 
             <p> I've later reached the conclusion that when you try to understand life, you figure that coding is a much simpler thing to understand . . .  I then realized that my aim in life is to push past the edges of reality. </p>
@@ -69,7 +69,7 @@ const bio = (): JSX.Element => {
               holds and am eager to take that step in joining the movement. </p> 
             
             <p> Here are some of the technologies I enjoy using: </p>
-            <center> <div id='glow' className='glow'> <p>       ______________________________ </p> </div> </center> 
+            <div id='glow' className='glow'> <p> <hr /> </p> </div> 
 
             <ul>
               <br />
@@ -89,7 +89,7 @@ const bio = (): JSX.Element => {
                 Solidity, Ethereum, Blockchain, Rust, decentralized React Applications
               </li>
             </ul>
-            <center> <div id='glow' className='glow'> <p>     _________________________________ </p></div> </center>
+            <div id='glow' className='glow'> <p> <hr /> </p> </div> 
             <br />
             <section>
 

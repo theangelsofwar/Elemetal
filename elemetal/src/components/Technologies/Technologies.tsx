@@ -8,6 +8,7 @@ const Technologies = (): JSX.Element => (
     <div id='glow' className='glow'> 
     <p> 
       <header> Technologies: </header>
+      <hr />
     </p> 
     </div>
 

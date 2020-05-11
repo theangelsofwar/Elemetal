@@ -9,6 +9,28 @@
   width: device-width;
   height: device-height;
 }
+// Transform mixin
+@mixin transform($property){	
+	-webkit-transform: $property;
+  -moz-transform: $property;
+  transform: $property; 
+}
+
+// Transition mixin
+@mixin single-transition($property:all, $speed:150ms, $ease:ease, $delay: 0s){	
+	-webkit-transition: $property $speed $ease $delay;	
+  transition: $property $speed $ease $delay;
+}
+@mixin sweepButtonGradient(){
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(90deg,  rgba(0,0,0,1) 0%, rgba(255,38,38,1) 94%, rgba(0,0,0,1) 100%);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(0,0,0,1)), color-stop(94%,rgba(255,38,38,1)), color-stop(100%,rgba(0,0,0,1)));
+  background: -webkit-linear-gradient(90deg,  rgba(0,0,0,1) 0%,rgba(255,38,38,1) 94%,rgba(0,0,0,1) 100%);
+  background: -o-linear-gradient(90deg,  rgba(0,0,0,1) 0%,rgba(255,38,38,1) 94%,rgba(0,0,0,1) 100%);
+  background: -ms-linear-gradient(90deg,  rgba(0,0,0,1) 0%,rgba(255,38,38,1) 94%,rgba(0,0,0,1) 100%);
+  background: linear-gradient(90deg,  rgba(0,0,0,1) 0%,rgba(255,38,38,1) 94%,rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 );
+}
 
 /* .react-burger-menu {
   max-width: 17vw;
@@ -55,14 +77,15 @@
 .bm-burger-button {
   position: fixed;
   box-sizing: border-box;
-  min-width: 4.2vw;
+  width: 6vw;
   height: 6.6vh;
   text-decoration: none;
   left: 4.2vw;
   top: 15vh;
-  background-color: #0abab5;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, ghostwhite, transparent);
   border: 3px groove ghostwhite;
-  transition: all .3s ease-in-out;
+  transition: all .2s ease-in-out;
   border-radius: 66px;
   -webkit-border-radius: 66px;
   -moz-border-radius: 66px;
@@ -74,7 +97,7 @@
   border-radius: 17px;
   width: 6vw;
   height: 9vh;
-  background-color: rgba(188, 158, 249, 0.034);
+  background-color: rgba(115, 205, 184, 0.034);
   background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.83), rgba(112, 98, 119, 0.303));
 }
 
@@ -96,7 +119,6 @@
 
 .menu-item, .menu-item--small {
   min-width: 17vw;
-  // max-width: 24vw;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -104,22 +126,54 @@
   text-decoration: none;
   box-sizing: border-box;
   cursor: pointer;
-  /* position: absolute; */ 
+  z-index: -1;
+  @include single-transition(all, 0.2s, ease-out, 0s);
+  .gradient {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300%;
+    height: 100%;
+    bottom: auto;
+    margin: auto;
+    z-index: -1;
+    @include sweepButtonGradient(); //transition gradient descent
+    @include single-transition(all, 0s, ease-out, 0s);
+    @include transform(translateX(-35%));
+  }
+
+  &:hover, &:focus {
+    border: 2px solid ghostwhite;
+    @include single-transition(all, 0.3s, ease-out, 0.1s);
+    .gradient {
+      @include transform(translateX(100%));
+      @include single-transition(all, 0.8s, ease-out, 0s);
+    }
+  }
+
+  @include transform(translateX(-35%));
   font-size: 1.5rem;
   font-weight: 4.2px;
   padding: 3vh 0 2.1vh 5.1vw;
+  transition: 0.5s;
+
+  
 }
+
 
 .menu-item:hover {
   box-sizing: border-box;
+  background-position: right center;
   border-radius: 17px;
-  background-color: rgba(145, 205, 218, 0.164);
-  background-image: linear-gradient(to right, #0abab5, rgba(145, 205, 218, 0), ghostwhite);
+  background-color: transparent;
+  background-image: linear-gradient(to right, #0abab5, rgba(34, 86, 44, 0.886), rgba(17, 53, 17, 0.948),rgba(123, 9, 9, 0.818), ghostwhite);
   color: ghostwhite;
   text-shadow: none;
   font-weight: 6px;
-}
+  transition: all 0.5s ease-in-out;
 
+}
 
 // @media only screen and (min-width: 1025px){
 //   body {
