@@ -22,7 +22,7 @@ export const ContactInqueries = (): JSX.Element => {
 
             <br/>
             <div id='glow' className='glow'> <p> <h1> Contact for Queries </h1> </p> </div>
-            <form name='ContactInqueries' method='POST' data-netlify='true' data-netlify-recaptcha='true'>
+            <form name='ContactInqueries' method='POST'>
             
               <div className='form-group'>
               <label>
@@ -50,7 +50,7 @@ export const ContactInqueries = (): JSX.Element => {
               <div className='form-group'>
               <label>
                 {"Subject Line      "}
-                <input type='text' name='subjeft' className='subject' id='subject' />
+                <input type='text' name='subject' className='subject' id='subject' />
               </label>
               </div>
 

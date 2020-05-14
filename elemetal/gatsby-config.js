@@ -7,7 +7,7 @@ const path = require('path');
 
 const siteMetadata= {
   name: `Angels Of War`,
-  author: `Angels Of War (angiechangpagne)`,
+  author: `Angie Chang`,
   description: `Software Developer based in Los Angeles, my mission is to Code Through the Edges of Reality`,
   social: {
     linkedin: `angiechangpagne`,
@@ -17,9 +17,9 @@ const siteMetadata= {
 module.exports = {
   siteMetadata: {
     title: `Angels Of War`,
-    name: `Angels Of War`,
+    name: `Angie Chang`,
     tagline: `Coding Through the Edges of Reality`,
-    description: `Web Developer based in Los Angeles`,
+    description: `Software Developer based in Los Angeles`,
     author: `@angiechangpagne`,
     stacks: [
       "React",
@@ -103,7 +103,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-typescript`,
-    // `gatsby-plugin-transition-link`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-page-creator`,
@@ -134,6 +133,6 @@ module.exports = {
     `gatsby-plugin-sass`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    // `gatsby-plugin-offline`,tsby develop
   ],
 };
