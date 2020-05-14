@@ -135,6 +135,7 @@ Im going to do a post on the underlying theories and workings behind Gatsby, loo
 Next:
 Google Analytics(Do not go overboard)
 
-Tumblr
+Tumblr Clone
 
 
+To Do: Think Outside the Box

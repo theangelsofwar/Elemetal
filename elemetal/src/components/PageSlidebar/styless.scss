@@ -9,6 +9,19 @@
   width: device-width;
   height: device-height;
 }
+//linear-gradient(to right, #0abab5, rgba(34, 86, 44, 0.886), rgba(17, 53, 17, 0.948),rgba(123, 9, 9, 0.818), ghostwhite)
+// Transition mixin #477267
+@mixin sweepButtonGradient(){
+  background: #0e3736;
+  background: -moz-linear-gradient(90deg, #0e3736 0%, #0e3736 90%, #597e7e 92%, rgba(123, 9, 9, 0.818) 94%, #0e3736 100%);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#0e3736), color-stop(#597e7e 92%), color-stop(94%,rgba(123, 9, 9, 0.818)), color-stop(100%,#0e3736));
+  background: -webkit-linear-gradient(90deg, #0e3736 0%,#597e7e 92%, rgba(123, 9, 9, 0.818)94%, #0e3736 100%);
+  background: -o-linear-gradient(90deg, #0e3736 0%,#597e7e 92%, rgba(123, 9, 9, 0.818) 94%, #0e3736 100%);
+  background: -ms-linear-gradient(90deg, #0e3736 0%,#597e7e 92%, rgba(123, 9, 9, 0.818) 94%,#0e3736 100%);
+  background: linear-gradient(90deg, #0e3736 0%,#597e7e 92%, rgba(123, 9, 9, 0.818) 94%,#0e3736 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e3736', endColorstr='#0e3736',GradientType=1 );
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0abab5', endColorstr='#000000',GradientType=1 );
+}
 // Transform mixin
 @mixin transform($property){	
 	-webkit-transform: $property;
@@ -16,20 +29,25 @@
   transform: $property; 
 }
 
-// Transition mixin
 @mixin single-transition($property:all, $speed:150ms, $ease:ease, $delay: 0s){	
 	-webkit-transition: $property $speed $ease $delay;	
   transition: $property $speed $ease $delay;
 }
-@mixin sweepButtonGradient(){
-  background: rgb(0,0,0);
-  background: -moz-linear-gradient(90deg,  rgba(0,0,0,1) 0%, rgba(255,38,38,1) 94%, rgba(0,0,0,1) 100%);
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(0,0,0,1)), color-stop(94%,rgba(255,38,38,1)), color-stop(100%,rgba(0,0,0,1)));
-  background: -webkit-linear-gradient(90deg,  rgba(0,0,0,1) 0%,rgba(255,38,38,1) 94%,rgba(0,0,0,1) 100%);
-  background: -o-linear-gradient(90deg,  rgba(0,0,0,1) 0%,rgba(255,38,38,1) 94%,rgba(0,0,0,1) 100%);
-  background: -ms-linear-gradient(90deg,  rgba(0,0,0,1) 0%,rgba(255,38,38,1) 94%,rgba(0,0,0,1) 100%);
-  background: linear-gradient(90deg,  rgba(0,0,0,1) 0%,rgba(255,38,38,1) 94%,rgba(0,0,0,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 );
+
+
+body {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  &.link {
+      color: ghostwhite;
+    @include single-transition();
+    &:hover {
+      color: aliceblue;
+    }
+  }
 }
 
 /* .react-burger-menu {
@@ -41,8 +59,7 @@
 .bm-menu {
   box-sizing: border-box;
   box-shadow: rgba(237, 240, 240, 0.564) 3px -3px 3px;
-  background-color: transparent;
-  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.83), rgba(112, 98, 119, 0.303));
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.83), rgba(112, 98, 119, 0.303));
   margin: auto;
   font-size: 1.1em;
   font-weight: 4.2px;
@@ -54,10 +71,10 @@
 .pageslidebar {
   box-sizing: border-box;
   box-shadow: 3px solid ghostwhite;
+  text-align: center;
   display: inline-flex;
-  background-image: linear-gradient(to bottom right, ghostwhite, rgba(94, 111, 108, 0));
-  /* flex-direction: row; */
-  /* flex: 0 0 190px; */
+  background: linear-gradient(to bottom right, ghostwhite, rgba(94, 111, 108, 0));
+  display: block;
 }
 
 .bm-menu-wrap {
@@ -69,7 +86,7 @@
 }
 
 .bm-cross {
-  background-color: rgba(54, 54, 58, 0.762);
+  color: rgba(54, 54, 58, 0.762);
 }
 
 
@@ -82,8 +99,7 @@
   text-decoration: none;
   left: 4.2vw;
   top: 15vh;
-  background-color: transparent;
-  background-image: linear-gradient(to bottom, ghostwhite, transparent);
+  background: linear-gradient(to bottom, ghostwhite, transparent);
   border: 3px groove ghostwhite;
   transition: all .2s ease-in-out;
   border-radius: 66px;
@@ -97,8 +113,7 @@
   border-radius: 17px;
   width: 6vw;
   height: 9vh;
-  background-color: rgba(115, 205, 184, 0.034);
-  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.83), rgba(112, 98, 119, 0.303));
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.83), rgba(112, 98, 119, 0.303));
 }
 
 /* .bm-burger-bars {
@@ -106,7 +121,11 @@
 } */
 
 .bm-item-list {
-  display: inline-block;
+  display: block;
+  width: 100%;
+  float: left;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .bm-overlay {
@@ -114,21 +133,34 @@
 }
 
 .bm-morph-shape {
-  fill: #0abab471;
+  fill: #0abab5;
 }
 
-.menu-item, .menu-item--small {
-  min-width: 17vw;
-  display: flex;
+
+.menu-item, .menu-item--small{
+  width: 96%;
+  float: left;
+  margin: 0.2rem;
+  display: block;
   flex-direction: row;
   position: relative;
   flex-wrap: wrap;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 4.2px;
+  padding: 5%;
+  // padding: 3vh 0 2.1vh 5.1vw;
   text-decoration: none;
   box-sizing: border-box;
+  border-radius: 21px;
+  overflow: hidden;
+  color: ghostwhite;
+  background: linear-gradient(to right, #0e3736, darkslategray, #0e3736, #597e7e, #477267d2, rgba(61, 81, 79, 0.79));
   cursor: pointer;
-  z-index: -1;
+  -webkit-transform: translatez(0);
+  transform: translatez(0);
   @include single-transition(all, 0.2s, ease-out, 0s);
-  .gradient {
+  .gradient{
     display: block;
     position: absolute;
     top: 0;
@@ -142,38 +174,35 @@
     @include single-transition(all, 0s, ease-out, 0s);
     @include transform(translateX(-35%));
   }
-
-  &:hover, &:focus {
-    border: 2px solid ghostwhite;
+  &:hover, &:focus{
+    border: 0.5px solid rgba(248, 248, 255, 0.811);
+    font-weight: 6px;
+    text-decoration: none;
+    border-radius: 21px;
+    // background: linear-gradient(to right, #0abab5, rgba(34, 86, 44, 0.886), rgba(17, 53, 17, 0.948),rgba(123, 9, 9, 0.818), ghostwhite);
+    // color: ghostwhite;
     @include single-transition(all, 0.3s, ease-out, 0.1s);
-    .gradient {
+    .gradient{
       @include transform(translateX(100%));
       @include single-transition(all, 0.8s, ease-out, 0s);
     }
   }
-
-  @include transform(translateX(-35%));
-  font-size: 1.5rem;
-  font-weight: 4.2px;
-  padding: 3vh 0 2.1vh 5.1vw;
-  transition: 0.5s;
-
-  
 }
 
 
-.menu-item:hover {
-  box-sizing: border-box;
-  background-position: right center;
-  border-radius: 17px;
-  background-color: transparent;
-  background-image: linear-gradient(to right, #0abab5, rgba(34, 86, 44, 0.886), rgba(17, 53, 17, 0.948),rgba(123, 9, 9, 0.818), ghostwhite);
-  color: ghostwhite;
-  text-shadow: none;
-  font-weight: 6px;
-  transition: all 0.5s ease-in-out;
+// .menu-item:hover {
+//   box-sizing: border-box;
+//   background-position: right center;
+//   border-radius: 17px;
+//   background-color: transparent;
+//   background-image: linear-gradient(to right, #0abab5, rgba(34, 86, 44, 0.886), rgba(17, 53, 17, 0.948),rgba(123, 9, 9, 0.818), ghostwhite);
+//   color: ghostwhite;
+//   text-shadow: none;
+//   font-weight: 6px;
+//   @include single-transition(all, 0.3s, ease-out, 0.1s);
+//   transition: all 0.5s ease-in-out;
 
-}
+// }
 
 // @media only screen and (min-width: 1025px){
 //   body {
