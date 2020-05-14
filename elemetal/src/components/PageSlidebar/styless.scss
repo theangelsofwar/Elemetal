@@ -72,7 +72,7 @@ a {
   box-sizing: border-box;
   box-shadow: 3px solid ghostwhite;
   text-align: center;
-  display: inline-flex;
+  display: inline-block;
   background: linear-gradient(to bottom right, ghostwhite, rgba(94, 111, 108, 0));
   display: block;
 }
@@ -139,12 +139,12 @@ a {
 
 .menu-item, .menu-item--small{
   width: 96%;
-  float: left;
-  margin: 0.2rem;
-  display: block;
-  flex-direction: row;
+  // float: left;
+  margin: 0.3rem;
+  display: inline-block;
+  // flex-direction: row;
   position: relative;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   font-size: 1.5rem;
   text-align: center;
   font-weight: 4.2px;
