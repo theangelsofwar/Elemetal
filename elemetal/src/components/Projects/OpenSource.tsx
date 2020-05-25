@@ -42,7 +42,7 @@ const OpenSource = (): JSX.Element => (
           url: "https://github.com/MuseGroup/concertify",
           title: "Codechella-Built With React Native and Expo CLI"
         }}
-        description="Codechella: Music Festival Updates for Mobile"
+        description="Codechella: Music Festival Updates, Calendar Event Scraper and Forums for Mobile"
         />
       </div>
       <div id='cell' className='cell'>
@@ -70,10 +70,10 @@ const OpenSource = (): JSX.Element => (
         <div id='cell' className='cell'>
         <Card 
         photo={require("../../images/voltaire.jpg")}
-        title="Vote-aire A Decentralized Voting App for Equality"
+        title="Voltaire A Decentralized Voting App for Equity"
         link={{
           url: "",
-          title: "Vote-aire, Truthful Voting in the Enlightened Digital Age"
+          title: "Voltaire is Truthful unaltered Voting in the Digital Age"
         }}
         description="Vote-aire is an Enlightened way of Voting, demonstrated on the the Ethereum Blockchain, with use of IPFS as a way to open the portal to equality through decentralized systems"
         />
@@ -84,9 +84,9 @@ const OpenSource = (): JSX.Element => (
         title="Oil Rig: An Ethereum Mine"
         link={{
           url: "",
-          title: "Oil Rig: A Decentralized Ethereum React Application"
+          title: "Oil Rig: A Decentralized Ethereum Application"
         }}
-        description="Coming Soon..."
+        description="Inspect and mine ether while you listen to music. A Spotify Client."
         />
         </div>
         <div id='cell' className='cell'>

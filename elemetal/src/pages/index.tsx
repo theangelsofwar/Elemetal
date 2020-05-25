@@ -68,7 +68,7 @@ const IndexPage = (props: any): JSX.Element => {
   return (
     <Layout>
       <SEO
-        title="Yve Vestal Titan"
+        title="Angie Chang"
         keywords={[
           `react`,
           `developer`,
@@ -133,7 +133,7 @@ const IndexPage = (props: any): JSX.Element => {
         </div>
       
         <footer>
-          © {new Date().getFullYear()},  Copyright {`Yve Vestal Titan `}
+          © {new Date().getFullYear()},  Copyright {`Angels Of War`}
           <a href="https://www.angiechangpagne.com">{`<Angie Chang/>`}</a>
           <br />
           Sent from Mars 

@@ -11,7 +11,7 @@ const someQuotes=[{
   source: "",
   quote: "Destruction is a form of Creation"
 }, {
-  author: "Oscar Wilde and Lana Del Rey",
+  author: "Oscar Wilde",
   source: "",
   quote: "Life Imitates Art"
 }, {

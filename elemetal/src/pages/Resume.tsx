@@ -47,10 +47,10 @@ const Resume = (): JSX.Element => {
             <div id='glow' className='glow'> <p> <header> Resume </header> </p> </div>
             <br />
             <center>
-            <img src={require('../../static/Img/yveResume.jpg')} alt='resume'/>
+            <img src={require('../../static/Img/angelsofwarresume.jpg')} alt='resume'/>
             <a
               rel='noopener noreferrer'
-              href={require('../../static/Resume/YveAngieCV.docx.pdf')}
+              href={require('../../static/Resume/A17ChangDevCV.pdf')}
               target="_blank"> <u> Resume PDF Download </u>
             </a>
             </center>

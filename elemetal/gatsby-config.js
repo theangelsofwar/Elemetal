@@ -10,7 +10,7 @@ const siteMetadata= {
   author: `Angie Chang`,
   description: `Software Developer based in Los Angeles, my mission is to Code Through the Edges of Reality`,
   social: {
-    linkedin: `angiechangpagne`,
+    linkedin: `angelsofwar`,
   },
 }
 
@@ -20,7 +20,7 @@ module.exports = {
     name: `Angie Chang`,
     tagline: `Coding Through the Edges of Reality`,
     description: `Software Developer based in Los Angeles`,
-    author: `@angiechangpagne`,
+    author: `@angelsofwar`,
     stacks: [
       "React",
       "GraphQL",
@@ -41,10 +41,10 @@ module.exports = {
       "NewAgeArchitecture",
       "Algorithms",
     ],
-    siteUrl: `http://www.angiechangpagne.com`,
+    siteUrl: `http://www.angelsofwar.com`,
     social: {
-      linkedin: `@angiechangpagne`,
-      github: `@angiechangpagne`,
+      linkedin: `@angelsofwar`,
+      github: `@angelsofwar`,
     },
   },
   plugins: [
@@ -63,7 +63,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://angiechangpagne.com`,
+        siteUrl: `https://angelsofwar.com`,
       }
     },
     {
@@ -93,7 +93,7 @@ module.exports = {
         ...siteMetadata,
         name: `Angels Of War`,
         lang: `en-US`,
-        short_name: `Angie Yve Chang`,
+        short_name: `Angie Chang`,
         start_url: `/`,
         color: `darkslategray`,
         background_color: `ghostwhite`,

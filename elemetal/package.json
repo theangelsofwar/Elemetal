@@ -3,7 +3,7 @@
   "private": true,
   "description": "Coding Through The Edges of Reality",
   "version": "0.1.0",
-  "author": "Angie Yve(angiechangpagne)",
+  "author": "Angie Yve(angelsofwar)",
   "dependencies": {
     "@blueprintjs/core": "^3.25.0",
     "@chakra-ui/core": "^0.7.0",
@@ -154,10 +154,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/angiechangpagne/Elemetal"
+    "url": "https://github.com/angelsofwar/Elemetal"
   },
   "bugs": {
-    "url": "https://github.com/angiechangpagne/Elemetal/issues"
+    "url": "https://github.com/angelsofwar/Elemetal/issues"
   },
-  "homepage": "http://www.angiechangpagne.com"
+  "homepage": "http://www.angelsofwar.com"
 }

@@ -109,9 +109,9 @@ export const opensourceGrid = (): JSX.Element => {
             title=""
             link={{
               url: "",
-              title: ": A Decentralized Ethereum React"
+              title: "AIRE: A Decentralized micro blog platform"
             }}
-            description="Coming Soon..."
+            description="To AIRE is to Human... Production Coming Soon..."
             />
           </Grid>
           <br />

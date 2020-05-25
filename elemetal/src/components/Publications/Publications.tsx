@@ -46,6 +46,15 @@ const Publications = (): JSX.Element => (
           }}
           description="Vogue: So you’re a framework, but how did you get started?"
         />
+         <GlassCard 
+          photo={require("../../images/exodus.jpg")}
+          title="A Great Exodus: Making a Migration to Web3"
+          link={{
+            url: "https://medium.com/red-ether-project/the-exodus-migrating-from-web2-to-web3-how-a-react-app-can-run-on-a-blockchain-2f2ddc7682e9?source=friends_link&sk=ccbcec4db1ef00d681790dbdd5196fb7",
+            title: "The Exodus: Migrating from Web2 to Web3 — How a React App can run on a Blockchain"
+          }}
+          description="Exodus: \a great digital migration; \an escape\"
+        />
         <GlassCard 
           photo={require("../../images/redethermanifesto.jpg")}
           title="What is the Red Ether Project?"
