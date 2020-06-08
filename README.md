@@ -3,9 +3,17 @@
 
 Elemetal V1. A futuristic aesthetic
 
+Get started:
+- clone repo
+- cd elemetal
+- npm install
+- gatsby develop
+
+
+
 1st Iteration of My Web2 site(Web3 will be a dApp)
 
-"Gatsby? What Gatsby?"
+
 
 
 Gatsby-amazing React Library for Progressive Web Apps and Speedy Static Sites
