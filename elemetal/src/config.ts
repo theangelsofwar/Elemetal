@@ -24,7 +24,7 @@ module.exports = {
       username: "angelsofwar",
       social: {
         email: "realangelsofwar@gmail.com",
-        github: "angelsofwar",
+        github: "theangelsofwar",
         instagram: "angiechangpagne",
         linkedin: "angelsofwar",
         medium: "angelsofwar",

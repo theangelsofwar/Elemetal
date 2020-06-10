@@ -27,7 +27,7 @@ const OpenSource = (): JSX.Element => (
         photo={require("../../images/KarlGallery.jpg")}
         title="Auction Client - Karl Lagerfeld" 
         link={{
-          url: "https://github.com/angiechangpagne/SilentAuction",
+          url: "https://github.com/theangelsofwar/SilentAuction",
           title: "Silent Auction: A Repository for Karl Lagerfeld"
         }}
         description="Silent Auction-to honor the works of the Icon Karl Lagerfeld's work in the fashion industry and in society"

@@ -27,6 +27,7 @@ const bio = (): JSX.Element => {
           `javascript`,
           `gatsby`,
           `angiechangpagne`,
+          `angelsofwar`,
           `open-source`,
           `los-angeles`,
           `decentralized`,
