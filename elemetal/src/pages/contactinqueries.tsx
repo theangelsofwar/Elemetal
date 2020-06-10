@@ -22,7 +22,7 @@ export const contactInqueries = (): JSX.Element => {
 
             <br/>
             <div id='glow' className='glow'> <p> <h1> Contact for Queries </h1> </p> </div>
-            <form name='ContactInqueries' method='POST'>
+            <form name='contactInqueries' method='POST'>
             
               <div className='form-group'>
               <label>
