@@ -9,11 +9,7 @@ Get started:
 - npm install
 - gatsby develop
 
-
-
 1st Iteration of My Web2 site(Web3 will be a dApp)
-
-
 
 
 Gatsby-amazing React Library for Progressive Web Apps and Speedy Static Sites

@@ -7,7 +7,6 @@ import SEO from '../components/seo';
 import '../carraway/glow/glow.scss';
 import './archetype.scss';
 
-
 import GlowQuotesContainer from '../components/About/GreatQuotes/GlowQuotesContainer';
 //      <button id="glow" className="glow" onClick={handleClick}> Some of My Favorite Quotes </button>
 //   <h5> A Great Reading List For Real Life Inspiration </h5>
@@ -61,7 +60,6 @@ const bio = (): JSX.Element => {
             <br />
             <p> Besides Technology, I am fascinated by philosophy, architecture, design, and I try to live by the idea of applying concepts and patterns from different walks of life and embed those ideas into technology. Growing up, I would often contemplate our existence, the very idea of a  <b> void. </b></p> 
             <p> I've later reached the conclusion that when you try to understand life, you figure that coding is a much simpler thing to understand . . .  I then realized that my aim in life is to push past the edges of reality. </p>
-         
             <p> Born and raised in a small bubble of a suburb right outside of Manhattan called Westchester, I quickly moved to Los Angeles after College because deep down I knew that I am a Californian at heart. I wasn't wrong! </p>
             <p> Hollywood and the growth in Tech in this amazing city is what excites and inspires me, especially in Media and Politics. My original background is in FinTech and Java, though these days I have become encapsulated by Javascript in the Web, especially with flux architecturural patterns like React and Redux. </p>
             <p> I believe that Programming is like an Art form, and Art is what life is all about. </p>
@@ -77,10 +75,10 @@ const bio = (): JSX.Element => {
                 Javascript(ES6), HTML5, CSS3, Typescript, React, React-Router, React-Hooks, Redux 
               </li>
               <li>
-               GraphQL, Webpack, Material-UI, Apollo, REST API, Gatsby
+               GraphQL, Webpack, Material-UI, Apollo, REST API, Gatsby PWA
               </li>
               <li>
-                Node, Express, MongoDB, PostgreSQL, AWS, Docker, Kubernetes, Jest, Enzyme,, Python
+                Node, Express, MongoDB, PostgreSQL, AWS, Docker, Kubernetes, Jest, Enzyme, Python
               </li>
               <li> 
                 BCrypt, JWT, OAuth, Git, Babel, Web Sockets, TravisCI, Firebase, Electron
