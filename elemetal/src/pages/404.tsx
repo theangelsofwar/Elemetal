@@ -1,4 +1,3 @@
-// import {graphql} from 'gatsby'
 import React from 'react'
 import {Helmet} from 'react-helmet'
 import Layout from '../components/layout'
@@ -10,9 +9,9 @@ const NotFoundPage = (): JSX.Element => {
     <Layout>
       <SEO title="404: Does not Exist" />
       <Helmet>
-        <title> Void Ether </title>
+        <title> Void </title>
       </Helmet>
-      <p>You just hit a void ether</p>
+      <p> You just hit a void. There is no escape!</p>
     </Layout>
   )
 }

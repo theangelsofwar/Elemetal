@@ -13,7 +13,7 @@ const Contact = (): JSX.Element => (
       <br />
       <a href="https://github.com/theangelsofwar"> <u> Github </u> </a>
       <br />
-      <TransitionLink activeClass='active' className='transition-link' to='/contactInqueries'> <u> Send a FAX Message </u> </TransitionLink>
+      <TransitionLink activeClass='active' className='transition-link' to='/contactInqueries/'> <u> Send a FAX Message </u> </TransitionLink>
   </div>
   </React.Fragment>
 );
