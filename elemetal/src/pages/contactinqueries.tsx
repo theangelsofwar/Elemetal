@@ -9,14 +9,14 @@ import '../carraway/glow/glow.scss';
 import './archetype.scss';
 
 
-export const ContactInqueries = (): JSX.Element => {
+export const contactInqueries = (): JSX.Element => {
 
   return (
     <Layout>
       <div id="carraway">
       <PageSlidebar />
         <div id='page-wrap'>
-          <div id='contactinqueries' className='contactinqueries'>
+          <div id='contactInqueries' className='contactInqueries'>
             <section>
             <p> Let's Talk Business... </p>
 
@@ -27,7 +27,7 @@ export const ContactInqueries = (): JSX.Element => {
               <div className='form-group'>
               <label>
                 {"Name or Alias    "}
-              <input type='text' name='firstname' className='firstName' id='firstName' />
+              <input type='text' name='firstName' className='firstName' id='firstName' />
               </label>
               </div>
 
@@ -73,4 +73,4 @@ export const ContactInqueries = (): JSX.Element => {
   )
 };
 
-export default ContactInqueries;
+export default contactInqueries;
