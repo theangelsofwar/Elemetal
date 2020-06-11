@@ -16,13 +16,13 @@ export const contactInqueries = (): JSX.Element => {
       <div id="carraway">
       <PageSlidebar />
         <div id='page-wrap'>
-          <div id='contactInqueries' className='contactInqueries'>
+          <div id='contactinqueries' className='contactinqueries'>
             <section>
             <p> Let's Talk Business... </p>
 
             <br/>
             <div id='glow' className='glow'> <p> <h1> Contact for Queries </h1> </p> </div>
-            <form name='contactInqueries' method='POST'>
+            <form name='contactinqueries' method='POST'>
             
               <div className='form-group'>
               <label>
@@ -60,7 +60,7 @@ export const contactInqueries = (): JSX.Element => {
                 <textarea className='content' name='content' id='content' rows={5} />
               </label>
               </div>
-              <input type="hidden" name="contactInqueries" value="contactInqueries" />
+              <input type="hidden" name="contactinqueries" value="contactinqueries" />
              <button type='submit'> <div className='glow' id='glow'> <p>  Send It </p> </div> </button>
             </form>
   
