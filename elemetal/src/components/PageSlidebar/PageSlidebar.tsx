@@ -20,7 +20,7 @@ const PageSlidebar = (): JSX.Element => {
       <a id='resume' className='menu-item' href='/Resume/'> <span className='gradient'>  </span>  <TransitionLink to='/Resume/' activeClass='active' className='transition-link'> Resume </TransitionLink> </a>
       <a id='opensourcegrid' className='menu-item' href='/opensourceGrid/'> <span className='gradient'> </span> <TransitionLink to='/opensourceGrid/' activeClass='active' className='transition-link'> Open Source </TransitionLink> </a>
       <a id='publicationsgrid' className='menu-item' href='/publicationsGrid/'> <span className='gradient'>  </span>  <TransitionLink to='/publicationsGrid/' activeClass='active' className='transition-link'> Publications </TransitionLink> </a>
-      <a id='contactinqueries' className='menu-item' href='/contactInqueries/'> <span className='gradient'>  </span>  <TransitionLink to='/contactInqueries/' activeClass='active' className='transition-link'> Query </TransitionLink> </a>
+      <a id='contactinqueries' className='menu-item' href='/contactinqueries/'> <span className='gradient'>  </span>  <TransitionLink to='/contactinqueries/' activeClass='active' className='transition-link'> Query </TransitionLink> </a>
       <a id='systemsettings' className='menu-item' href='/systemSettings/'> <span className='gradient'>   </span> <TransitionLink to='/systemSettings/' activeClass='active' className='transition-link'> System Settings </TransitionLink> </a>
       <a id='archives' className='menu-item' href='/archives/'> <span className='gradient'>  </span> <TransitionLink to='/archives/' activeClass='active' className='transition-link'> Archives </TransitionLink>  </a>
     </Slider>

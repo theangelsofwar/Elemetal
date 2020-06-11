@@ -9,7 +9,7 @@ import '../carraway/glow/glow.scss';
 import './archetype.scss';
 
 
-export const contactInqueries = (): JSX.Element => {
+export const contactinqueries = (): JSX.Element => {
 
   return (
     <Layout>
@@ -73,4 +73,4 @@ export const contactInqueries = (): JSX.Element => {
   )
 };
 
-export default contactInqueries;
+export default contactinqueries;
