@@ -90,7 +90,7 @@
     "jest-emotion": "^10.0.32",
     "lint-staged": "^10.1.6",
     "material-components-web": "^5.1.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "node-sass": "^4.13.1",
     "path": "^0.12.7",
     "prop-types": "^15.7.2",
